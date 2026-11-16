@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>完整版日复盘 · 2026-11-17（周二）</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+:root{
+  --bg:#0d1117; --panel:#161b22; --panel2:#1c2129; --border:#2d333b;
+  --txt:#e6edf3; --txt2:#9aa7b4; --txt3:#6e7681;
+  --up:#f04444; --down:#2ea043; --accent:#58a6ff; --warn:#e3b341; --gold:#f0b72f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;font-size:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:24px;text-align:center;margin:8px 0 4px;color:#fff;letter-spacing:1px}
+.subtitle{text-align:center;color:var(--txt2);font-size:13px;margin-bottom:20px}
+.tag-bar{text-align:center;margin-bottom:16px}
+.tag{display:inline-block;padding:3px 12px;border-radius:20px;font-size:12px;margin:3px 4px;background:var(--panel2);border:1px solid var(--border);color:var(--accent)}
+.tag.warn{color:var(--warn);border-color:var(--warn)}
+.tag.up{color:var(--up);border-color:var(--up)}
+.tag.down{color:var(--down);border-color:var(--down)}
+h2{font-size:19px;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent);color:#fff;scroll-margin-top:60px}
+h2 .num{color:var(--accent);margin-right:6px}
+h3{font-size:16px;margin:20px 0 10px;color:#fff}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:12px;padding:9px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:7px}
+nav a{color:var(--txt2);text-decoration:none;font-size:12.5px;padding:4px 10px;border-radius:8px;border:1px solid transparent;white-space:nowrap}
+nav a:hover{color:var(--gold);border-color:rgba(240,183,47,.35);background:rgba(240,183,47,.08)}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.panel.hl{border-color:#f0444466}
+.grid{display:grid;gap:12px}
+.grid3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:720px){.grid3{grid-template-columns:1fr}}
+.kpi{background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.kpi .label{color:var(--txt2);font-size:12px}
+.kpi .val{font-size:20px;font-weight:700;margin-top:2px}
+.up{color:var(--up)}
+.down{color:var(--down)}
+.flat{color:var(--txt2)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:var(--panel2);color:var(--txt2);font-weight:600;white-space:nowrap}
+tr:hover td{background:#1a2028}
+.hl-red{color:var(--up);font-weight:700}
+.hl-gold{color:var(--gold);font-weight:700}
+.hl-blue{color:var(--accent);font-weight:700}
+.note{color:var(--txt2);font-size:12px;margin-top:6px}
+.badge{display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;margin-left:6px;vertical-align:middle}
+.badge.hot{background:#f0444422;color:var(--up);border:1px solid #f0444466}
+.badge.new{background:#58a6ff22;color:var(--accent);border:1px solid #58a6ff66}
+.badge.warn{background:#e3b34122;color:var(--warn);border:1px solid #e3b34166}
+.conclusion{background:linear-gradient(180deg,#1c2129,#161b22);border:1px solid var(--border);border-left:4px solid var(--up);border-radius:10px;padding:18px;margin-bottom:14px}
+.conclusion ol{padding-left:22px}
+.conclusion li{margin:9px 0;font-size:14px}
+.conclusion li b{color:var(--accent)}
+.chart{width:100%;height:300px}
+.meta{color:var(--txt3);font-size:11px;text-align:center;margin-top:30px}
+.warnbox{background:#3a2d10;border:1px solid var(--warn);border-radius:8px;padding:12px 14px;color:#f5d98a;margin:10px 0;font-size:13px}
+.oplist li{margin:8px 0;padding-left:6px}
+.dim{color:var(--txt3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>完整版日复盘 · 2026-11-17（周二）</h1>
+<div class="subtitle">盘前夜复盘 · 数据基准日 2026-11-16（周一）收盘 · 六大模块 · 导航目录</div>
+<div class="tag-bar">
+  <span class="tag warn">盘前夜 · 退潮杀跌延续</span>
+  <span class="tag down">上证 3602.57 -0.87%</span>
+  <span class="tag down">深成 10690.78 -2.53%</span>
+  <span class="tag down">创业板 2320.02 -4.37%</span>
+  <span class="tag down">科创50 1213.68 -5.16%</span>
+  <span class="tag warn">跌停63 &gt; 涨停33</span>
+</div>
+
+<nav>
+  <a href="#s0">★核心研判</a><a href="#s1">一大盘宏观</a><a href="#s2">二公告解读</a><a href="#s3">三短线情绪及个股发现</a><a href="#s4">四机构趋势及趋势选股</a><a href="#s5">五机会分析及仓位建议</a><a href="#s6">数据源口径</a>
+</nav>
+
+<!-- ============ 一、核心研判 ============ -->
+<h2 id="s0"><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
+<div class="conclusion">
+<ol>
+  <li><b>情绪温度：</b>冰点偏冷、恐慌杀跌延续。全市场<b class="hl-red">跌停 63 家 &gt; 涨停 33 家（近 2 倍）</b>，涨跌比 1136 : 4344，超 4300 股下跌，赚钱效应冰封，退潮进入「杀跌加速段」，连续第三个交易日超 4300 股下跌。<span class="badge warn">恐慌杀跌</span></li>
+  <li><b>周期位置：</b>高潮拐点向下确认，进入<b>二次探底</b>。创业板 -4.37%、科创50 -5.16%、中证1000 -3.03% 领跌，算力硬件（CPO/半导体/PCB）连续第三日重挫，指数「沪强深弱、权重抗跌成长崩塌」。<span class="badge warn">拐点向下</span></li>
+  <li><b>最强主线：</b>红利防御 + 题材避险双主线。资金<b>从算力硬件撤出，涌入银行（工行/建行/南京/成都/杭州/江苏/青岛 7 家续创历史新高）、家电（美的集团创历史新高、长虹美菱/华帝/小熊涨停）</b>；题材端<b>固态电池（领湃科技 20CM、紫竹高科涨停）与 AI 漫剧回暖（吉视传媒 3 天 2 板、华数传媒涨停）</b>。<span class="badge hot">主线切换</span></li>
+  <li><b>最高标 / 连板梯队：</b>北纬科技 4 连板为全场高度，广百股份 3 连板；新能股份、岳阳兴长、凯撒文化、金新农、华东重机、世龙实业、金逸影视 2 连板。AI 漫剧龙头文投控股 19 天 11 板涨停（但龙虎榜净卖 3.55 亿，警惕出货）。<span class="badge hot">龙头清晰</span></li>
+  <li><b>资金主力：</b>算力硬件大幅净卖——<b>中际旭创 -12.28% 创年内新低、新易盛 -11.08%、东山精密/沪电股份跌停、工业富联 -9.68%</b>；避险资金流入银行、家电、保险、煤炭等防御方向。全 A 主力净流出 646.8 亿。<span class="badge warn">科技出逃</span></li>
+  <li><b>最大隐患：</b>① 全球 AI 算力「审判周」压制——<b>外资机构 SemiAnalysis 大幅下修 2028 年 AI 算力资本开支预测近三成，英伟达本周财报（11/18 周三）为风向标</b>，算力链「断头」杀跌未止；② 高位人气股退潮（大东方、百洋股份、东方环宇、闽发铝业、襄阳轴承等跌停）；③ 缩量下跌（成交 1.494 万亿），承接力不足。<span class="badge warn">核心风险</span></li>
+  <li><b>明日策略：</b>退潮加速期<b>控仓观望、坚决不接飞刀</b>。防御方向（银行/家电/红利）与题材龙头（固态电池/AI 漫剧）可轻仓跟踪，高位算力硬件坚决回避；等待「<b>跌停收敛 + 连板重新打开 + 算力链止跌</b>」三重冰点拐点信号再上仓位。<span class="badge warn">等待冰点</span></li>
+  <li><b>仓位建议：</b>情绪拐点向下，整体仓位<b>降至 0–2 成（清仓等待）</b>，保留现金等待冰点企稳，宁缺毋滥。<span class="badge warn">清仓等待</span></li>
+</ol>
+</div>
+
+<div class="panel hl">
+<h3>⑨ 今日盘面主升浪候选观察</h3>
+<table>
+<tr><th>方向</th><th>收盘表现（11/16）</th><th>定性</th></tr>
+<tr><td class="hl-gold">银行/红利</td><td>工行 +2.26%、建行、南京、成都、杭州、江苏、青岛续创历史新高；上证50 逆势 +0.62%</td><td class="hl-blue">防御主线 · 拥挤度抬升</td></tr>
+<tr><td class="hl-gold">家电/消费</td><td>美的集团创历史新高，长虹美菱、华帝股份、小熊电器涨停，北鼎股份 20CM</td><td class="hl-blue">消费防御 · 高低切</td></tr>
+<tr><td class="hl-gold">固态电池</td><td>领湃科技 20CM 涨停、紫竹高科涨停、尚水智能涨超 10%</td><td class="hl-gold">题材脉冲</td></tr>
+<tr><td class="hl-gold">AI 漫剧</td><td>吉视传媒 3 天 2 板、华数传媒涨停、文投控股 19 天 11 板（龙虎榜净卖 3.55 亿）</td><td class="hl-gold">题材回暖 · 分歧</td></tr>
+<tr><td class="down">算力硬件/CPO</td><td>中际旭创 -12.28% 创年内新低、新易盛 -11.08%、东山精密/沪电股份跌停、工业富联 -9.68%</td><td class="down">断头杀跌 · 坚决回避</td></tr>
+</table>
+</div>
+
+<!-- ============ 二、大盘宏观 ============ -->
+<h2 id="s1"><span class="num">二</span>大盘宏观</h2>
+<div class="panel">
+<h3>量能与指数梯度（11/16 收盘 · 实取）</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">上证指数</div><div class="val down">3602.57 <span style="font-size:12px">-0.87%</span></div><div class="note">成交 7062 亿</div></div>
+  <div class="kpi"><div class="label">深证成指</div><div class="val down">10690.78 <span style="font-size:12px">-2.53%</span></div><div class="note">成交 7783 亿</div></div>
+  <div class="kpi"><div class="label">创业板指</div><div class="val down">2320.02 <span style="font-size:12px">-4.37%</span></div><div class="note">成交 3734 亿 · 成长最弱</div></div>
+  <div class="kpi"><div class="label">科创50</div><div class="val down">1213.68 <span style="font-size:12px">-5.16%</span></div><div class="note">成交 851 亿 · 科技崩塌</div></div>
+  <div class="kpi"><div class="label">全市场宽度</div><div class="val down">跌停63 &gt; 涨停33</div><div class="note">涨1136/跌4344 · 超4300股下跌</div></div>
+  <div class="kpi"><div class="label">量能定性</div><div class="val flat">缩量杀跌</div><div class="note">成交1.494万亿 · 较前日缩量</div></div>
+</div>
+<div class="note">指数梯度「沪强深弱、权重抗跌成长崩塌」：上证 -0.87% &gt; 上证50 +0.62% &gt; 沪深300 -0.91% &gt; 深成 -2.53% &gt; 中证500 -2.60% &gt; 中证1000 -3.03% &gt; 创业板 -4.37% &gt; 科创50 -5.16%。资金避险特征显著，红利权重虹吸成长。</div>
+</div>
+
+<div class="panel">
+<h3>健康度九维雷达（11/16 定性）</h3>
+<div id="radar" class="chart"></div>
+<div class="note">九维评分（10 分制）：量能支撑 3 / 涨停质量 3 / 主线清晰度 5 / 赚钱效应 2 / 情绪接力 3 / 游资活跃 4 / 机构参与 3 / 外资态度 3 / 估值安全 6。整体健康度低，退潮加速段。Westock 市场画像：行业分化严重、板块宽度全面下跌、价值主导、趋势偏弱。</div>
+</div>
+
+<!-- ============ 三、公告解读 ============ -->
+<h2 id="s2"><span class="num">三</span>公告解读（11/16 盘后 · 重点公告）</h2>
+<div class="panel">
+<h3>有辨识度 / 特殊性 / 重要字眼的公告（五类整理）</h3>
+<h3 style="margin-top:14px">【投资签约】</h3>
+<table>
+<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
+<tr><td class="hl-red">光启技术</td><td>签订近 <b>18 亿元超材料大单</b>（盘后公告精选）</td><td class="hl-red">大额订单 · 超材料稀缺</td></tr>
+<tr><td class="hl-gold">科翔股份</td><td>与九江经济技术开发区管委会签订项目投资协议（PCB 方向）</td><td class="hl-blue">扩产布局 · PCB</td></tr>
+<tr><td class="hl-gold">威马农机</td><td>对外投资设立海外全资子公司</td><td class="hl-blue">出海布局</td></tr>
+<tr><td class="hl-gold">开勒股份</td><td>收购福建威泰思光电部分股权并增资，完成工商变更</td><td class="hl-blue">外延并购落地</td></tr>
+</table>
+<h3 style="margin-top:14px">【增持回购】</h3>
+<table>
+<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
+<tr><td class="hl-red">卓胜微 / 天华新能 / 大族数控 / 德必集团 / 耐普矿机</td><td>多家公司<b>取得金融机构股票回购专项贷款承诺函</b></td><td class="hl-red">回购贷落地潮 · 护盘信号</td></tr>
+<tr><td class="hl-gold">胜宏科技</td><td>拟回购公司股份；并向三级全资子公司增资</td><td class="hl-blue">算力 PCB 龙头回购</td></tr>
+<tr><td class="hl-gold">星徽股份</td><td>回购股份用于注销并减少注册资本</td><td class="hl-blue">注销式回购</td></tr>
+<tr><td class="hl-gold">兆龙互连 / 中仑新材 / 鼎泰高科</td><td>发布回购股份方案 / 报告书</td><td class="hl-blue">回购潮</td></tr>
+</table>
+<h3 style="margin-top:14px">【经营业绩】</h3>
+<table>
+<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
+<tr><td class="hl-gold">华康洁净</td><td>项目<b>中标</b>提示性公告</td><td class="hl-gold">订单落地</td></tr>
+<tr><td class="hl-gold">华厦眼科</td><td>2026 年中期分红派息实施</td><td class="hl-blue">分红实施</td></tr>
+<tr><td class="hl-gold">瑞纳智能</td><td>2026 年前三季度分红派息实施</td><td class="hl-blue">分红</td></tr>
+</table>
+<h3 style="margin-top:14px">【融资】</h3>
+<table>
+<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
+<tr><td class="hl-gold">碧水源 / 南方泵业 / 长江证券 / 华西证券</td><td>发行超短融 / 科技创新公司债 / 公司债</td><td class="hl-blue">债务融资</td></tr>
+</table>
+<h3 style="margin-top:14px">【其他 / 风险】</h3>
+<table>
+<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
+<tr><td class="hl-red">美晨科技</td><td>重大资产出售预案后的进展公告</td><td class="hl-gold">重组进展 · 关注</td></tr>
+<tr><td class="hl-gold">ST银江</td><td>子公司部分房产将被司法拍卖</td><td class="hl-gold">风险提示</td></tr>
+<tr><td class="hl-gold">*ST天喻</td><td>涉及诉讼的进展公告</td><td class="hl-gold">诉讼风险</td></tr>
+</table>
+<div class="note">注：以上为 11/16 盘后巨潮资讯全量公告（深市 3153 条）中筛选的有辨识度公告，重点红色标注「大额订单 / 回购贷落地 / 注销式回购 / 重组进展」等特殊性字眼。回购潮（多家取得回购专项贷款）与光启技术 18 亿大单是本期最值得关注的两个方向。</div>
+</div>
+
+<!-- ============ 四、短线情绪及个股发现 ============ -->
+<h2 id="s3"><span class="num">四</span>短线情绪及个股发现</h2>
+<div class="panel">
+<h3>涨停/跌停 · 连板梯队 · 封板率</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">涨停家数</div><div class="val up">33</div><div class="note">封板率 58.93%（含炸板）</div></div>
+  <div class="kpi"><div class="label">跌停家数</div><div class="val down">63</div><div class="note">跌停接近涨停 2 倍</div></div>
+  <div class="kpi"><div class="label">连板高度</div><div class="val up">4 板</div><div class="note">北纬科技 · 连板 11 家</div></div>
+</div>
+<h3>连板梯队</h3>
+<table>
+<tr><th>高度</th><th>个股</th></tr>
+<tr><td class="hl-red">4 板</td><td>北纬科技（游戏/创投）</td></tr>
+<tr><td class="hl-gold">3 板</td><td>广百股份（零售）</td></tr>
+<tr><td class="hl-blue">2 板</td><td>新能股份、岳阳兴长、凯撒文化、金新农、华东重机、世龙实业、金逸影视</td></tr>
+<tr><td class="hl-gold">题材高位</td><td>文投控股（AI 漫剧，19 天 11 板）、吉视传媒（3 天 2 板）、华数传媒（涨停）</td></tr>
+</table>
+<div class="warnbox"><b>关键提醒</b>：跌停 63 家反超涨停 33 家（近 2 倍），是「想卖的恐慌」压过「想买的热情」的明确退潮信号。连板高度从前期高位压缩（天普股份 4 连板后停牌核查），当前属「<b>退潮加速、抱团避险</b>」阶段，不是上仓位时机。连板晋级率 42.86%（不含 ST），情绪持续降温。</div>
+</div>
+
+<div class="panel">
+<h3>龙虎榜关键读数（11/16）</h3>
+<table>
+<tr><th>个股</th><th>涨跌</th><th>净买/净卖</th><th>解读</th></tr>
+<tr><td>沪电股份</td><td class="down">-10%</td><td class="up">净买 4.57 亿</td><td>跌停却获大幅净买，资金抄底算力 PCB（机构 7 席）</td></tr>
+<tr><td>杰华特</td><td class="down">-16.98%</td><td class="up">净买 2.34 亿</td><td>半导体跌停获抄底（机构 2 席）</td></tr>
+<tr><td>吉视传媒</td><td class="up">+10.04%</td><td class="up">净买 2.14 亿</td><td>AI 漫剧回暖，游资主攻</td></tr>
+<tr><td>华数传媒</td><td class="up">+10.05%</td><td class="up">净买 1.19 亿</td><td>AI 漫剧跟涨</td></tr>
+<tr><td class="hl-red">文投控股</td><td class="up">+10%</td><td class="down">净卖 -3.55 亿</td><td><b>涨停却遭大幅净卖，出货信号</b></td></tr>
+<tr><td>东山精密</td><td class="down">-10%</td><td class="down">净卖 -3.60 亿</td><td>机构 5 席大幅净卖，算力 PCB 出逃</td></tr>
+<tr><td>襄阳轴承</td><td class="down">-9.97%</td><td class="up">净买 1.02 亿</td><td>汽零跌停获抄底（机构 2 席）</td></tr>
+<tr><td>禾元生物</td><td class="down">-18.44%</td><td class="down">净卖 -1.28 亿</td><td>高位股崩跌</td></tr>
+</table>
+<div class="note">整体看：算力硬件（沪电、杰华特）跌停后获机构/游资净买抄底，AI 漫剧（吉视、华数）获游资净买，但龙头文投控股涨停却净卖 3.55 亿、东山精密机构 5 席净卖 3.60 亿——题材内部分歧加剧，退潮期「有抄底、无追高」。</div>
+</div>
+
+<!-- ============ 五、机构趋势及趋势选股 ============ -->
+<h2 id="s4"><span class="num">五</span>机构趋势及趋势选股</h2>
+<div class="panel">
+<h3>资金性质：科技出逃 vs 红利避险</h3>
+<table>
+<tr><th>方向</th><th>资金行为</th><th>性质</th></tr>
+<tr><td class="down">算力硬件/CPO</td><td>主力大幅净卖（中际旭创、新易盛、东山精密、工业富联净流出居前），全 A 主力净流出 646.8 亿</td><td class="down">主升浪证伪 · 出逃</td></tr>
+<tr><td class="up">银行/保险</td><td>避险资金持续流入，7 家银行创新高</td><td class="up">防御抱团</td></tr>
+<tr><td class="up">家电/消费</td><td>美的创历史新高，多股涨停</td><td class="up">高低切 · 防御</td></tr>
+<tr><td class="hl-gold">固态电池/AI漫剧</td><td>游资题材脉冲</td><td class="hl-gold">避险题材</td></tr>
+</table>
+<div class="warnbox"><b>趋势选股结论</b>：当前无「贝塔主升浪」趋势股可做。算力硬件主升浪已证伪（中际旭创创年内新低），防御方向（银行/家电）是「避险抱团」而非「进攻主升」，拥挤度已抬升。真正的趋势机会需等「冰点拐点向上」后，从杀跌出清的方向里重新找启动。<b>当前 = 空仓等待，不强行选股。</b></div>
+</div>
+
+<div class="panel">
+<h3>核心宽基 ETF 资金动向（代理：涨跌与避险方向）</h3>
+<table>
+<tr><th>ETF 方向</th><th>表现</th><th>信号</th></tr>
+<tr><td class="up">银行/红利 ETF</td><td class="up">逆市上涨</td><td>红利避险极致演绎</td></tr>
+<tr><td class="up">上证50 / 沪深300</td><td class="up">上证50 +0.62% 逆势</td><td>权重护盘</td></tr>
+<tr><td class="down">通信/半导体 ETF</td><td class="down">通信设备 -8.67%、半导体 -6.02%</td><td>科技出逃</td></tr>
+</table>
+<div class="note">红利/银行逆市大涨，印证「科技调整、红利防御占优」格局，资金避险特征极致。行业 ETF 申赎份额数据本期未直接获取，用板块涨跌与主力资金净流入作代理。</div>
+</div>
+
+<!-- ============ 六、机会分析及仓位建议 ============ -->
+<h2 id="s5"><span class="num">六</span>机会分析及仓位建议</h2>
+<div class="panel">
+<h3>① 明天炒什么（舆情热度 × 预期差方向榜）</h3>
+<table>
+<tr><th>方向</th><th>舆情/催化</th><th>预期差定性</th></tr>
+<tr><td class="hl-gold">英伟达财报（11/18 周三）</td><td>全球 AI 算力「审判周」，SemiAnalysis 大幅下修 2028 年资本开支近三成，美债收益率重回 5%</td><td class="hl-red">最大变量 · 跌出来的预期差</td></tr>
+<tr><td class="hl-gold">超材料（光启技术）</td><td>盘后 18 亿超材料大单，稀缺性订单</td><td class="hl-red">业绩兑现 · 高辨识度</td></tr>
+<tr><td class="hl-gold">回购贷落地潮</td><td>卓胜微/天华新能/大族数控等多股取得回购专项贷款承诺函</td><td class="hl-blue">护盘信号 · 情绪托底</td></tr>
+<tr><td class="hl-gold">固态电池</td><td>领湃科技 20CM、紫竹高科涨停，避险题材</td><td class="hl-gold">题材脉冲</td></tr>
+<tr><td class="hl-gold">AI 漫剧</td><td>吉视传媒 3 天 2 板、华数传媒涨停，但文投控股净卖 3.55 亿</td><td class="hl-gold">题材回暖 · 分歧</td></tr>
+<tr><td class="hl-gold">红利/银行</td><td>7 家银行创新高，长江电力创历史新高</td><td class="hl-blue">防御抱团 · 拥挤度抬升</td></tr>
+</table>
+</div>
+
+<div class="panel">
+<h3>② 下一轮主升浪窗口研判</h3>
+<div class="warnbox"><b>核心判断</b>：本轮主升浪（算力硬件/AI）已证伪，进入二次探底。下一轮主升浪需等待「<b>跌停收敛 + 连板重新打开 + 算力链止跌</b>」三重冰点拐点信号，从杀跌出清的方向（AI 漫剧 / 固态电池 / 算力超跌反抽）里重新找贝塔主升段。当前仍是「高潮拐点向下 → 清仓等待」的左侧观察期，不左侧抄底、不接飞刀。</div>
+</div>
+
+<div class="panel">
+<h3>③ 仓位建议（仓位档位循环表）</h3>
+<table>
+<tr><th>周期位置</th><th>情绪状态</th><th>仓位</th><th>当前判定</th></tr>
+<tr><td class="hl-red">高潮拐点向下</td><td class="down">跌停63&gt;涨停33 · 恐慌杀跌</td><td class="down">0–2 成（清仓等待）</td><td class="hl-red">◀ 当前</td></tr>
+<tr><td>冰点拐点向上（未触发）</td><td>跌停收敛 + 涨停回升</td><td>分批上仓位做多</td><td class="dim">待确认</td></tr>
+<tr><td>情绪高潮</td><td>普涨 · 涨停潮</td><td>开始减仓</td><td class="dim">—</td></tr>
+</table>
+</div>
+
+<div class="panel">
+<h3>④ 明日操作清单（T+1 = 2026-11-17 周二）</h3>
+<ol class="oplist">
+  <li><b>控仓观望</b>：维持 0–2 成仓，不新增进攻仓位。</li>
+  <li><b>不接飞刀</b>：算力硬件（CPO/半导体/PCB）断头杀跌未止，坚决不抄底。</li>
+  <li><b>盯冰点三信号</b>：跌停家数收敛 + 连板重新打开 + 算力链止跌企稳。</li>
+  <li><b>跟踪防御与题材</b>：银行/家电（防御）、固态电池/AI 漫剧（题材）轻仓观察，不追高。</li>
+  <li><b>关注外部变量</b>：英伟达周三财报、SemiAnalysis 下修算力预测发酵、美债收益率走势。</li>
+  <li><b>关注公告催化</b>：光启技术 18 亿超材料大单、回购贷落地潮（卓胜微/天华新能等）对情绪的托底作用。</li>
+</ol>
+<div class="warnbox"><b>一句话总结</b>：高潮拐点向下已确认 → <b>清仓等待（0–2 成仓）</b>；跌停 63 反超涨停 33 → <b>退潮加速，恐慌杀跌</b>；下一轮主升浪 → 等「冰点拐点向上三信号」确认后，从杀跌出清的方向（AI 漫剧 / 固态电池 / 算力超跌反抽）里找贝塔主升段，坚决不接飞刀。</div>
+</div>
+
+<!-- ============ 七、数据源与口径 ============ -->
+<h2 id="s6"><span class="num">七</span>数据源与口径说明</h2>
+<div class="panel">
+<ul class="oplist">
+  <li>指数行情 + 涨跌停家数：东方财富妙想（mx_index_block_finance_data，8 大指数收盘快照 + 涨跌家数 + 主力资金流）</li>
+  <li>市场画像九维：腾讯自选股（data_market_overview，summary 评分）</li>
+  <li>龙虎榜：腾讯自选股（data_lhb，2026-11-16 全市场榜 + 机构席位 jg 榜）</li>
+  <li>热度榜/收评/连板梯队：腾讯自选股 data_hot（stock/board/news）+ 东方财富妙想新闻检索交叉验证</li>
+  <li>公告全量：巨潮资讯网（cninfo hisAnnouncement 接口，2026-11-13~11-16，深市 3153 条，关键词分类）</li>
+  <li>微博热搜：weibo 实时榜（当日以时政/娱乐为主，财经类热搜稀疏，已标注）</li>
+  <li><b>数据缺口声明</b>：行业 ETF 申赎份额本期未直接获取，用板块涨跌 + 主力资金净流入代理；上交所公告接口本期返回与深市重叠，沪市重点公告以新闻口径补充。</li>
+  <li>本文基于公开数据与量化分析，仅供个人复盘参考，<b>不构成投资建议</b>。市场有风险，投资需谨慎。</li>
+</ul>
+</div>
+
+<div class="meta">周期择时复盘 · 数据基准 2026-11-16 收盘 · ascorelogic.github.io/MarketReview</div>
+</div>
+
+<script>
+(function(){
+  var radar = echarts.init(document.getElementById('radar'));
+  radar.setOption({
+    backgroundColor:'transparent',
+    radar:{
+      indicator:[
+        {name:'量能支撑',max:10},{name:'涨停质量',max:10},{name:'主线清晰度',max:10},
+        {name:'赚钱效应',max:10},{name:'情绪接力',max:10},{name:'游资活跃',max:10},
+        {name:'机构参与',max:10},{name:'外资态度',max:10},{name:'估值安全',max:10}
+      ],
+      axisName:{color:'#9aa7b4'},
+      splitLine:{lineStyle:{color:'#2d333b'}},
+      splitArea:{areaStyle:{color:['rgba(88,166,255,0.02)','rgba(88,166,255,0.05)']}},
+      axisLine:{lineStyle:{color:'#2d333b'}}
+    },
+    series:[{
+      type:'radar',
+      data:[{
+        value:[3,3,5,2,3,4,3,3,6],
+        name:'今日健康度',
+        areaStyle:{color:'rgba(240,68,68,0.25)'},
+        lineStyle:{color:'#f04444'},
+        itemStyle:{color:'#f04444'}
+      }]
+    }]
+  });
+  window.addEventListener('resize',function(){radar.resize();});
+})();
+</script>
+</body>
+</html>
