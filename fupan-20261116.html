@@ -56,6 +56,10 @@ tr:hover td{background:#1a2028}
 .meta{color:var(--txt3);font-size:11px;text-align:center;margin-top:30px}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:12px;padding:9px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:7px}
+nav a{color:var(--txt2);text-decoration:none;font-size:12.5px;padding:4px 10px;border-radius:8px;border:1px solid transparent;white-space:nowrap}
+nav a:hover{color:var(--gold);border-color:rgba(240,183,47,.35);background:rgba(240,183,47,.08)}
+h2{scroll-margin-top:60px}
 .warnbox{background:#3a2d10;border:1px solid var(--warn);border-radius:8px;padding:12px 14px;color:#f5d98a;margin:10px 0;font-size:13px}
 .oplist li{margin:8px 0;padding-left:6px}
 .dim{color:var(--txt3)}
@@ -74,8 +78,12 @@ a:hover{text-decoration:underline}
   <span class="tag warn">超 4400 股下跌</span>
 </div>
 
+<nav>
+  <a href="#s0">★核心研判</a><a href="#s1">一大盘宏观</a><a href="#s2">二公告解读</a><a href="#s3">三短线情绪及个股发现</a><a href="#s4">四机构趋势及趋势选股</a><a href="#s5">五机会分析及仓位建议</a><a href="#s6">数据源口径</a>
+</nav>
+
 <!-- 一、核心研判 -->
-<h2><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
+<h2 id="s0"><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
 <div class="conclusion">
 <ol>
   <li><b>情绪温度：</b>冰点偏冷，恐慌释放。全市场超 4400 股下跌，上证 589 涨/1718 跌、创业板 163 涨/1236 跌，涨停 33 家 / 跌停 14 家（午间口径），高位科技股集中放量杀跌，赚钱效应冰封。<span class="badge warn">恐慌杀跌</span></li>
@@ -102,7 +110,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 二、大盘宏观 -->
-<h2><span class="num">二</span>大盘宏观</h2>
+<h2 id="s1"><span class="num">二</span>大盘宏观</h2>
 <div class="panel">
 <h3>量能与指数梯度（收盘 · 实取）</h3>
 <div class="grid grid3">
@@ -132,7 +140,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 三、公告解读 -->
-<h2><span class="num">三</span>公告解读（11/13 收盘后 · 全量公告）</h2>
+<h2 id="s2"><span class="num">三</span>公告解读（11/13 收盘后 · 全量公告）</h2>
 <div class="panel">
 <div class="note">数据源：巨潮资讯网 hisAnnouncement/query，全市场约 2787 条公告（2026-11-13 收盘后至 11-16）。按「投资签约/融资/增持回购/经营业绩/其他」五类整理，重点红色标注辨识度/唯一性/特殊性公告。</div>
 <h3>① 投资签约 / 并购重组</h3>
@@ -179,7 +187,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 四、短线情绪及个股发现 -->
-<h2><span class="num">四</span>短线情绪及个股发现</h2>
+<h2 id="s3"><span class="num">四</span>短线情绪及个股发现</h2>
 <div class="panel">
 <h3>短线情绪定性</h3>
 <div class="warnbox">退潮加速 + 主线切换：涨停 33 家 / 跌停 14 家（午间口径），封板率 77%。高位科技股（中际旭创 -12.28%、新易盛 -11.08%、东山精密 -10%）集体放量杀跌，高位连板退潮股（大东方、百洋股份、东方环宇、闽发铝业）跌停；资金切向冰雪经济（龙江交通）、家电消费、银行红利避险。情绪处于「高潮拐点向下」的二次探底段，短线亏钱效应集中在科技链与高位连板，题材避险抱团仍存活口。</div>
@@ -221,7 +229,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 五、机构趋势及趋势选股 -->
-<h2><span class="num">五</span>机构趋势及趋势选股</h2>
+<h2 id="s4"><span class="num">五</span>机构趋势及趋势选股</h2>
 <div class="panel">
 <h3>主力资金与机构动向（收盘实取）</h3>
 <table>
@@ -247,7 +255,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 六、机会分析及仓位建议 -->
-<h2><span class="num">六</span>机会分析及仓位建议</h2>
+<h2 id="s5"><span class="num">六</span>机会分析及仓位建议</h2>
 <div class="panel">
 <h3>① 明天炒什么（舆情热度 × 预期差方向榜）</h3>
 <table>
@@ -292,7 +300,7 @@ a:hover{text-decoration:underline}
 </div>
 
 <!-- 数据源与口径 -->
-<h2><span class="num">七</span>数据源与口径说明</h2>
+<h2 id="s6"><span class="num">七</span>数据源与口径说明</h2>
 <div class="panel">
 <ul class="oplist">
   <li><b>行情/指数：</b>通达信 tdx_quotes（上证 000001、深成 399001、创业板 399006、科创50 000688），收盘数据实取（涨跌幅、成交额、上涨/下跌家数）。</li>
