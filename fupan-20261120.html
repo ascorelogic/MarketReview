@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>完整版日复盘 · 2026-11-20（周五）</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+:root{
+  --bg:#0d1117; --panel:#161b22; --panel2:#1c2129; --border:#2d333b;
+  --txt:#e6edf3; --txt2:#9aa7b4; --txt3:#6e7681;
+  --up:#f04444; --down:#2ea043; --accent:#58a6ff; --warn:#e3b341; --gold:#f0b72f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;font-size:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:24px;text-align:center;margin:8px 0 4px;color:#fff;letter-spacing:1px}
+.subtitle{text-align:center;color:var(--txt2);font-size:13px;margin-bottom:20px}
+.tag-bar{text-align:center;margin-bottom:16px}
+.tag{display:inline-block;padding:3px 12px;border-radius:20px;font-size:12px;margin:3px 4px;background:var(--panel2);border:1px solid var(--border);color:var(--accent)}
+.tag.warn{color:var(--warn);border-color:var(--warn)}
+.tag.up{color:var(--up);border-color:var(--up)}
+.tag.down{color:var(--down);border-color:var(--down)}
+h2{font-size:19px;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent);color:#fff;scroll-margin-top:60px}
+h2 .num{color:var(--accent);margin-right:6px}
+h3{font-size:16px;margin:20px 0 10px;color:#fff}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.94);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:12px;padding:9px 12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:7px}
+nav a{color:var(--txt2);text-decoration:none;font-size:12.5px;padding:4px 10px;border-radius:8px;border:1px solid transparent;white-space:nowrap}
+nav a:hover{color:var(--gold);border-color:rgba(240,183,47,.35);background:rgba(240,183,47,.08)}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.panel.hl{border-color:#f0444466}
+.grid{display:grid;gap:12px}
+.grid3{grid-template-columns:1fr 1fr 1fr}
+.grid2{grid-template-columns:1fr 1fr}
+@media(max-width:720px){.grid3,.grid2{grid-template-columns:1fr}}
+.kpi{background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.kpi .label{color:var(--txt2);font-size:12px}
+.kpi .val{font-size:20px;font-weight:700;margin-top:2px}
+.up{color:var(--up)}
+.down{color:var(--down)}
+.flat{color:var(--txt2)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:var(--panel2);color:var(--txt2);font-weight:600;white-space:nowrap}
+tr:hover td{background:#1a2028}
+.hl-red{color:var(--up);font-weight:700}
+.hl-gold{color:var(--gold);font-weight:700}
+.hl-blue{color:var(--accent);font-weight:700}
+.note{color:var(--txt2);font-size:12px;margin-top:6px}
+.badge{display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;margin-left:6px;vertical-align:middle}
+.badge.hot{background:#f0444422;color:var(--up);border:1px solid #f0444466}
+.badge.new{background:#58a6ff22;color:var(--accent);border:1px solid #58a6ff66}
+.badge.warn{background:#e3b34122;color:var(--warn);border:1px solid #e3b34166}
+.conclusion{background:linear-gradient(180deg,#1c2129,#161b22);border:1px solid var(--border);border-left:4px solid var(--up);border-radius:10px;padding:18px;margin-bottom:14px}
+.conclusion ol{padding-left:22px}
+.conclusion li{margin:9px 0;font-size:14px}
+.conclusion li b{color:var(--accent)}
+.chart{width:100%;height:320px}
+.meta{color:var(--txt3);font-size:11px;text-align:center;margin-top:30px}
+.warnbox{background:#3a2d10;border:1px solid var(--warn);border-radius:8px;padding:12px 14px;color:#f5d98a;margin:10px 0;font-size:13px}
+.oplist li{margin:8px 0;padding-left:6px}
+.dim{color:var(--txt3)}
+.pending{color:var(--warn);font-weight:700}
+.disclaimer{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--txt2);font-size:12px;margin-top:20px;line-height:1.8}
+.breaking{background:linear-gradient(180deg,#1f2a1a,#161b22);border:1px solid #2ea043;border-left:4px solid #2ea043;border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.breaking b{color:#7ee2a8}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>完整版日复盘 · 2026-11-20（周五）</h1>
+<div class="subtitle">盘前夜复盘 · 全量数据实取 · 六大模块 · V4.3 框架</div>
+<div class="tag-bar">
+  <span class="tag down">沪指 -0.28% · 深成 -0.71% · 创业板 -0.79%</span>
+  <span class="tag up">科创50 +1.83% 三连阳 · 半导体制造链托底</span>
+  <span class="tag down">涨停26/跌停72 · 连板仅5只 · 最高3板</span>
+  <span class="tag warn">缩量1.305万亿创年内新低 · 6连冰</span>
+  <span class="tag up">Anthropic「史上最大IPO」今晚首秀</span>
+  <span class="tag up">长鑫科技最高50亿回购护盘 · 阿里Q2云+53%</span>
+</div>
+
+<nav>
+  <a href="#s0">★核心研判</a><a href="#s1">一大盘宏观</a><a href="#s2">二公告解读</a><a href="#s3">三短线情绪及个股发现</a><a href="#s4">四机构趋势及趋势选股</a><a href="#s5">五机会分析及仓位建议</a><a href="#s6">数据源口径</a>
+</nav>
+
+<!-- ============ 一、核心研判 ============ -->
+<h2 id="s0"><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
+
+<div class="breaking">
+<b>⚠ 今日收盘格局：缩量冰点日、6连冰确认，但「跌停大幅收敛 + 科创50三连阳 + 半导体制造链托底」三信号初现拐点苗头。情绪从「极致恐慌出清」过渡到「冰点后试错」，明日是本周最后一个交易日，重点观察半导体自主可控能否由「局部抱团」升级为「成建制主线」。</b>沪指 3577.62（-0.28%）、深成 10583.20（-0.71%）、创业板 2293.34（-0.79%），科创50 逆势 +1.83% 三连阳。两市成交 1.305 万亿，续创年内新低，缩量阴跌 + 局部抱团 = 冰点探底日，不是修复日。全市场上涨 649 / 下跌 4876，涨停 26 / 跌停 72，封板率 49.1%、连板晋级率 37.5%（低基数回升但最高标断板）。
+</div>
+
+<div class="conclusion">
+<ol>
+  <li><b>情绪温度：</b>涨停 26 家（创 2024-07-08 以来新低）、跌停 72 家、封板率 49.1%（跌破50%）、连板仅 5 只、最高板从 4 板退回 3 板，连续第 6 个交易日超 4100 只个股下跌，<b class="hl-gold">情绪进入极致冰点</b>。但跌停家数较昨日 84 家大幅收敛、华东重机/九阳股份出现「地天板」式的分歧承接，情绪在冰点处出现分化式修复的微弱信号。<span class="badge warn">极致冰点 · 分化式修复萌芽</span></li>
+  <li><b>周期位置：</b>仍处「高潮拐点向下 → 退潮」周期中后段，但<b class="hl-gold">已出现冰点拐点向上的前兆信号</b>——跌停由 84→72 收敛、科创50 三连阳放量、半导体制造链资金持续净流入。三重信号（跌停收敛至10内 + 放量 + 主线晋级连板）中「跌停收敛」与「主线资金集中」两项已部分达成，<b class="hl-gold">「放量」仍缺失（缩量新低）</b>，拐点尚未最终确认。<span class="badge warn">退潮中后段 · 拐点前兆</span></li>
+  <li><b>最强主线：</b>半导体自主可控成全场唯一避险硬逻辑——<b class="hl-red">光刻胶/电子化学品（盛剑科技3连板、格林达/海立股份/江化微3天2板）+ 先进封装（蓝箭电子20cm涨停、大港股份/中京电子涨停）</b>。半导体产业链主力净流入合计超 90 亿（设备+制造+材料），推动科创50 逆势 +1.83%。光刻胶涨停 8 只，但光刻胶指数当日收跌 0.14%，涨停集中在小票，联动宽度有限。<span class="badge hot">半导体自主可控单极抱团</span></li>
+  <li><b>最高标 / 连板梯队：</b>最高板从 4 板退回 <b class="hl-red">3 板</b>——<b>真视通（华为算力/液冷）、全筑股份（光刻机/EUV光源）、盛剑科技（电子化学品/光刻胶）</b>；2 连板：<b>京蓝科技（7N高纯铟）、华升股份（算力租赁）</b>。前龙头华东重机红盘断板未死但死亡换手 51.33%、成交 40.67 亿，宣告纯情绪连板终结；双环科技/泰嘉股份「2进3」核死跌停恶性 A 杀。<b class="hl-gold">空间高度死死压制在3板，连板生态进入高危期</b>。<span class="badge new">最高3板 · 梯队断层</span></li>
+  <li><b>资金主力：</b>主力资金<b class="hl-red">净流入半导体（+28.2亿）、电子化学品（+3.3亿）、造纸、小家电</b>；<b class="hl-gold">净流出 IT服务（-26.5亿）、计算机设备、工业金属、通用设备</b>。国产算力芯片遭重挫（燧原科技20cm跌停、沐曦股份-14%、摩尔线程/芯原-8%），资金从「算力芯片」向「半导体材料/封测」避险式切换。尾盘宽基 ETF 放量托底（中证500/科创50 ETF 成交破百亿/66亿）。<span class="badge hot">避险式调仓 · ETF托底</span></li>
+  <li><b>最大隐患：</b>① <b class="hl-gold">算力芯片与算力租赁高位踩踏</b>——华胜天成断板、川润/拓维信息/神州数码跌超9%，燧原科技20cm跌停，算力链内部剧烈分化；② <b class="hl-gold">缩量续创新低</b>——1.305万亿成交，增量资金缺失，反弹无量；③ <b class="hl-gold">个股普跌6连冰</b>——超4100股下跌，亏钱效应持续扩散；④ <b class="hl-gold">最高标断板+恶性A杀</b>——双环科技/泰嘉股份核死跌停，短线风险偏好遭毁灭性打击；⑤ <b class="hl-gold">光刻胶涨停集中在小票</b>，成建制主线尚未形成，谨防补跌。<span class="badge warn">核心风险</span></li>
+  <li><b>明日策略：</b><b class="hl-gold">冰点后试错，0~3 成轻仓，只做半导体自主可控方向的分歧低吸，不追一致、不接飞刀。</b>核心观察点：① 今晚 Anthropic IPO 表现（暗盘暴涨26%，若美股 AI 链共振，明天国产算力/半导体或有情绪修复）；② 半导体材料前排（盛剑科技/格林达）能否放量晋级 4 板、确立成建制主线；③ 跌停家数能否进一步收敛至 10 内；④ 量能能否回补。<span class="badge warn">轻仓试错 · 只做半导体分歧低吸</span></li>
+  <li><b>明日核心关注：</b>① <b class="hl-gold">Anthropic「史上最大IPO」首日表现</b>（今晚美股，估值冲击1.5万亿美元，AI链情绪风向标）；② <b class="hl-blue">长鑫科技50亿回购护盘</b>（DRAM龙头，存储链企稳信号）；③ <b class="hl-blue">阿里Q2业绩（云+53%、净利润+213%）</b>对算力/云产业链的映射；④ <b class="hl-gold">中俄美元首会晤后续</b>（和平宣言，地缘缓和）；⑤ <b class="hl-blue">半导体材料晋级连板持续性</b>。<span class="badge new">明日预案</span></li>
+</ol>
+</div>
+
+<div class="panel hl">
+<h3>⑨ 主升浪候选观察（冰点试错期定性）</h3>
+<p style="font-size:13px;color:var(--txt2)">退潮中后段、冰点拐点前兆显现，具备产业贝塔、等待「放量 + 主线晋级」确认的方向纳入候选池跟踪（非买入建议）：</p>
+<table>
+  <tr><th>方向</th><th>代表标的</th><th>今日表现</th><th>核心逻辑 / 触发点</th></tr>
+  <tr><td>光刻胶/电子化学品</td><td>盛剑科技、格林达、海立股份、江化微、南大光电</td><td>盛剑3连板、格林达/海立/江化微3天2板</td><td>光刻胶国产替代 + 涨停8只（集中小票）+ 三星流片/日本管制逻辑</td></tr>
+  <tr><td>先进封装/封测</td><td>蓝箭电子、大港股份、中京电子、灿芯股份</td><td>蓝箭电子20cm涨停</td><td>海外利空激发国产替代，Chiplet/HBM先进封装需求</td></tr>
+  <tr><td>半导体设备/制造</td><td>中芯国际(+6.21%)、长电科技(+4.74%)、华天科技</td><td>逆势走强</td><td>国产设备自主可控 + 科创50核心权重</td></tr>
+  <tr><td>存储（DRAM）</td><td>长鑫科技(+1.60%)</td><td>企稳，两日低点36.13</td><td>最高50亿回购护盘 + 存储涨价周期，超跌反弹候选</td></tr>
+</table>
+<p class="note">上述为候选池，均需等「跌停收敛至10内 + 放量 + 主线晋级连板」的冰点拐点向上信号确认后再动手。当前半导体自主可控是相对最优的防守性进攻方向，但缩量下谨防小票补跌，只跟踪不追一致。</p>
+</div>
+
+<div class="panel">
+<h3>⑩ 事实核验（关键数据交叉比对）</h3>
+<table>
+  <tr><th>事项</th><th>核验结论</th></tr>
+  <tr><td>收盘指数</td><td>实取（通达信 tdx_quotes）：沪指 3577.62（-0.28%）、深成 10583.20（-0.71%）、创业板 2293.34（-0.79%）。科创50 +1.83%（westock market_overview + 财联社/数据宝多源一致）。</td></tr>
+  <tr><td>涨跌家数</td><td>实取（westock market_overview updown）：上涨 649 / 下跌 4876 / 平盘 55，上涨占比 11.63%，下跌占比 87.38%。</td></tr>
+  <tr><td>涨跌停家数</td><td>收盘口径（数据宝/央广财经/每经网多源）：涨停 26 家、跌停 72 家、炸板 27 家、封板率 49.1%；国信证券口径涨停28/跌停82、封板率53%。本页采用数据宝口径 26/72 并显式声明。</td></tr>
+  <tr><td>量能</td><td>实取（westock market_overview trade）：两市成交 13051.47 亿，较上日 -4.71%，续创年内新低（10日均值比 84.06%）。</td></tr>
+  <tr><td>主力资金</td><td>实取（tdx）：上证主力净流入 -102.26亿、深成 -166.25亿、创业板 -55.90亿、科创50 +15.04亿（全市场唯一为正）。</td></tr>
+  <tr><td>关键催化</td><td>实取（财联社/华尔街见闻/证券时报多源）：Anthropic 今晚 IPO（暗盘暴涨26%、估值冲击1.5万亿美元）；长鑫科技最高50亿回购；阿里Q2云+53%、净利润+213%；中俄美元首深圳会晤。</td></tr>
+</table>
+</div>
+
+<!-- ============ 二、大盘宏观 ============ -->
+<h2 id="s1"><span class="num">二</span>一大盘宏观</h2>
+
+<div class="panel">
+<h3>2.1 指数梯度（收盘 · 实取）</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">上证指数</div><div class="val down">-0.28%</div><div class="note">3577.62 · 成交6369亿</div></div>
+  <div class="kpi"><div class="label">深证成指</div><div class="val down">-0.71%</div><div class="note">10583.20 · 成交6682亿</div></div>
+  <div class="kpi"><div class="label">创业板指</div><div class="val down">-0.79%</div><div class="note">2293.34 · 主力净流出55.9亿</div></div>
+  <div class="kpi"><div class="label">科创50</div><div class="val up">+1.83%</div><div class="note">三连阳 · 主力+15.04亿</div></div>
+  <div class="kpi"><div class="label">沪深300</div><div class="val flat">+0.03%</div><div class="note">勉强收平 · 权重护盘</div></div>
+  <div class="kpi"><div class="label">中证1000</div><div class="val down">-1.88%</div><div class="note">小微盘领跌</div></div>
+</div>
+<div class="chart" id="idxChart"></div>
+<p class="note">收盘「科创50三连阳独强、中证1000领跌」的极致分化延续。科创50 连续 3 日上涨、主力净流入 15.04 亿，是全场唯一资金净流入为正的核心指数；沪深300 勉强收平靠权重护盘；中证1000 跌 1.88% 反映小微盘情绪持续恶化。结构上「半导体/权重撑指数、题材股杀跌」，属典型退潮期的指数失真。</p>
+</div>
+
+<div class="panel">
+<h3>2.2 量能（收盘 · 实取）</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">沪市成交</div><div class="val">6369亿</div><div class="note">上证</div></div>
+  <div class="kpi"><div class="label">深市成交</div><div class="val">6682亿</div><div class="note">深成</div></div>
+  <div class="kpi"><div class="label">两市合计</div><div class="val">13051亿</div><div class="note">续创年内新低 · 10日均值比84%</div></div>
+</div>
+<p class="note">全天成交 1.305 万亿，较昨日再缩约 646 亿，续创年内单日新低。缩量阴跌 + 局部抱团 = 冰点探底日，不是修复日。尾盘宽基 ETF 放量（中证500ETF 超100亿/4倍、科创50ETF 超66亿）属被动托底，并非增量资金主动进场，量能修复仍待观察。</p>
+</div>
+
+<div class="panel">
+<h3>2.3 板块涨跌（收盘 · 实取 · 申万二级）</h3>
+<table>
+  <tr><th>方向</th><th>板块</th><th>涨跌幅</th><th>主力净流入</th><th>备注</th></tr>
+  <tr><td class="hl-red">领涨</td><td>白色家电</td><td class="hl-red">+1.38%</td><td>-0.43亿</td><td>海信家电领涨</td></tr>
+  <tr><td class="hl-red">领涨</td><td>航空机场</td><td class="hl-red">+1.28%</td><td>+0.86亿</td><td>中美元首会晤+出行复苏</td></tr>
+  <tr><td class="hl-red">领涨</td><td>饮料乳品</td><td class="hl-red">+1.27%</td><td>-1.70亿</td><td>防御性消费</td></tr>
+  <tr><td class="hl-red">领涨</td><td>电子化学品</td><td class="hl-red">+0.75%</td><td class="hl-red">+3.31亿</td><td>江化微/格林达涨停</td></tr>
+  <tr><td class="hl-red">领涨</td><td>半导体</td><td class="hl-red">+0.54%</td><td class="hl-red">+28.21亿</td><td>蓝箭电子20cm涨停</td></tr>
+  <tr><td class="hl-gold">领跌</td><td>数字媒体</td><td class="hl-gold">-5.52%</td><td>-5.26亿</td><td>AI漫剧出清</td></tr>
+  <tr><td class="hl-gold">领跌</td><td>厨卫电器</td><td class="hl-gold">-5.26%</td><td>-1.13亿</td><td>前期强势补跌</td></tr>
+  <tr><td class="hl-gold">领跌</td><td>影视院线</td><td class="hl-gold">-4.35%</td><td>-4.27亿</td><td>文投控股跌停</td></tr>
+  <tr><td class="hl-gold">领跌</td><td>IT服务Ⅱ</td><td class="hl-gold">-4.21%</td><td class="hl-gold">-26.49亿</td><td>算力链退潮</td></tr>
+  <tr><td class="hl-gold">领跌</td><td>广告营销</td><td class="hl-gold">-4.09%</td><td>-7.20亿</td><td>AI应用退潮</td></tr>
+</table>
+</div>
+
+<div class="panel">
+<h3>2.4 涨跌宽度（收盘 · 实取）</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">上涨家数</div><div class="val up">649</div><div class="note">占比 11.63%</div></div>
+  <div class="kpi"><div class="label">下跌家数</div><div class="val down">4876</div><div class="note">占比 87.38%</div></div>
+  <div class="kpi"><div class="label">涨停 / 跌停</div><div class="val">26 / 72</div><div class="note">封板率49.1%</div></div>
+</div>
+<p class="note">个股严重普跌、连续第 6 个交易日超 4100 股下跌，上涨占比仅约 12%，属「指数弱、赚钱效应冰点」的典型退潮特征。赚钱效应高度集中在半导体材料/先进封装 + 家电 + 航空机场等窄方向，宽度严重不足。</p>
+</div>
+
+<div class="panel">
+<h3>2.5 资金意图（收盘 · 实取）</h3>
+<p style="font-size:13px;color:var(--txt2)">主力资金净流入<b class="hl-red">半导体（+28.2亿）、电子化学品（+3.3亿）、小家电（+3.2亿）、造纸（+2.8亿）</b>；净流出<b class="hl-gold">IT服务（-26.5亿）、计算机设备（-16.1亿）、工业金属（-15.2亿）、通用设备（-13.3亿）、消费电子（-12.7亿）</b>。三大指数主力资金全线净流出（上证-102亿、深成-166亿、创业板-56亿），仅科创50 +15亿。资金意图：<b class="hl-red">从「算力芯片/IT服务」大幅撤退，向「半导体材料/先进封装」避险式集中</b>，同时大资金通过宽基ETF尾盘放量被动托底。但整体仍是存量博弈、缩量，缺乏增量资金，半导体属「结构性抱团、弱势轮动」，尚未形成成建制做多合力。</p>
+</div>
+
+<!-- ============ 三、公告解读 ============ -->
+<h2 id="s2"><span class="num">三</span>二公告解读（上一交易日收盘后全量 · 分类整理）</h2>
+
+<div class="panel">
+<h3>公告分类（2026-11-19 收盘后全量 · 巨潮资讯实取）</h3>
+<p class="note">数据源：巨潮资讯网（cninfo，11-19 当日 A 股公告实取 180 条去重样本）。标注 <span class="badge hot">★</span> 为有辨识度/唯一性/特殊意义公告。</p>
+<table>
+  <tr><th>分类</th><th>公司</th><th>公告要点</th></tr>
+  <tr><td rowspan="3"><b class="hl-red">投资/签约/中标</b></td>
+    <td>节能国祯 300388 <span class="badge hot">★</span></td>
+    <td><b>收到项目中标通知书的自愿性信息披露公告</b>——环保水务中标落地。</td></tr>
+  <tr><td>天阳科技 300872 <span class="badge hot">★</span></td>
+    <td><b>签订航空互联网项目建设与运营合同</b>——低空/航空信息化订单落地。</td></tr>
+  <tr><td>冠中生态 300948 <span class="badge hot">★</span></td>
+    <td><b>拟中标项目的提示性公告</b>——生态修复项目中标预期。</td></tr>
+  <tr><td rowspan="2"><b class="hl-gold">增持/回购</b></td>
+    <td>奥飞数据 300738 <span class="badge hot">★</span></td>
+    <td><b>2026年第二期回购股份报告书 + 部分回购股份用于注销并减少注册资本</b>——数据中心龙头回购+注销，力度较大。</td></tr>
+  <tr><td>广立微 301095 / 大宏立 300865 / 新迅达 300518 / 震裕科技 300953 / 飞凯材料 300398 / 科翔股份 300903</td>
+    <td><b>集中竞价回购股份方案/报告书</b>——半导体（广立微/飞凯材料/科翔股份）+ 设备回购潮，与市场避险情绪呼应。</td></tr>
+  <tr><td rowspan="3"><b class="hl-blue">收购/重组</b></td>
+    <td>可孚医疗 301087 <span class="badge hot">★</span></td>
+    <td><b>收购合肥康居人医疗器械60%股权</b>——医疗器械外延并购。</td></tr>
+  <tr><td>新莱福 301323 / 邵阳液压 301079 <span class="badge hot">★</span></td>
+    <td><b>发行股份及支付现金购买资产并募集配套资金暨关联交易事项会议安排</b>——并购重组上会审核。</td></tr>
+  <tr><td>嘉戎技术 301148 <span class="badge hot">★</span></td>
+    <td><b>收到深交所恢复审核发行股份购买资产通知</b>——重组审核恢复推进。</td></tr>
+  <tr><td rowspan="2"><b>经营/其他</b></td>
+    <td>佰奥智能 300836 <span class="badge hot">★</span></td>
+    <td><b>部分董事、高级管理人员增持公司股份计划</b>——管理层真金白银增持。</td></tr>
+  <tr><td>上大股份 301522 <span class="badge hot">★</span></td>
+    <td><b>实控人一致行动人增持计划暨取得金融机构增持专项贷款承诺函</b>——增持专项贷款落地。</td></tr>
+</table>
+<div class="warnbox">⚠️ 数据缺口说明：巨潮 11-19 当日公告去重样本约 180 条，本表通过「回购/增持/中标/合同/收购/重组/停牌」等关键词交叉检索提取高辨识度公告，非全市场完整清单。今日公告亮点集中在「半导体/设备公司回购潮」（广立微/飞凯材料/科翔股份/震裕科技）与「并购重组上会」（新莱福/邵阳液压/嘉戎技术），与市场「半导体避险 + 重组题材」情绪一致。长鑫科技 50 亿回购为沪市新闻口径（见新闻源）。</div>
+</div>
+
+<!-- ============ 四、短线情绪及个股发现 ============ -->
+<h2 id="s3"><span class="num">四</span>三短线情绪及个股发现</h2>
+
+<div class="panel">
+<h3>3.1 涨跌停与连板梯队（收盘 · 实取）</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">涨停家数</div><div class="val up">26</div><div class="note">创2024-07-08以来新低</div></div>
+  <div class="kpi"><div class="label">跌停家数</div><div class="val down">72</div><div class="note">较昨日84家收敛</div></div>
+  <div class="kpi"><div class="label">封板率 / 连板晋级率</div><div class="val">49.1% / 37.5%</div><div class="note">封板率跌破50%</div></div>
+</div>
+<table>
+  <tr><th>高度</th><th>个股</th><th>题材</th><th>状态</th></tr>
+  <tr><td>3连板</td><td class="hl-red">真视通 002771</td><td>华为算力/液冷/IT服务</td><td>一字板 · 封单2.08亿 · 最高标</td></tr>
+  <tr><td>3连板</td><td class="hl-red">全筑股份 603030</td><td>光刻机/EUV光源量测</td><td>一字板 · 2.4%换手</td></tr>
+  <tr><td>3连板</td><td class="hl-red">盛剑科技 603324</td><td>电子化学品/光刻胶/洁净室</td><td>换手板 · 7.04%换手 · 筹码交换充分</td></tr>
+  <tr><td>2连板</td><td class="hl-red">京蓝科技 000711</td><td>7N高纯铟/ITO靶材</td><td>尾盘板 · 13:52封板</td></tr>
+  <tr><td>2连板</td><td class="hl-red">华升股份 600156</td><td>算力租赁/收购易信科技</td><td>湖南国资</td></tr>
+  <tr><td>3天2板</td><td>格林达 603931 / 海立股份 600619 / 江化微 603078</td><td>光刻胶 / 热管理 / 湿电子化学品</td><td>半导体材料梯队</td></tr>
+  <tr><td>20cm涨停</td><td>蓝箭电子 301348</td><td>先进封装</td><td>封测脉冲</td></tr>
+  <tr><td class="hl-gold">断板(前最高标)</td><td>华东重机 002685</td><td>算力芯片</td><td>红盘断板+4.07% · 死亡换手51.33%</td></tr>
+  <tr><td class="hl-gold">天地板→地天板</td><td>九阳股份 002242</td><td>家电/机器人</td><td>连续地天-天地-地天板，巨震</td></tr>
+  <tr><td class="hl-gold">20cm跌停</td><td>燧原科技 688801</td><td>国产算力芯片</td><td>小作文+高位踩踏</td></tr>
+  <tr><td class="hl-gold">跌停</td><td>文投控股/浙文影业/横店影视/慈文传媒/金逸影视</td><td>影视院线/AI漫剧</td><td>AI应用出清</td></tr>
+</table>
+<p class="note">空间高度被死死压制在 3 板。前龙头华东重机红盘断板未死但死亡换手 51.33%、成交 40.67 亿，宣告纯情绪连板终结；双环科技/泰嘉股份「2进3」核死跌停恶性 A 杀，对短线风险偏好造成毁灭性打击；真视通一字缩量筹码锁定，一旦分歧极易踩踏，连板生态已进入极端高危期。但九阳股份「地天板」式的分歧承接，反映冰点处仍有资金试错做多。</p>
+</div>
+
+<div class="panel">
+<h3>3.2 龙虎榜（实取 · westock data_lhb）</h3>
+<p style="font-size:13px;color:var(--txt2)">今日（11-19）龙虎榜已出齐，全市场净买入居前：<b class="hl-red">福莱新材 +4.26亿、襄阳轴承 +1.93亿、常山北明 +1.65亿、海立股份 +1.20亿、九阳股份 +1.06亿</b>。净卖出居前：<b class="hl-gold">燧原科技 -2.32亿、慈文传媒 -1.49亿、浙文影业 -1.15亿、华胜天成 -9372万、文投控股 -9304万</b>。资金流向分化明显——机器人/轴承（襄阳轴承）、光刻机冷却（海立股份）、算力租赁（常山北明）获游资博弈，而国产算力芯片（燧原科技）与 AI 漫剧（慈文/浙文/文投）遭集中抛售。<span class="badge hot">龙虎榜已出齐</span></p>
+</div>
+
+<div class="panel">
+<h3>3.3 情绪流选股（含避雷/兑现监控）</h3>
+<table>
+  <tr><th>类型</th><th>个股</th><th>逻辑</th><th>监控要点</th></tr>
+  <tr><td class="hl-red">情绪核心</td><td>盛剑科技 603324</td><td>电子化学品/光刻胶3连板</td><td>半导体材料方向持续性，明日能否晋级4板</td></tr>
+  <tr><td class="hl-red">情绪核心</td><td>真视通 002771</td><td>华为算力3连板，一字缩量</td><td>明日能否晋级4板，一字板分歧即高危</td></tr>
+  <tr><td class="hl-red">情绪核心</td><td>格林达 603931</td><td>光刻胶3天2板</td><td>半导体材料能否成建制</td></tr>
+  <tr><td class="hl-blue">修复观察</td><td>蓝箭电子 301348 / 大港股份 / 中京电子</td><td>先进封装20cm/涨停</td><td>先进封装扩散持续性</td></tr>
+  <tr><td class="hl-blue">修复观察</td><td>九阳股份 002242</td><td>家电/机器人，地天板</td><td>家电出海 + 机器人双逻辑</td></tr>
+  <tr><td class="hl-gold">兑现监控</td><td>华东重机 002685</td><td>算力芯片前最高标断板</td><td>能否反包，算力情绪风向标</td></tr>
+  <tr><td class="hl-gold">避雷</td><td>燧原科技 / 沐曦股份 / 摩尔线程 / 芯原股份</td><td>国产算力芯片杀跌</td><td>小作文+高位踩踏，坚决回避</td></tr>
+  <tr><td class="hl-gold">避雷</td><td>文投控股 / 浙文影业 / 慈文传媒 / 横店影视</td><td>影视院线/AI漫剧跌停</td><td>AI应用出清，坚决回避</td></tr>
+  <tr><td class="hl-gold">避雷</td><td>华胜天成 / 川润股份 / 拓维信息 / 神州数码</td><td>算力租赁/华为算力跌超9%</td><td>高位筹码松动，兑现意愿升温</td></tr>
+  <tr><td class="hl-gold">避雷</td><td>东方海洋 002086</td><td>前期主升股 -8.58%</td><td>高位兑现，回避</td></tr>
+</table>
+</div>
+
+<!-- ============ 五、机构趋势及趋势选股 ============ -->
+<h2 id="s4"><span class="num">五</span>四机构趋势及趋势选股</h2>
+
+<div class="panel">
+<h3>4.1 主力资金与机构席位（收盘 · 实取）</h3>
+<table>
+  <tr><th>维度</th><th>净流入居前</th><th>净流出居前</th></tr>
+  <tr><td>行业/板块</td><td class="hl-red">半导体（+28.2亿）、电子化学品（+3.3亿）、小家电（+3.2亿）</td><td class="hl-gold">IT服务（-26.5亿）、计算机设备（-16.1亿）、工业金属（-15.2亿）</td></tr>
+  <tr><td>指数</td><td class="hl-red">科创50（+15.04亿，唯一为正）</td><td class="hl-gold">深成（-166亿）、上证（-102亿）、创业板（-56亿）</td></tr>
+  <tr><td>龙虎榜席位（11-19）</td><td class="hl-red">福莱新材 +4.26亿、襄阳轴承 +1.93亿、常山北明 +1.65亿</td><td class="hl-gold">燧原科技 -2.32亿、慈文传媒 -1.49亿、浙文影业 -1.15亿</td></tr>
+</table>
+<p class="note">资金主线由「算力芯片」向「半导体材料/先进封装」避险式切换，半导体主力净流入 28.2 亿为全场唯一超 20 亿行业。但三大指数主力全线净流出，仅科创50 为正，说明机构资金整体仍在退潮避险，半导体属结构性抱团。宽基 ETF 尾盘放量（中证500ETF 超100亿/4倍）是大资金被动托底信号，非主动做多。</p>
+</div>
+
+<div class="panel">
+<h3>4.2 宽基/行业 ETF 申赎（资金净流入代理 · 实取）</h3>
+<table>
+  <tr><th>ETF 方向</th><th>信号</th></tr>
+  <tr><td>中证500 ETF</td><td class="hl-red">中证500ETF南方（510500）成交超100亿，超昨日4倍，尾盘大幅放量托底</td></tr>
+  <tr><td>科创50 ETF</td><td class="hl-red">科创50ETF易方达（588080）成交超66亿，超昨日1.5倍，连续放量</td></tr>
+  <tr><td>创业板/沪深300 ETF</td><td class="hl-red">创业板ETF易方达（159915）、沪深300ETF华泰柏瑞（510300）尾盘20分钟均成交超25亿</td></tr>
+  <tr><td>半导体方向</td><td class="hl-red">半导体设备ETF（159327）+2.38%，半导体主力净流入28.2亿</td></tr>
+</table>
+<p class="note">尾盘多只宽基 ETF 同步放量（中证500/科创50/创业板/沪深300），是大资金被动护盘的明确信号，反映在指数深跌时存在「国家队/长线资金」托底意愿。但需警惕「存量博弈、缩量」下护盘资金的持续性，属脉冲式而非趋势性增量，真正反转需量能实质性回补。</p>
+</div>
+
+<div class="panel">
+<h3>4.3 趋势选股（2 只趋势股 + 操作表）</h3>
+<table>
+  <tr><th>个股</th><th>趋势定性</th><th>逻辑</th><th>操作</th></tr>
+  <tr><td class="hl-red">盛剑科技 603324</td><td>电子化学品/光刻胶龙头，3连板</td><td>半导体材料国产替代 + 光刻胶8只涨停共振 + 海思洁净室</td><td>分歧低吸，不追高；跌破5日线离场</td></tr>
+  <tr><td class="hl-red">中芯国际 688981</td><td>半导体制造中军，+6.21%</td><td>国产设备自主可控 + 先进封装/制程龙头 + 科创50核心权重</td><td>回踩低吸，趋势持有</td></tr>
+</table>
+<p class="note">两股均为半导体材料/设备方向，是当前退潮期相对最强的防守性进攻方向。当前冰点试错期轻仓防守，只做分歧低吸、不追一致。需结合明日承接决定是否参与——确认半导体材料由「反抽」升级为「成建制主线」并放量再上仓位，缩量分歧则观望。止损参考：跌破近期平台低点即离场。</p>
+</div>
+
+<!-- ============ 六、机会分析及仓位建议 ============ -->
+<h2 id="s5"><span class="num">六</span>五机会分析及仓位建议</h2>
+
+<div class="panel">
+<h3>5.1 明天炒什么（舆情热度 × 预期差方向榜）</h3>
+<table>
+  <tr><th>方向</th><th>舆情热度</th><th>预期差</th><th>评级</th></tr>
+  <tr><td class="hl-red">半导体自主可控（光刻胶/先进封装）</td><td class="hl-red">★★★★★</td><td>海外利空激发国产替代，光刻胶涨停8只（集中小票）、先进封装蓝箭电子20cm，龙头盛剑/格林达带情绪，但需放量确认成建制</td><td>核心关注，盯晋级4板</td></tr>
+  <tr><td class="hl-red">Anthropic IPO 映射（AI算力）</td><td class="hl-red">★★★★★</td><td>「史上最大IPO」今晚首秀，暗盘暴涨26%、估值冲击1.5万亿美元，若美股AI链共振，明天国产算力/光模块或有情绪修复</td><td>核心关注，今晚美股定调</td></tr>
+  <tr><td class="hl-blue">存储（DRAM）</td><td class="hl-red">★★★★☆</td><td>长鑫科技50亿回购护盘+两日低点企稳，存储涨价周期+超跌反弹预期</td><td>关注，超跌反弹候选</td></tr>
+  <tr><td class="hl-blue">阿里云/算力租赁</td><td class="hl-red">★★★★☆</td><td>阿里Q2云+53%、净利润+213%、AI资本开支+60%，映射国内算力/云产业链</td><td>关注，业绩映射</td></tr>
+  <tr><td class="hl-blue">家电出海</td><td class="hl-red">★★★☆☆</td><td>白色家电+1.38%领涨，九阳地天板，成本回落+出口增长</td><td>观察，趋势低吸</td></tr>
+  <tr><td class="hl-gold">算力芯片/算力租赁</td><td class="hl-red">★★★★☆</td><td>小作文带崩后虽辟谣，但高位踩踏（燧原20cm跌停、华胜天成断板），情绪脆弱</td><td>暂避，等止跌企稳</td></tr>
+  <tr><td class="hl-gold">影视院线/AI漫剧</td><td class="hl-red">★★☆☆☆</td><td>延续跌停，AI应用/传媒出清</td><td>坚决回避</td></tr>
+</table>
+</div>
+
+<div class="panel">
+<h3>5.2 下一轮主升浪窗口</h3>
+<p style="font-size:13px;color:var(--txt2)">当前周期位置「高潮拐点向下 → 退潮中后段」，已出现冰点拐点向上的前兆（跌停84→72收敛、科创50三连阳、半导体资金集中），但「放量」仍缺失（缩量新低）。触发信号：<b class="hl-gold">跌停家数收敛至10只以内 + 放量回补 + 半导体自主可控主线晋级连板 + 封板率回升</b>。今晚 Anthropic IPO 是重要变量——若美股 AI 链共振上涨，明天国产算力/半导体或开启情绪修复，叠加半导体材料由「局部抱团」升级为「成建制主线」，则有望开启下一轮主升浪；若缩量继续、跌停回潮，则需继续等待情绪冰点重新出清。核心是「看承接，不预判」，退潮期第一波反抽往往难成气候，需等确认信号再上仓位。</p>
+</div>
+
+<div class="panel">
+<h3>5.3 仓位建议（仓位档位循环表）</h3>
+<table>
+  <tr><th>周期位置</th><th>情绪信号</th><th>建议仓位</th><th>当前状态</th></tr>
+  <tr><td>冰点拐点向上</td><td>跌停收敛至10内 + 放量 + 主线晋级连板</td><td class="hl-red">5~8 成上仓位做多</td><td>—</td></tr>
+  <tr><td>情绪回暖</td><td>主线扩散 + 连板晋级率回升</td><td class="hl-red">3~5 成</td><td>—</td></tr>
+  <tr><td class="hl-gold">退潮中后段（当前）</td><td class="hl-gold">跌停72收敛但缩量新低、高度3板、6连冰、拐点前兆</td><td class="hl-gold">0~3 成轻仓试错</td><td>← 当前</td></tr>
+  <tr><td>高潮拐点向下</td><td>普涨后高标杀跌 + 跌停潮</td><td class="flat">0 成清仓</td><td>—</td></tr>
+</table>
+<p class="note">退潮中后段维持 0~3 成轻仓试错，明日视承接质量动态调整——若今晚 Anthropic 表现强劲、明日半导体材料放量晋级、跌停进一步收敛，可适度上仓位试错半导体自主可控方向；若缩量继续、跌停回潮、半导体补跌，则维持空仓观望。不因半导体材料的脉冲式反弹盲目追高。</p>
+</div>
+
+<div class="panel">
+<h3>5.4 明日操作清单</h3>
+<ul class="oplist">
+  <li>① <b class="hl-gold">先看今晚美股</b>：Anthropic「史上最大IPO」首日表现，定调 AI 链情绪，映射明日国产算力/半导体。</li>
+  <li>② <b class="hl-red">半导体自主可控（光刻胶/先进封装）</b>：若放量晋级连板，低吸龙头（盛剑科技、格林达）；若缩量分歧，观望不动。</li>
+  <li>③ <b class="hl-blue">存储（DRAM）</b>：长鑫科技50亿回购护盘，关注超跌反弹机会，观察存储链企稳。</li>
+  <li>④ <b class="hl-gold">算力芯片/算力租赁</b>：小作文辟谣但高位踩踏，暂避，等止跌企稳+Anthropic映射确认再观察。</li>
+  <li>⑤ <b class="hl-gold">避雷</b>：国产算力芯片（燧原/沐曦/摩尔线程）、影视院线（文投/慈文/横店）、算力租赁（华胜天成/川润）、东方海洋（高位兑现）。</li>
+  <li>⑥ <b class="hl-blue">潜伏</b>：家电出海（九阳/海立，白色家电领涨）、航空机场（中美元首会晤+出行复苏）、半导体设备（中芯国际）。</li>
+  <li>⑦ <b class="hl-blue">盯情绪冰点三信号</b>：跌停守住10内 + 放量 + 主线晋级连板，出现后再上仓位。</li>
+</ul>
+</div>
+
+<!-- ============ 数据源与口径 ============ -->
+<h2 id="s6"><span class="num">七</span>数据源与口径说明</h2>
+<div class="panel">
+<h3>数据源（全部实取）</h3>
+<table>
+  <tr><th>数据项</th><th>来源</th><th>口径</th></tr>
+  <tr><td>收盘指数行情 / 成交额 / 主力资金 / 涨跌家数</td><td>通达信 tdx-connector（tdx_quotes）</td><td>2026-11-19 15:00 收盘实取</td></tr>
+  <tr><td>涨跌家数 / 涨跌停 / 量能 / 估值 / 技术 / 轮动</td><td>腾讯自选股 westock（data_market_overview）</td><td>2026-11-19 收盘实取</td></tr>
+  <tr><td>板块涨跌 / 主力净流入</td><td>腾讯自选股 westock（data_hot board）</td><td>2026-11-19 收盘实取</td></tr>
+  <tr><td>涨跌停家数 / 连板梯队</td><td>数据宝 / 央广财经 / 每经网 / 财联社（多源交叉）</td><td>2026-11-19 收盘口径</td></tr>
+  <tr><td>龙虎榜</td><td>腾讯自选股 westock（data_lhb）</td><td>2026-11-19 收盘实取</td></tr>
+  <tr><td>公告</td><td>巨潮资讯网 cninfo（11-19 当日去重样本180条）</td><td>2026-11-19 实取</td></tr>
+  <tr><td>新闻/舆情/热搜</td><td>腾讯自选股 westock（data_hot）+ 东方财富妙想 mx-ds-mcp</td><td>2026-11-19 收盘实取</td></tr>
+  <tr><td>微博热搜</td><td>weibo.com/ajax/side/hotSearch</td><td>2026-11-19 实取</td></tr>
+</table>
+<h3 style="margin-top:16px">数据缺口（显式声明）</h3>
+<ul class="oplist">
+  <li>① <b class="hl-gold">涨跌停家数口径差异</b>：数据宝口径涨停26/跌停72、封板率49.1%；国信证券口径涨停28/跌停82、封板率53%；央广财经口径涨停26/跌停72。本页采用数据宝口径 26/72 为主。</li>
+  <li>② <b class="hl-gold">科创50指数值缺口</b>：tdx 科创50（000688）取数误命中非目标，科创50 涨跌幅 +1.83% 采用 westock market_overview + 财联社/数据宝新闻口径，精确点位值本页未列（仅列涨跌幅）。</li>
+  <li>③ <b class="hl-gold">公告为筛选样本</b>：巨潮 11-19 当日公告去重样本约 180 条，本页仅提取高辨识度/特殊意义公告，非完整清单；沪市长鑫科技50亿回购为新闻口径。</li>
+  <li>④ <b class="hl-gold">盘前夜属性</b>：本页为「盘前夜」复盘，目标交易日 2026-11-20（周五），数据基准为 2026-11-19（周四）收盘；Anthropic IPO 表现、明日开盘等尚属未发生事件，相关判断为前瞻性预案。</li>
+</ul>
+</div>
+
+<div class="disclaimer">
+<b>免责声明：</b>本复盘由 AI 基于公开数据自动生成，仅用于个人研究参考，不构成任何投资建议。文中涉及的个股、方向、仓位建议均为分析性内容，不构成买入/卖出要约。股市有风险，投资需谨慎。数据以交易所及上市公司正式披露为准，AI 生成内容可能存在误差或遗漏，据此操作风险自担。
+</div>
+
+<div class="meta">生成时间：2026-11-19 22:00 · 目标交易日 2026-11-20（周五）· 数据基准 2026-11-19 收盘 · GitHub Pages 自动部署</div>
+</div>
+
+<script>
+(function(){
+  var idx = echarts.init(document.getElementById('idxChart'));
+  idx.setOption({
+    backgroundColor:'transparent',
+    tooltip:{trigger:'axis'},
+    legend:{data:['收盘涨跌幅%'],textStyle:{color:'#9aa7b4'},top:0},
+    grid:{left:50,right:20,top:40,bottom:30},
+    xAxis:{type:'category',data:['上证','深成','创业板','科创50','沪深300','中证1000'],axisLabel:{color:'#9aa7b4'},axisLine:{lineStyle:{color:'#2d333b'}}},
+    yAxis:{type:'value',axisLabel:{color:'#9aa7b4',formatter:'{value}%'},splitLine:{lineStyle:{color:'#2d333b'}}},
+    series:[{
+      name:'收盘涨跌幅%',type:'bar',barWidth:'55%',
+      data:[
+        {value:-0.28,itemStyle:{color:'#2ea043'}},
+        {value:-0.71,itemStyle:{color:'#2ea043'}},
+        {value:-0.79,itemStyle:{color:'#2ea043'}},
+        {value:1.83,itemStyle:{color:'#f04444'}},
+        {value:0.03,itemStyle:{color:'#58a6ff'}},
+        {value:-1.88,itemStyle:{color:'#2ea043'}}
+      ],
+      label:{show:true,position:'top',color:'#e6edf3',formatter:'{c}%'}
+    }]
+  });
+  window.addEventListener('resize',function(){idx.resize();});
+})();
+</script>
+</body>
+</html>
