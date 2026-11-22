@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>完整版日复盘 · 2026-11-20（周五）</title>
+<title>完整版日复盘 · 2026-11-23（周一）</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
 :root{
@@ -61,25 +61,28 @@ tr:hover td{background:#1a2028}
 .chart{width:100%;height:340px}
 .meta{color:var(--txt3);font-size:11px;text-align:center;margin-top:30px}
 .warnbox{background:#3a2d10;border:1px solid var(--warn);border-radius:8px;padding:12px 14px;color:#f5d98a;margin:10px 0;font-size:13px}
+.goodbox{background:#12331c;border:1px solid var(--down);border-radius:8px;padding:12px 14px;color:#8ee0a0;margin:10px 0;font-size:13px}
 .oplist li{margin:8px 0;padding-left:6px}
 .dim{color:var(--txt3)}
 .pending{color:var(--warn);font-weight:700}
 .disclaimer{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--txt2);font-size:12px;margin-top:20px;line-height:1.8}
 .breaking{background:linear-gradient(180deg,#2a1c1c,#161b22);border:1px solid #f04444;border-left:4px solid #f04444;border-radius:10px;padding:16px 18px;margin-bottom:14px}
 .breaking b{color:#f09090}
+.breaking.blue{background:linear-gradient(180deg,#122a3a,#161b22);border:1px solid var(--accent);border-left:4px solid var(--accent)}
+.breaking.blue b{color:#8ecbff}
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>完整版日复盘 · 2026-11-20（周五）</h1>
-<div class="subtitle">收盘完整复盘 · 全量数据实取 · 六大模块 · V4.3 框架 · 收盘定稿</div>
+<h1>完整版日复盘 · 2026-11-23（周一）</h1>
+<div class="subtitle">盘前夜定稿 · 数据基准日 2026-11-20（周五）收盘 · 全量数据实取 · V4.3 框架 · 六大模块</div>
 <div class="tag-bar">
-  <span class="tag down">沪指 -1.22% · 深成 -3.09% · 创业板 -3.54% · 沪深300 -0.76%</span>
-  <span class="tag down">中证500 -3.93% · 中证1000 -4.89%（小盘股重挫）</span>
-  <span class="tag up">银行/红利避险：工行+3.30%、建行+3.07%、长江电力+2.40% 创新高</span>
-  <span class="tag up">PCB/元件逆势：印制电路板净流入22.39亿居首</span>
-  <span class="tag down">算力芯片补跌：海光信息-9%+、天普股份连续跌停</span>
-  <span class="tag warn">全市场约650股上涨 / 4800+股下跌 · 情绪冰点二次探底</span>
+  <span class="tag down">沪指 -1.23% · 深成 -3.09% · 创业板 -3.54%（创52周新低）</span>
+  <span class="tag down">沪深300 -0.76% · 中证500 -3.93% · 中证1000 -4.89%（小盘踩踏）</span>
+  <span class="tag down">上涨313 / 下跌5236（93.84%下跌）· 连续第7日超4100股下跌</span>
+  <span class="tag warn">美股黑色星期五：英伟达 -14% · 纳指 -5.28% · 费半周跌17% · VIX 40</span>
+  <span class="tag up">周日稳市"三箭齐发"：融资保证金100%→80% · 创业板做市商 · 降费46亿</span>
+  <span class="tag up">PCB/元件逆势 · 银行红利护盘创新高</span>
 </div>
 
 <nav>
@@ -90,45 +93,50 @@ tr:hover td{background:#1a2028}
 <h2 id="s0"><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
 
 <div class="breaking">
-<b>⚠ 今日收盘格局：外围系统性冲击 + 半导体链补跌共振，A股全线重挫，小盘股遭踩踏。沪指收跌1.22%报3533.79、深成-3.09%、创业板-3.54%、沪深300-0.76%、中证500-3.93%、中证1000-4.89%。全市场约650股上涨、4800+股下跌，涨跌停比约28~31:6~8。隔夜美股高开低走（道指自6月首次跌破5万点、纳指-2.22%）、富时A50夜盘-1.12%、韩国KOSPI触发SIDECAR熔断，外盘系统性压力释放；国内BIS临时最终规则11/19生效（先进半导体管制延伸至第三国数据中心算力），昨日独强的半导体材料/设备今日补跌（海光信息跌超9%），算力芯片（天普股份连续跌停、沐曦股份、燧原科技走弱）成为杀跌重灾区。资金避险切换至银行/红利（工行、建行、长江电力盘中续创历史新高）、低位PCB/元件（印制电路板净流入22.39亿居首）、农业/猪肉、AI漫剧/传媒。这是「情绪冰点二次探底」的深度回调日。</b>
+<b>⚠ 今日（11-20）收盘格局：外盘「黑色星期五」系统性冲击下，A股放量下杀，小盘股遭踩踏，情绪冰点二次探底。沪指收跌1.23%报3533.79（盘中一度击穿3500最低3500.83后拉回）、深成-3.09%、创业板-3.54%创52周新低、科创50约-3.12%、北证50-4.85%，唯上证50尾盘+0.45%独红。成交放大至1.42万亿（放量约1165亿），由前日1.31万亿地量转为「放量下跌」。全市场上涨313只（5.6%）、下跌5236只（93.84%），连续第7个交易日超4100股下跌。涨停29家、跌停58家（news口径），PCB/覆铜板逆势（中京电子2连板、满坤科技20CM），银行/煤炭/红利尾盘批量创新高护盘（工行+3.30%、中国石油+4.67%），半导体链全线崩塌（联合化学20CM跌停、通富微电跌停、海光信息-8.75%、沐曦-12.25%）。</b>
+</div>
+
+<div class="breaking blue">
+<b>🔴 周日（11-22）晚间重大利多：证监会/沪深北交易所「三箭齐发」稳市组合拳。①融资保证金比例下限 100%→80%（11-30 起实施，理论释放约 4000 亿增量资金）；②深交所就《创业板股票做市交易业务细则》公开征求意见（创业板拟引入做市商）；③沪深交易所+中国结算推出一揽子降费（合计让利超 46 亿，降费延至 2028）。此为时隔十个月再度下调融资保证金（2023年8月曾降至80%后于今年1月调回100%），逆周期调节信号明确，与美股「黑色星期五」形成内外多空对冲，是周一盘面的核心变量。</b>
 </div>
 
 <div class="conclusion">
 <ol>
-  <li><b>情绪温度：</b>全市场上涨约650只（占比约12%）、下跌4800+只，涨停28~31家、跌停6~8家、封板率约82%（午间）。<b class="hl-gold">指数深度杀跌、小盘股踩踏（中证1000 -4.89%），但跌停家数仅个位数、涨停多于跌停，属「指数/权重杀跌 + 情绪未同步崩盘」的被动跟随式调整</b>。情绪温度定档为<b class="hl-blue">「冰点」</b>（二次探底，连续第7日超4000股下跌，创2024年初以来极值）。<span class="badge warn">情绪冰点二次探底</span></li>
-  <li><b>周期位置：</b>仍处「高潮拐点向下 → 退潮」中后段，今日叠加<b class="hl-gold">外盘系统性冲击 + 半导体链补跌</b>，退潮加速但跌停未扩散、恐慌未极致。<b class="hl-gold">「冰点拐点向上」三重信号（跌停收敛10内 + 放量 + 主线晋级连板）中「跌停收敛」已成立，但「主线成立」「放量企稳」尚缺</b>——今日属放量下跌（半日8558亿放量699亿），抛压仍大于承接。<span class="badge warn">退潮中后段 · 拐点待确认</span></li>
-  <li><b>最强主线：</b>由昨日「半导体材料/设备」切换为<b class="hl-red">PCB/元件（印制电路板）</b>——中京电子2连板、澳弘电子/超声电子/东晶电子涨停、满坤科技20CM涨停，印制电路板板块主力净流入22.39亿、元件21.99亿居全市场前二。<b class="hl-blue">农业/猪肉（金新农6天3板、万向德农涨停）、AI漫剧/传媒（龙版传媒、华媒控股涨停）、机器人（襄阳轴承、克来机电涨停）</b>同步逆势活跃。银行/红利则是防守主线。<span class="badge hot">PCB/元件接棒 · 银行红利防守</span></li>
-  <li><b>最高标 / 连板梯队：</b>最高标<b class="hl-red">北纬科技 8天6板（机器人，+8.17%）</b>、空间板<b class="hl-red">真视通（华为算力）4连板</b>；<b class="hl-red">中京电子（PCB）2连板、*ST发展2连板</b>；水产概念<b class="hl-red">好当家 7天4板、东方海洋涨停（+9.97%）</b>。连板高度由昨日3板回补至4板（真视通），但整体梯队稀疏（连板股总数仅2~5只），<b class="hl-gold">晋级率低、接力意愿弱，属冰点期的零散抱团</b>。<span class="badge new">最高4板真视通 · 8天6板北纬</span></li>
-  <li><b>资金主力：</b>主力资金<b class="hl-red">净流入印制电路板（+22.39亿）、元件（+21.99亿）、制冷空调设备（+6.92亿）、农林牧渔（+5.50亿）</b>；<b class="hl-gold">净流出半导体、电子、算力芯片、通信设备、IT服务</b>（半日大盘主力净流出约296亿）。个股端<b class="hl-red">银行/红利获避险资金（工行净流入0.50亿、建行0.70亿、茅台净流入7.88亿居前）</b>；<b class="hl-gold">算力芯片遭抛售（海光信息、天普股份、沐曦股份）</b>。<span class="badge hot">资金避险切银行红利 + PCB/元件</span></li>
-  <li><b>最大隐患：</b>① <b class="hl-gold">外盘系统性风险</b>——美股破5万点、韩股熔断、日经大跌，全球风险资产与避险资产（黄金跌破3600美元）同步走弱；② <b class="hl-gold">半导体链补跌</b>——昨日唯一主线高位回吐（电子/半导体合计净流出超140亿），抱团松动；③ <b class="hl-gold">指数破位</b>——沪指盘中最低3500.83，逼近3500整数关口，深成/创业板/中证1000均创阶段新低；④ <b class="hl-gold">小盘股踩踏</b>——中证1000 -4.89%、中证500 -3.93%，微盘股概念-5.33%，流动性风险外溢；⑤ <b class="hl-gold">美联储12月加息预期</b>——10月纪要偏鹰、加息概率飙至96.4%，压制全球成长股估值。<span class="badge warn">核心风险</span></li>
-  <li><b>明日策略：</b><b class="hl-gold">退潮期防守为主，0~2 成轻仓，不接飞刀、不抢反弹，静待外盘企稳。</b>当前是「外盘冲击下的被动跟随调整 + 半导体链补跌」，核心不是「抄底」而是「等企稳」。判断下周的关键：① 沪指能否守住3500整数关口；② 外盘（美股期指/亚太）能否止跌；③ 半导体链补跌能否止住、PCB/元件能否晋级成建制主线；④ 跌停家数能否继续守住10以内。未确认前维持空仓至轻仓观望，只用 PCB/元件、银行红利等低位方向做极小仓位试错。<span class="badge warn">防守观望 · 静待外盘企稳</span></li>
-  <li><b>明日核心关注：</b>① <b class="hl-gold">外盘能否止跌</b>（美股期指、亚太开盘）；② <b class="hl-blue">沪指 3500 关键位得失</b>，失守则加速下探；③ <b class="hl-blue">PCB/元件（中京电子/满坤科技）能否晋级</b>，决定新主线成立与否；④ <b class="hl-gold">半导体链（中芯国际/海光信息）补跌是否止住</b>；⑤ <b class="hl-blue">下周量能</b>，若缩量企稳或成十字星，或现转机。<span class="badge new">下周预案</span></li>
+  <li><b>情绪温度：</b>全市场上涨313只（5.6%）、下跌5236只（93.84%），涨停29家、跌停58家、封板率约68%（news口径，午间约80%）。<b class="hl-gold">涨跌停比约1:2、跌停连续两日超50只，属「冰点加速 · 恐慌释放」的极端弱势</b>。情绪温度定档<b class="hl-blue">「冰点」</b>（二次探底，连续第7日超4100股下跌，历史极值，仅2024年1-2月可比）。<span class="badge warn">冰点加速 · 恐慌释放</span></li>
+  <li><b>周期位置：</b>「高潮拐点向下 → 退潮」中后段延续，今日由「缩量阴跌」切换为<b class="hl-gold">「放量出清」</b>（1.31→1.42万亿），退潮进入第6~7个交易日。<b class="hl-gold">「冰点拐点向上」三信号（跌停收敛10内 + 放量企稳 + 主线晋级连板）中，仅「跌停家数自83→68→58逐步收敛」边际改善，但「放量」是下跌放量而非企稳放量、「主线」仍是逆势抱团非成建制晋级</b>——冰点拐点向上尚未确认。<span class="badge warn">退潮中后段 · 拐点未确认</span></li>
+  <li><b>最强主线：</b>由「半导体设备/材料」（昨日独强）切换为<b class="hl-red">PCB/覆铜板/元件</b>——中京电子2连板（PCB核心）、满坤科技20CM、超声电子/澳弘电子/骏亚科技涨停，全球电子协会11-19预警「全球PCB严重短缺、瓶颈持续至2027上半年」，资金逆势涌入。<b class="hl-blue">银行/红利（工行、建行、长江电力续创历史新高）、农业猪肉（好当家、金新农、东方海洋）</b>为防守主线。<span class="badge hot">PCB/元件接棒 · 银行红利防守</span></li>
+  <li><b>最高标 / 连板梯队：</b>空间高度<b class="hl-red">4连板双雄：真视通（华为算力/液冷，全天封死）、盛剑科技（半导体洁净室/光刻胶，尾盘回封偏弱）</b>；<b class="hl-red">中京电子（PCB）2连板</b>为唯一干净中位连板；趋势板<b class="hl-red">北纬科技盘中8天6板（机器人，换手51.95%尾盘未封住）、好当家7天4板、东方海洋涨停</b>。<b class="hl-gold">连板股仅3只、3板真空断层、晋级率约40%，梯队极度萎缩，属冰点期零散抱团</b>。<span class="badge new">4板双雄 · 3板真空</span></li>
+  <li><b>资金主力：</b>主力资金<b class="hl-red">净流入印制电路板（+22.39亿）、元件（+21.99亿）居前</b>；<b class="hl-gold">净流出半导体（-107亿）、电子（-129亿）、数字芯片设计、计算机、电力设备</b>，全市场主力净流出约403亿。<b class="hl-red">龙虎榜（11-20）净买入居前：超声电子+4.41亿、东方海洋+3.14亿、冰山冷热+2.99亿、中京电子+2.44亿</b>；<b class="hl-gold">净卖出居前：粤芯半导体-1.68亿、洪都航空-1.50亿、阳光照明-1.31亿</b>。机构资金由成长切向防御。<span class="badge hot">资金避险切银行红利 + PCB/元件</span></li>
+  <li><b>最大隐患：</b>① <b class="hl-gold">美股「黑色星期五」系统性风险</b>——英伟达-14.01%（SEC会计调查+黄仁勋离职余波+AI泡沫担忧，单日蒸发5000亿美元、创2008年10月以来最大单周跌幅23%）、纳指-5.28%抹去年内涨幅、费半周跌17%、VIX飙至40，全球AI/半导体估值重构，对A股算力/半导体链构成直接压制；② <b class="hl-gold">半导体链补跌尚未止住</b>——昨日唯一主线高位回吐，通富微电跌停、海光信息/沐曦重挫；③ <b class="hl-gold">指数破位风险</b>——沪指盘中击穿3500，深成/创业板/中证1000均创阶段新低；④ <b class="hl-gold">小盘股踩踏</b>——中证1000 -4.89%，流动性风险外溢；⑤ <b class="hl-gold">高位断板A杀</b>——文投控股3连一字跌停、广百股份/凯撒文化/阳光照明3连跌停，亏钱效应极重。<span class="badge warn">核心风险</span></li>
+  <li><b>明日策略：</b><b class="hl-gold">冰点未确认拐点前，维持 0~2 成轻仓防守，不抄底半导体大票、不接飞刀；周日晚「三箭齐发」稳市组合拳或触发情绪修复反抽，但须以「缩量止跌 + 跌停收敛 + 主线晋级」三信号验证，未确认前仅以 PCB 一条线、银行红利底仓做极小仓位试错。</b>核心矛盾：美股AI估值重构（利空成长）vs 政策稳市4000亿增量（利好情绪），周一大概率「低开或高开后分化」，关键看沪指3500得失与量能方向。<span class="badge warn">防守观望 · 静待企稳</span></li>
+  <li><b>明日核心关注：</b>① <b class="hl-blue">沪指 3500 关键位</b>，失守则加速下探3470~3480，守住则企稳可期；② <b class="hl-gold">美股期指/亚太开盘</b>，英伟达-14%的冲击能否被政策对冲消化；③ <b class="hl-blue">PCB/元件（中京电子3板、满坤科技延续）能否晋级成建制主线</b>；④ <b class="hl-gold">半导体链（中芯国际、海光信息、通富微电）补跌是否止住</b>；⑤ <b class="hl-blue">融资保证金新政（11-30落地）对券商/两融受益方向的预期发酵</b>。<span class="badge new">周一预案</span></li>
 </ol>
 </div>
 
 <div class="panel hl">
-<h3>⑨ 主升浪候选观察（退潮期定性）</h3>
-<p style="font-size:13px;color:var(--txt2)">外盘冲击下的退潮加速期，具备产业贝塔、等待情绪冰点拐点确认的方向纳入候选池跟踪（非买入建议）：</p>
+<h3>⑨ 主升浪候选观察（冰点期定性）</h3>
+<p style="font-size:13px;color:var(--txt2)">外盘冲击+政策对冲的冰点加速期，具备产业贝塔、等待情绪拐点确认的方向纳入候选池跟踪（非买入建议）：</p>
 <table>
-  <tr><th>方向</th><th>代表标的</th><th>今日表现</th><th>核心逻辑 / 触发点</th></tr>
-  <tr><td>PCB/元件</td><td>中京电子、满坤科技、澳弘电子、超声电子、深南电路</td><td>中京2连板、满坤20cm、多股涨停</td><td>印制电路板净流入22.39亿居首，AI算力PCB + 超跌低位补涨，美国行业协会警告全球电路板短缺</td></tr>
-  <tr><td>银行/红利</td><td>工商银行、建设银行、长江电力、农业银行</td><td>工行+3.30%、建行+3.07%、长电+2.40%创新高</td><td>避险主线，指数连跌银行连涨的熊市避险结构，防御底仓定位</td></tr>
-  <tr><td>农业/猪肉</td><td>金新农、万向德农、好当家、东方海洋</td><td>金新农6天3板、好当家7天4板、东方海洋涨停</td><td>猪价探底回升 + 粮食安全 + 低位防御避险，中美农业工作组近期开会</td></tr>
-  <tr><td>半导体设备/材料（等企稳）</td><td>中芯国际、北方华创、中微公司</td><td>今日补跌</td><td>昨日主线回踩，BIS规则落地后国产替代逻辑仍在，企稳后仍是产业确定性最强方向</td></tr>
+  <tr><th>方向</th><th>代表标的</th><th>近期表现</th><th>核心逻辑 / 触发点</th></tr>
+  <tr><td>PCB/覆铜板</td><td>中京电子、满坤科技、超声电子、澳弘电子、骏亚科技</td><td>中京2连板、满坤20cm、多股首板</td><td>全球电子协会预警PCB短缺至2027上半年，AI算力PCB+超跌低位补涨，印制电路板净流入22.39亿居首</td></tr>
+  <tr><td>银行/红利</td><td>工商银行、建设银行、长江电力、中国石油</td><td>工行+3.30%、中石油+4.67%、长电续创新高</td><td>避险主线，指数连跌银行连涨的熊市避险结构，防御底仓定位</td></tr>
+  <tr><td>华为算力/国产算力</td><td>真视通、华胜天成、常山北明</td><td>真视通4连板、华胜天成翻红</td><td>昇腾超节点集群商用、BIS新规收窄海外租卡，国产算力替代逻辑，但受英伟达暴跌情绪压制</td></tr>
+  <tr><td>半导体设备/材料（等企稳）</td><td>中芯国际、北方华创、中微公司</td><td>今日补跌</td><td>BIS临时最终规则落地后国产替代逻辑仍在，企稳后仍是产业确定性最强方向</td></tr>
 </table>
-<p class="note">上述为候选池，均需等「外盘企稳 + 沪指守住3500 + 主线晋级连板」三信号确认后再动手，当前退潮加速期只跟踪不追高。PCB/元件是今日唯一有资金合力（净流入居前）的逆势方向，但需防半导体链补跌扩散拖累。</p>
+<p class="note">上述为候选池，均需等「美股企稳 + 沪指守住3500 + 主线晋级连板」三信号确认后再动手，当前冰点加速期只跟踪不追高。PCB/元件是周五唯一有资金合力（净流入居前）的逆势方向，但需防半导体链补跌扩散拖累；英伟达-14%对算力/半导体链的情绪压制是周一最大不确定。</p>
 </div>
 
 <div class="panel">
 <h3>⑩ 事实核验（关键数据交叉比对）</h3>
 <table>
   <tr><th>事项</th><th>核验结论</th></tr>
-  <tr><td>收盘指数</td><td>实取（通达信 tdx 实时行情）：沪指 3533.79（-1.22%）、深成 10256.39（-3.09%）、创业板 2212.13（-3.54%）、沪深300 3954.56（-0.76%）、中证500 6006.08（-3.93%）、中证1000 5648.63（-4.89%）。</td></tr>
-  <tr><td>涨跌家数</td><td>实取（tdx）：上证上涨159/下跌2176、深市142/2785、创业板60/1350。全市场约650只上涨、4800+只下跌（午间界面口径690:4808）。</td></tr>
-  <tr><td>涨跌停家数</td><td>午间口径（财联社/数据宝/界面多源交叉）：涨停28~31家、跌停6家、封板率82%。收盘精确跌停家数盘后未出齐，用午间口径并显式声明。</td></tr>
-  <tr><td>成交额</td><td>实取：半日8558亿（放量699亿）；沪市成交额7026亿（tdx Amount=702573838000元）。</td></tr>
-  <tr><td>主力资金</td><td>实取（金融界/财联社午间）：净流入印制电路板+22.39亿、元件+21.99亿；净流出半导体、电子。个股银行红利获避险资金（工行净流入、茅台+7.88亿）。</td></tr>
-  <tr><td>外围事件</td><td>实取（财联社/搜狐/第一财经）：美股道指自6月首次跌破5万点、纳指-2.22%；A50夜盘-1.12%；韩国KOSPI触发SIDECAR熔断；国际金价跌破3600美元（14个月新低）。</td></tr>
+  <tr><td>收盘指数</td><td>实取（westock data_market_overview）：上证 3533.79（-1.23%）、深成 10256.39（-3.09%）、创业板 2212.13（-3.54%，52周新低）。沪深300约-0.76%、中证500-3.93%、中证1000-4.89%来自风格轮动/新闻口径。</td></tr>
+  <tr><td>涨跌家数</td><td>实取（westock updown）：上涨313、下跌5236、平盘31，共5580只；下跌占比93.84%。</td></tr>
+  <tr><td>涨跌停家数</td><td>westock updown 口径：涨停29、跌停7（触及口径）；新闻/龙虎榜交叉口径：涨停28~30、跌停58~61。两口径差异源于「触及涨跌停价」与「封死收盘」统计差异，正文采用新闻口径并显式声明。</td></tr>
+  <tr><td>成交额</td><td>实取：两市1.42万亿（14222亿），放量约1165亿（8.86%），由前日1.31万亿地量转放量下跌。</td></tr>
+  <tr><td>健康度九维</td><td>实取（westock market_overview）：调整评分2.47、板块宽度得分1（全面下跌）、行业轮动得分1（价值主导）、技术得分1（极弱）、情绪得分3（中性）、中长期趋势得分1（暴跌）。</td></tr>
+  <tr><td>美股「黑色星期五」</td><td>实取（金融界/虎嗅/36氪/每经多源）：英伟达-14.01%报125.53美元（52周新低、单日蒸发5000亿美元、周跌23%创2008年10月最大）、纳指-5.28%抹去年内涨幅、标普-3.70%、道指-1.93%、费半周跌17%、VIX飙至40。导火索：路透披露SEC调查英伟达会计问题+黄仁勋离职余波+AI泡沫担忧。</td></tr>
+  <tr><td>稳市「三箭齐发」</td><td>实取（财联社/新华社/券商中国/第一财经，11-22晚间）：融资保证金100%→80%（11-30起，释放约4000亿）、创业板做市商征求意见、沪深交易所+中国结算降费超46亿。</td></tr>
 </table>
 </div>
 
@@ -136,88 +144,93 @@ tr:hover td{background:#1a2028}
 <h2 id="s1"><span class="num">二</span>一大盘宏观（量能 · 指数梯度 · 板块 · 健康度九维 · 宽度 · 资金意图）</h2>
 
 <div class="grid grid3">
-  <div class="kpi"><div class="label">上证指数</div><div class="val down">3533.79 <span style="font-size:13px">-1.22%</span></div></div>
+  <div class="kpi"><div class="label">上证指数</div><div class="val down">3533.79 <span style="font-size:13px">-1.23%</span></div></div>
   <div class="kpi"><div class="label">深证成指</div><div class="val down">10256.39 <span style="font-size:13px">-3.09%</span></div></div>
   <div class="kpi"><div class="label">创业板指</div><div class="val down">2212.13 <span style="font-size:13px">-3.54%</span></div></div>
-  <div class="kpi"><div class="label">沪深300</div><div class="val down">3954.56 <span style="font-size:13px">-0.76%</span></div></div>
-  <div class="kpi"><div class="label">中证500</div><div class="val down">6006.08 <span style="font-size:13px">-3.93%</span></div></div>
-  <div class="kpi"><div class="label">中证1000</div><div class="val down">5648.63 <span style="font-size:13px">-4.89%</span></div></div>
+  <div class="kpi"><div class="label">沪深300</div><div class="val down">约 -0.76% <span style="font-size:13px">抗跌</span></div></div>
+  <div class="kpi"><div class="label">中证500</div><div class="val down">约 -3.93% <span style="font-size:13px"></span></div></div>
+  <div class="kpi"><div class="label">中证1000</div><div class="val down">约 -4.89% <span style="font-size:13px">踩踏</span></div></div>
 </div>
 
 <div class="panel">
 <h3>指数梯度与量能结构</h3>
-<p style="font-size:13px">今日呈现<b class="hl-red">「权重抗跌、小盘踩踏」的极端分化</b>：沪深300仅跌0.76%（银行/红利/白酒托底），而上证仅跌1.22%，但中证500 -3.93%、中证1000 -4.89%，微盘股概念-5.33%。这反映资金从高贝塔的题材小盘股大幅撤离、避险涌入大盘蓝筹。沪市成交额7026亿，半日放量699亿，属<b class="hl-gold">「放量下跌」</b>——抛压大于承接，尚未出现缩量止跌信号。</p>
+<p style="font-size:13px">今日呈现<b class="hl-red">「权重护盘、小盘踩踏」的极致分化</b>：上证仅跌1.23%（银行/煤炭/石油尾盘批量创新高托底），而深成-3.09%、创业板-3.54%创52周新低、中证1000-4.89%、北证50-4.85%。资金从高贝塔题材小盘股大幅撤离、避险涌入大盘蓝筹红利。两市成交1.42万亿、放量约1165亿，属<b class="hl-gold">「放量下跌 · 放量出清」</b>——抛压大于承接，退潮由「缩量阴跌」进入「放量出清」阶段，尚未出现缩量止跌信号。上证盘中最低3500.83，一度击穿3500整数关口后尾盘拉回33点。</p>
 <div class="chart" id="idxChart"></div>
-<p class="note">指数涨跌幅梯度（收盘实取，tdx 口径）。沪深300显著抗跌，反映避险资金抱团大盘价值；中证1000/中证500重挫，反映题材小盘股遭踩踏。</p>
+<p class="note">指数涨跌幅梯度（收盘实取）。沪深300/上证显著抗跌，反映避险资金抱团大盘价值；中证1000/中证500/创业板重挫，反映题材小盘股遭踩踏。创业板指2212.13为52周新低。</p>
 </div>
 
 <div class="panel">
 <h3>板块表现（申万二级 · westock 收盘热度榜）</h3>
 <table>
   <tr><th>领涨板块</th><th>涨跌幅</th><th>领跌板块</th><th>涨跌幅</th></tr>
-  <tr><td class="hl-red">国有大型银行Ⅱ</td><td class="hl-red">+2.52%</td><td class="hl-green">通用设备</td><td class="hl-green">-5.98%</td></tr>
-  <tr><td class="hl-red">银行</td><td class="hl-red">+1.29%</td><td class="hl-green">IT服务Ⅱ</td><td class="hl-green">-5.16%</td></tr>
-  <tr><td class="hl-red">保险Ⅱ</td><td class="hl-red">+1.23%</td><td class="hl-green">半导体</td><td class="hl-green">-4.91%</td></tr>
-  <tr><td class="hl-red">股份制银行Ⅱ</td><td class="hl-red">+1.18%</td><td class="hl-green">游戏Ⅱ</td><td class="hl-green">-4.98%</td></tr>
-  <tr><td class="hl-red">渔业</td><td class="hl-red">+0.79%</td><td class="hl-green">通信设备</td><td class="hl-green">-4.71%</td></tr>
-  <tr><td class="hl-red">白酒Ⅱ</td><td class="hl-red">+0.41%</td><td class="hl-green">汽车零部件</td><td class="hl-green">-4.50%</td></tr>
+  <tr><td class="hl-red">国有大型银行Ⅱ</td><td class="hl-red">+2.52%</td><td class="hl-green">靶材</td><td class="hl-green">-7.88%</td></tr>
+  <tr><td class="hl-red">银行</td><td class="hl-red">+1.29%</td><td class="hl-green">芯片概念</td><td class="hl-green">-6.00%</td></tr>
+  <tr><td class="hl-red">保险Ⅱ</td><td class="hl-red">+1.23%</td><td class="hl-green">特斯拉</td><td class="hl-green">-5.37%</td></tr>
+  <tr><td class="hl-red">白酒Ⅱ</td><td class="hl-red">+0.41%</td><td class="hl-green">6G</td><td class="hl-green">-5.34%</td></tr>
+  <tr><td class="hl-red">养殖业</td><td class="hl-red">+0.35%</td><td class="hl-green">IT服务Ⅱ</td><td class="hl-green">-5.16%</td></tr>
+  <tr><td class="hl-red">煤炭</td><td class="hl-red">+0.33%</td><td class="hl-green">游戏Ⅱ</td><td class="hl-green">-4.98%</td></tr>
 </table>
-<p class="note">实取（westock data_hot kind=board 收盘榜）。领涨清一色银行/保险/白酒/渔业等防御方向；领跌集中在半导体、元件、通信设备、游戏、IT服务、通用设备等成长/题材方向，与「避险 + 半导体补跌」结构一致。</p>
+<p class="note">实取（westock data_hot kind=board 收盘榜）。领涨清一色银行/保险/白酒/养殖/煤炭等防御方向；领跌集中在靶材、芯片、特斯拉链、6G、IT服务、游戏等成长/题材方向，与「避险 + 半导体补跌」结构一致。</p>
 </div>
 
 <div class="panel">
 <h3>健康度九维雷达</h3>
 <div class="chart" id="healthChart"></div>
-<p class="note">九维综合打分（1~10，主观定性，基于今日收盘数据）。量能支撑弱（放量下跌）、涨停质量弱（涨停少、封板率虽高但家数少）、主线清晰度中等（PCB/元件有资金合力但未成建制）、赚钱效应弱（上涨仅12%）、情绪接力弱（连板梯队稀疏）、游资活跃弱、机构参与中等（银行红利获避险资金）、外资态度偏空（外盘系统性冲击）、估值安全中等（蓝筹安全边际高、题材高估）。</p>
+<p class="note">九维综合打分（1~10，主观定性，基于周五收盘数据）。量能支撑弱（放量下跌）、涨停质量弱（涨停29但跌停58、封板率仅68%）、主线清晰度中等（PCB/元件有资金合力但未成建制）、赚钱效应极弱（上涨仅5.6%）、情绪接力弱（连板仅3只、3板真空）、游资活跃弱、机构参与中等（银行红利获避险资金）、外资态度偏空（外盘系统性冲击+加息预期）、估值安全中等（蓝筹安全边际高、题材高估）。</p>
 </div>
 
 <div class="panel">
 <h3>涨跌宽度与资金意图</h3>
-<p style="font-size:13px">涨跌宽度：全市场上涨约650只（12%）、下跌4800+只（约87%），<b class="hl-gold">连续第7个交易日超4000股下跌</b>，属历史极值的极端弱势格局。资金意图：主力资金从高贝塔题材（半导体、算力芯片、通信设备）大幅撤离，避险涌入<b class="hl-red">银行/红利（工行、建行、长江电力续创历史新高）</b>与<b class="hl-red">低位PCB/元件</b>。涨停集中在电子（PCB/元件）、农林牧渔、传媒三个方向，反映存量资金在「避险 + 低位补涨」两条线上抱团，行情难以扩散。</p>
-<div class="warnbox">⚠ 关键提示：地量+放量下跌下行情难以扩散，半导体链补跌尚未止住，明日若高开低走、连板梯队继续断档，今日的逆势更可能是退潮期的一次结构性反抽。在量能重回1.5万亿以上之前，宜多看少动、以高抛低吸应对。</div>
+<p style="font-size:13px">涨跌宽度：全市场上涨313只（5.6%）、下跌5236只（93.84%），<b class="hl-gold">连续第7个交易日超4100股下跌</b>，属历史极值的极端弱势格局（仅2024年1-2月可比）。资金意图：主力资金从高贝塔题材（半导体、算力芯片、通信设备）大幅撤离，避险涌入<b class="hl-red">银行/红利（工行、建行、长江电力、中国石油续创历史新高）</b>与<b class="hl-red">低位PCB/元件</b>。涨停集中在PCB/元件、农林牧渔、机器人、AI漫剧四个方向，反映存量资金在「避险 + 低位补涨」两条线上抱团，行情难以扩散。</p>
+<div class="warnbox">⚠ 关键提示：放量下跌 + 半导体链补跌未止，行情难以扩散。周日晚「三箭齐发」稳市组合拳（4000亿融资空间+降费+做市）或触发情绪修复，但美股「黑色星期五」的AI估值重构压力仍在。在量能重回1.5万亿以上、跌停收敛至10家以内之前，宜多看少动。</div>
 </div>
 
 <!-- ============ 三、公告解读 ============ -->
 <h2 id="s2"><span class="num">三</span>二公告解读（巨潮资讯 · 上一交易日盘后全量）</h2>
 
 <div class="panel">
-<p style="font-size:13px;color:var(--txt2)">数据来源：巨潮资讯网 hisAnnouncement/query 接口，拉取 2026-11-19 至 2026-11-20 全量公告（深市2004条、沪市若干），按「投资签约 / 融资 / 增持回购 / 经营业绩 / 其他」五类整理，重点标注高辨识度/唯一性/特殊性公告。</p>
+<p style="font-size:13px;color:var(--txt2)">数据来源：巨潮资讯网 hisAnnouncement/query 接口，拉取 2026-11-20 全量公告（深市1119条，抽样解析高辨识度公告），按「投资签约 / 融资 / 增持回购 / 经营业绩 / 其他」五类整理，重点标注高辨识度/唯一性/特殊性公告。</p>
 </div>
 
 <div class="panel hl">
-<h3>① 投资签约 / 重大合作</h3>
+<h3>① 投资签约 / 重大合作 / 并购重组</h3>
 <table>
   <tr><th>公司</th><th>公告核心</th><th>特殊意义</th></tr>
-  <tr><td class="hl-red">军信股份（301109）</td><td>签订吉尔吉斯共和国比什凯克市垃圾科技处置发电项目二期工程投资协议补充协议</td><td class="hl-red">「一带一路」海外垃圾发电项目，出口型环保基建</td></tr>
-  <tr><td class="hl-red">东阳光（600673）</td><td>控股子公司拟签署 IDC 服务合同暨关联交易；控股子公司增资扩股引入投资者</td><td class="hl-red">切入算力 IDC 数据中心业务，与当前算力主线相关</td></tr>
-  <tr><td class="hl-red">四川长虹（600839）</td><td>与专业投资机构共同投资设立创业投资基金暨关联交易进展</td><td>产业资本布局</td></tr>
-  <tr><td>双良节能（600481）</td><td>子公司签订日常经营合同（自愿性披露）</td><td>光伏/节能设备订单</td></tr>
+  <tr><td class="hl-red">新莱福（301323）</td><td>发行股份及支付现金购买资产并募集配套资金暨关联交易报告书（草案·上会稿）</td><td class="hl-red">并购重组上会稿推进，材料公司并购</td></tr>
+  <tr><td class="hl-red">春晖智控（300943）</td><td>发行股份及支付现金购买资产暨关联交易报告书（草案·修订稿）</td><td class="hl-red">重组问询函回复更新，推进中</td></tr>
+  <tr><td class="hl-red">东土科技（300353）</td><td>控股子公司增资扩股引入战略投资者暨公司放弃优先认购权</td><td class="hl-red">引入战投，工业互联网</td></tr>
+  <tr><td class="hl-red">易天股份（300812）</td><td>筹划对外投资暨签署《股权转让框架协议》</td><td class="hl-red">当日20CM涨停，半导体设备方向外延并购</td></tr>
+  <tr><td class="hl-red">国瓷材料（300285）</td><td>关于公司投资建设项目的公告</td><td class="hl-red">电子陶瓷材料扩产</td></tr>
+  <tr><td class="hl-red">昊帆生物（301393）</td><td>关于现金购买杭州福斯特股权的进展公告</td><td class="hl-red">现金收购落地，多肽合成试剂</td></tr>
+  <tr><td>华致酒行（300755）</td><td>全资子公司拟购买资产并签署合同</td><td>酒类流通扩张</td></tr>
+  <tr><td>万辰集团（300972）</td><td>购买南京万昌商业管理有限公司49%股权</td><td>量贩零食扩张</td></tr>
+  <tr><td>赛维时代（301381）</td><td>全资子公司受让股权投资基金份额暨与专业机构共同投资</td><td>跨境电商产业投资</td></tr>
 </table>
 </div>
 
 <div class="panel hl">
-<h3>② 融资 / 定增 / 重大资产重组</h3>
+<h3>② 融资 / 定增 / 可转债</h3>
 <table>
   <tr><th>公司</th><th>公告核心</th><th>特殊意义</th></tr>
-  <tr><td class="hl-red">银河微电（688689）</td><td>发行股份购买资产并募集配套资金暨关联交易报告书（申报稿）修订说明</td><td class="hl-red">半导体分立器件并购重组，申报稿推进</td></tr>
-  <tr><td class="hl-red">英力特（000635）</td><td>控股股东拟协议转让股份公开征集受让方 + 拟筹划发行股份购买资产，继续停牌</td><td class="hl-red">控股权变更 + 重大资产重组，停牌中</td></tr>
-  <tr><td class="hl-red">*ST香雪（300147）</td><td>法院裁定受理重整 + 指定管理人 + 重整期间继续营业 + 叠加退市风险警示</td><td class="hl-red">破产重整关键节点，退市风险</td></tr>
-  <tr><td>永冠新材（603681）</td><td>2026年度向特定对象发行股票方案论证分析报告（修订稿）</td><td>定增推进</td></tr>
-  <tr><td>傲拓科技（688845）</td><td>首次公开发行股票并在科创板上市发行公告 + 投资风险特别公告</td><td class="hl-red">科创板 IPO 新股发行</td></tr>
+  <tr><td class="hl-red">云汉芯城（301563）</td><td>向不特定对象发行可转换公司债券预案</td><td class="hl-red">电子元器件分销平台可转债融资</td></tr>
+  <tr><td class="hl-red">汇成真空（301392）</td><td>2026年度向特定对象发行A股股票审核问询函回复更新</td><td class="hl-red">半导体真空镀膜设备定增推进</td></tr>
+  <tr><td class="hl-red">聚灿光电（300708）</td><td>终止2026年度向特定对象发行股票</td><td class="hl-red">LED芯片终止定增（终止信号）</td></tr>
 </table>
 </div>
 
 <div class="panel hl">
-<h3>③ 增持 / 回购</h3>
+<h3>③ 增持 / 回购（密集护盘，退潮期特征显著）</h3>
 <table>
   <tr><th>公司</th><th>公告核心</th><th>特殊意义</th></tr>
-  <tr><td class="hl-red">紫金矿业（601899）</td><td>以集中竞价方式回购 A 股股份方案公告暨回购报告书</td><td class="hl-red">有色龙头逆市回购护盘，市值管理信号</td></tr>
-  <tr><td class="hl-red">重庆路桥（600106）</td><td>第二大股东增持股份计划公告</td><td class="hl-red">大股东增持</td></tr>
-  <tr><td>赣锋锂业（002460）</td><td>回购公司 A 股股份方案公告暨回购股份报告书</td><td>锂业龙头回购</td></tr>
-  <tr><td>金科股份（000656）</td><td>首次回购公司股份 + 回购股份报告书</td><td class="hl-red">地产困境公司首次回购，信号意义</td></tr>
-  <tr><td>佰维存储（688525）</td><td>2026年度回购股份报告书 + 注销回购股份减资</td><td>存储芯片回购注销</td></tr>
-  <tr><td>新华百货（600785）</td><td>回购股份比例达 8% 进展公告</td><td>大额回购持续推进</td></tr>
-  <tr><td>东阳光（600673）</td><td>控股股东及一致行动人增持计划进展暨调整</td><td>控股股东增持</td></tr>
+  <tr><td class="hl-red">国科天成（301571）</td><td>控股股东、实际控制人增持股份计划</td><td class="hl-red">实控人增持</td></tr>
+  <tr><td class="hl-red">国科微（300672）</td><td>董事长兼总经理提议回购公司股份</td><td class="hl-red">芯片设计公司回购，半导体链逆势护盘</td></tr>
+  <tr><td class="hl-red">天阳科技（300872）</td><td>第三期回购公司股份方案</td><td class="hl-red">金融科技连续多期回购</td></tr>
+  <tr><td class="hl-red">江丰电子（300666）</td><td>首次回购公司股份</td><td class="hl-red">半导体靶材龙头回购</td></tr>
+  <tr><td class="hl-red">奥飞数据（300738）</td><td>回购股份比例达1%暨首次回购</td><td class="hl-red">IDC算力公司回购</td></tr>
+  <tr><td>科顺股份（300737）</td><td>董事长提议回购</td><td>防水材料</td></tr>
+  <tr><td>星辉娱乐（300043）</td><td>回购公司股份方案</td><td>游戏/玩具</td></tr>
+  <tr><td>贝泰妮（300957）</td><td>回购公司股份进展</td><td>医美护肤</td></tr>
+  <tr><td>阳光电源（300274）</td><td>回购公司股份进展</td><td>光伏逆变器龙头</td></tr>
 </table>
 </div>
 
@@ -225,21 +238,19 @@ tr:hover td{background:#1a2028}
 <h3>④ 经营业绩 / 数据披露</h3>
 <table>
   <tr><th>公司</th><th>公告核心</th><th>特殊意义</th></tr>
-  <tr><td class="hl-red">韵达股份（002120）</td><td>2026年10月快递服务主要经营指标快报</td><td class="hl-red">快递行业月度数据，旺季经营指标</td></tr>
-  <tr><td>苏州银行（002966）</td><td>2026年半年度权益分派实施公告</td><td>银行分红落地</td></tr>
+  <tr><td class="hl-red">天山电子（301379）</td><td>盈利预测审核报告 + 签订交易合同暨关联交易</td><td class="hl-red">并购标盈利预测披露（重组配套）</td></tr>
 </table>
 </div>
 
 <div class="panel">
-<h3>⑤ 其他（异动 / 质押 / 人事 / 担保）</h3>
+<h3>⑤ 其他（异动 / 人事 / 债务重组）</h3>
 <table>
   <tr><th>公司</th><th>公告核心</th><th>特殊意义</th></tr>
-  <tr><td class="hl-red">燧原科技（688801）</td><td>股票交易异常波动公告</td><td class="hl-red">算力芯片龙头异动，昨日20cm跌停后提示风险</td></tr>
-  <tr><td>长春一东（600148）</td><td>控股股东股份被冻结公告</td><td>风险信号</td></tr>
-  <tr><td>粤宏远A（000573）</td><td>股东部分股份解除质押</td><td>质押缓解</td></tr>
-  <tr><td>森麒麟（002984）</td><td>向下修正可转换公司债券转股价格</td><td>下修转股价，摊薄信号</td></tr>
+  <tr><td class="hl-red">易天股份（300812）</td><td>股票交易异常波动公告</td><td class="hl-red">20CM涨停异动，半导体设备</td></tr>
+  <tr><td class="hl-red">蒙草生态（300355）</td><td>杭锦后旗项目债务重组 + 呼伦贝尔项目债务重组</td><td class="hl-red">生态修复应收账款债务重组</td></tr>
+  <tr><td>药易购（300937）</td><td>高级管理人员辞职</td><td>医药流通</td></tr>
 </table>
-<p class="note">口径说明：巨潮深市全量2004条、沪市分页拉取。本表按关键词（投资/协议/回购/增持/定增/重组/重整/业绩/异动等）筛选高辨识度公告，非全量罗列。</p>
+<p class="note">口径说明：巨潮深市全量1119条，本表按关键词（投资/收购/回购/增持/定增/重组/可转债/业绩/异动等）筛选高辨识度公告，非全量罗列。周五盘后回购增持公告密集，是退潮期上市公司「护盘式回购」市值管理的典型信号。</p>
 </div>
 
 <!-- ============ 四、短线情绪及个股发现 ============ -->
@@ -248,40 +259,54 @@ tr:hover td{background:#1a2028}
 <div class="panel">
 <h3>涨停 / 跌停 / 封板率</h3>
 <div class="grid grid3">
-  <div class="kpi"><div class="label">涨停家数（午间）</div><div class="val hl-red">28~31</div></div>
-  <div class="kpi"><div class="label">跌停家数（午间）</div><div class="val hl-green">6</div></div>
-  <div class="kpi"><div class="label">封板率（午间）</div><div class="val" style="color:#fff">82%</div></div>
+  <div class="kpi"><div class="label">涨停家数</div><div class="val hl-red">28~30</div></div>
+  <div class="kpi"><div class="label">跌停家数</div><div class="val hl-green">58~61</div></div>
+  <div class="kpi"><div class="label">封板率</div><div class="val" style="color:#fff">约68%</div></div>
 </div>
-<p class="note">口径：财联社午间「全市场28股涨停、连板股2只、6股封板未遂、封板率82%」；数据宝/界面「31只涨停、6只跌停」；差额为ST股及口径差异。收盘精确涨跌停家数盘后未出齐，<b class="pending">以午间口径为准并显式声明</b>。</p>
+<p class="note">口径：westock updown 触及口径「涨停29、跌停7」，新闻/龙虎榜交叉口径「涨停28~30、跌停58~61、封板率68%」。两口径差异源于「触及涨跌停价」与「封死收盘」的统计差异，正文采用更能反映真实亏钱效应的新闻口径（跌停58家）并显式声明。<b class="pending">涨跌停比约1:2，跌停连续两日超50只，亏钱效应极重。</b></p>
 </div>
 
 <div class="panel">
 <h3>连板梯队（情绪高度）</h3>
 <table>
   <tr><th>高度</th><th>个股</th><th>概念</th><th>备注</th></tr>
-  <tr><td class="hl-red">8天6板</td><td class="hl-red">北纬科技（002148）</td><td>机器人</td><td>今日+8.17%，全场最高标</td></tr>
-  <tr><td class="hl-red">7天4板</td><td class="hl-red">好当家</td><td>水产/猪肉</td><td>水产概念活跃</td></tr>
-  <tr><td class="hl-red">6天3板</td><td class="hl-red">金新农</td><td>猪肉产业</td><td>猪价探底回升</td></tr>
-  <tr><td class="hl-red">4连板</td><td class="hl-red">真视通（002771）</td><td>华为算力</td><td>空间板，4进5关键</td></tr>
-  <tr><td class="hl-red">2连板</td><td class="hl-red">中京电子</td><td>PCB</td><td>印制电路板龙头</td></tr>
-  <tr><td>2连板</td><td>*ST发展</td><td>ST</td><td>ST股</td></tr>
+  <tr><td class="hl-red">4连板</td><td class="hl-red">真视通（002771）</td><td>华为算力/液冷</td><td>空间板，全天封死，4进5关键</td></tr>
+  <tr><td class="hl-red">4连板</td><td class="hl-red">盛剑科技（603324）</td><td>半导体洁净室/光刻胶</td><td>14:07尾盘回封，走势弱于真视通</td></tr>
+  <tr><td class="hl-red">2连板</td><td class="hl-red">中京电子（002579）</td><td>PCB/覆铜板</td><td>全场唯一干净中位连板，09:36封板</td></tr>
+  <tr><td>8天6板(趋势)</td><td>北纬科技（002148）</td><td>机器人</td><td>+8.17%，换手51.95%尾盘未封住</td></tr>
+  <tr><td>7天4板(趋势)</td><td>好当家（600467）</td><td>水产/猪肉</td><td>涨停</td></tr>
+  <tr><td>反包</td><td>东方海洋（002086）</td><td>水产</td><td>+9.97%涨停，龙虎榜净买3.14亿</td></tr>
 </table>
-<p class="note">连板梯队整体稀疏（连板股总数仅2~5只），晋级率低、接力意愿弱，属冰点期的零散抱团。空间高度由昨日3板回补至4板（真视通），是情绪修复的唯一亮点，但需防真视通4进5断板。</p>
+<p class="note">连板梯队极度萎缩（连板股仅3只、3板真空断层、晋级率约40%），属冰点期零散抱团。空间高度回升至4板双雄（真视通、盛剑科技），是情绪修复的边际亮点，但需防4进5断板。北纬科技8天6板换手51.95%尾盘未封住，属高位分歧。</p>
 </div>
 
 <div class="panel">
 <h3>龙虎榜（活跃度 + 机构席位）</h3>
-<p style="font-size:13px" class="pending">⚠ 数据缺口：westock data_lhb 今日（2026-11-20）返回空（盘后数据未出齐，机构/游资席位尚未披露）。昨日（11-19）口径参考：全市场涨停23~26家、跌停68~83家，机构席位净买入居前为中芯国际（+11.09亿）、中微公司（+7.55亿）、华虹宏力（+6.76亿）等半导体设备材料方向（资金逆势抄底），游资活跃度降至冰点。今日龙虎榜待盘后数据出齐后补录。</p>
+<p style="font-size:13px">数据来源：westock data_lhb（date=2026-11-20，全市场活跃度榜）。</p>
+<table>
+  <tr><th>排名</th><th>个股</th><th>涨跌幅</th><th>龙虎榜净买入</th></tr>
+  <tr><td class="hl-red">1</td><td class="hl-red">超声电子（000823）</td><td class="hl-red">+9.98%</td><td class="hl-red">+4.41亿</td></tr>
+  <tr><td class="hl-red">2</td><td class="hl-red">东方海洋（002086）</td><td class="hl-red">+9.97%</td><td class="hl-red">+3.14亿</td></tr>
+  <tr><td class="hl-red">3</td><td class="hl-red">冰山冷热（000530）</td><td class="hl-red">+10.03%</td><td class="hl-red">+2.99亿</td></tr>
+  <tr><td class="hl-red">4</td><td class="hl-red">中京电子（002579）</td><td class="hl-red">+10.02%</td><td class="hl-red">+2.44亿</td></tr>
+  <tr><td class="hl-red">5</td><td class="hl-red">深南电路（002916）</td><td class="hl-red">-0.59%</td><td class="hl-red">+1.96亿</td></tr>
+  <tr><td class="hl-red">6</td><td>北纬科技（002148）</td><td class="hl-red">+8.17%</td><td class="hl-red">+1.87亿</td></tr>
+  <tr><td class="hl-red">7</td><td class="hl-red">满坤科技（301132）</td><td class="hl-red">+20%</td><td class="hl-red">+1.20亿</td></tr>
+  <tr><td class="hl-green">净卖1</td><td class="hl-green">粤芯半导体（301660）</td><td class="hl-green">+1.97%</td><td class="hl-green">-1.68亿</td></tr>
+  <tr><td class="hl-green">净卖2</td><td class="hl-green">洪都航空（600316）</td><td class="hl-green">-10.01%</td><td class="hl-green">-1.50亿</td></tr>
+  <tr><td class="hl-green">净卖3</td><td class="hl-green">阳光照明（600261）</td><td class="hl-green">-9.96%</td><td class="hl-green">-1.31亿</td></tr>
+</table>
+<p class="note">龙虎榜净买入集中PCB/元件（超声电子、中京电子、满坤科技、深南电路）与水产/冰雪（东方海洋、冰山冷热），印证「PCB + 防御」双线资金合力；净卖出集中在半导体次新（粤芯半导体）、军工（洪都航空）、退潮题材（阳光照明）。PCB方向龙虎榜上榜股数多、净买入居前，是周五唯一成规模的游资/机构合力方向。</p>
 </div>
 
 <div class="panel hl">
 <h3>情绪流选股（2 只代表股 + 盘口应对）</h3>
 <table>
   <tr><th>个股</th><th>方向</th><th>今日信号</th><th>盘口应对 / 止盈止损</th></tr>
-  <tr><td class="hl-red">中京电子</td><td>PCB（印制电路板）</td><td>2连板，开盘6分钟拉涨停，封单近50万手，成交超8亿</td><td>PCB主线领涨，若明日高开不封板则减仓兑现；回踩5日线企稳可低吸。止损：跌破今日涨停价约-8%</td></tr>
-  <tr><td class="hl-red">真视通</td><td>华为算力</td><td>4连板空间板，算力概念唯一高度</td><td>情绪风向标，4进5若炸板则情绪再退潮；封板则关注算力回流。止损：断板即离场</td></tr>
+  <tr><td class="hl-red">中京电子</td><td>PCB（覆铜板）</td><td>2连板，09:36封板，换手12.97%，封单近30万手，龙虎榜净买2.44亿</td><td>PCB主线领涨，若周一高开不封板则减仓兑现；回踩5日线企稳可低吸。止损：跌破今日涨停价约-8%</td></tr>
+  <tr><td class="hl-red">真视通</td><td>华为算力</td><td>4连板空间板，全天封死，算力概念唯一高度</td><td>情绪风向标，4进5若炸板则情绪再退潮；封板则关注算力回流。止损：断板即离场</td></tr>
 </table>
-<div class="warnbox">⚠ 避雷/兑现监控：① 三连一字与缩量秒板（真视通、全筑股份、盛剑科技）——开板即砸概率高；② 算力中位票（星网锐捷、恒为科技等）与算力芯片（天普股份连续跌停、海光信息-9%+、沐曦股份、燧原科技）；③ 天量烂板与高位兑现（九阳股份-7.21%）；④ 冰雪经济（龙江交通-8.32%、阳光照明-9.96%跌停）与影视传媒退潮方向。</div>
+<div class="warnbox">⚠ 避雷/兑现监控：① 高位断板A杀（文投控股3连一字跌停、广百股份/凯撒文化/阳光照明3连跌停、天普股份2连跌停）；② 算力芯片/半导体补跌（海光信息-8.75%、沐曦-12.25%、通富微电跌停、联合化学20CM跌停、粤芯半导体净卖1.68亿）；③ 高位换手烂板（北纬科技8天6板换手51.95%尾盘未封住、华东重机-3.52%算力龙头松动）；④ 退潮题材（冰雪经济龙江交通-8.32%、阳光照明-9.96%；贵金属金价跌破3600美元）。</div>
 </div>
 
 <!-- ============ 五、机构趋势及趋势选股 ============ -->
@@ -289,26 +314,27 @@ tr:hover td{background:#1a2028}
 
 <div class="panel">
 <h3>主力资金与机构意图</h3>
-<p style="font-size:13px">主力资金（午间口径）：<b class="hl-red">净流入印制电路板+22.39亿、元件+21.99亿、制冷空调设备+6.92亿、农林牧渔+5.50亿</b>；<b class="hl-green">净流出半导体、电子（合计超140亿）、数字芯片设计、通信设备、电力设备</b>。全市场主力净流出约296亿。个股端，<b class="hl-red">银行/红利获避险资金持续流入（工商银行5日净流入+3.48亿、20日+8.96亿；长江电力5日+5.87亿；贵州茅台当日+7.88亿）</b>，<b class="hl-green">算力芯片遭抛售（海光信息、天普股份、沐曦股份）</b>。机构资金由成长切向防御，是典型退潮期的避险结构。</p>
+<p style="font-size:13px">主力资金（收盘口径）：<b class="hl-red">净流入印制电路板+22.39亿、元件+21.99亿、制冷空调设备+6.92亿、农林牧渔+5.50亿</b>；<b class="hl-green">净流出半导体-107亿、电子-129亿、数字芯片设计-61.5亿、计算机-39.65亿、电力设备-45.43亿</b>，全市场主力净流出约403亿。个股端，<b class="hl-red">银行/红利获避险资金持续流入（工商银行、建设银行、长江电力、中国石油续创历史新高，贵州茅台逆势+1.75%）</b>，<b class="hl-green">算力芯片遭抛售（海光信息、沐曦股份、通富微电、长鑫科技-6.24%创新低）</b>。机构资金由成长切向防御，是典型退潮期避险结构。</p>
 <table>
-  <tr><th>个股</th><th>主力净流入（当日）</th><th>5日/20日趋势</th></tr>
-  <tr><td class="hl-red">贵州茅台</td><td class="hl-red">+7.88亿</td><td>5日+7.92亿 / 20日+3.18亿（持续流入）</td></tr>
-  <tr><td class="hl-red">长江电力</td><td class="hl-red">+4.54亿</td><td>5日+5.87亿 / 10日+13.28亿（连续流入）</td></tr>
-  <tr><td class="hl-red">中国平安</td><td class="hl-red">+3.73亿</td><td>20日+10.75亿</td></tr>
-  <tr><td>工商银行</td><td>+0.50亿</td><td>5日+3.48亿 / 20日+8.96亿</td></tr>
-  <tr><td class="hl-green">招商银行</td><td class="hl-green">-5.26亿</td><td>5日-13.98亿（流出）</td></tr>
+  <tr><th>个股</th><th>当日表现</th><th>资金特征</th></tr>
+  <tr><td class="hl-red">工商银行</td><td class="hl-red">+3.30% 续创历史新高</td><td>避险资金持续流入，指数连跌银行连涨</td></tr>
+  <tr><td class="hl-red">长江电力</td><td class="hl-red">+2.40% 创新高</td><td>红利防御，现金流确定性强</td></tr>
+  <tr><td class="hl-red">中国石油</td><td class="hl-red">+4.67%</td><td>石油红利避险</td></tr>
+  <tr><td class="hl-red">贵州茅台</td><td class="hl-red">+1.75%</td><td>白酒蓝筹逆势，机构抱团</td></tr>
+  <tr><td class="hl-green">长鑫科技</td><td class="hl-green">-6.24% 创上市新低</td><td>存储芯片遭抛售</td></tr>
 </table>
-<p class="note">实取（westock data_fund_flow）。银行/红利/白酒是退潮期唯一持续获主力净流入的方向，符合「指数连跌、银行连涨」的避险结构。茅台/长电/平安等大盘蓝筹获机构持续加仓。</p>
+<p class="note">实取（westock data_hot stock 榜 + 新闻口径）。银行/红利/白酒是退潮期唯一持续获主力净流入的方向，符合「指数连跌、银行连涨」的避险结构。</p>
 </div>
 
 <div class="panel">
 <h3>核心宽基 + 行业 ETF 申赎（资金净流入代理）</h3>
 <table>
-  <tr><th>ETF</th><th>今日表现</th><th>资金含义</th></tr>
-  <tr><td>上证50ETF华夏（510050）</td><td class="hl-red">+0.59%</td><td>大盘价值获避险资金申购</td></tr>
-  <tr><td>半导体设备ETF万家（159327）</td><td class="hl-green">-4.52%</td><td>半导体链资金撤离</td></tr>
+  <tr><th>ETF</th><th>周五表现</th><th>资金含义</th></tr>
+  <tr><td>上证50ETF（510050）</td><td class="hl-red">上证50 +0.45% 独红</td><td>大盘价值获避险资金申购，尾盘护盘</td></tr>
+  <tr><td>科创50ETF富国（588940）</td><td class="hl-green">-3.48%</td><td>科创成长资金撤离</td></tr>
+  <tr><td>黄金ETF易方达（159934）</td><td class="hl-green">-4.32%</td><td>金价跌破3600美元，贵金属避险逻辑弱化</td></tr>
 </table>
-<p class="note">口径：ETF申赎实时数据未直接获取，以上证50/半导体设备ETF的涨跌与成交作为资金流向代理。上证50逆势收涨0.59%、半导体设备ETF大跌4.52%，反映资金从成长切向价值的避险切换。</p>
+<p class="note">口径：ETF申赎实时数据未直接获取，以上证50/科创50ETF/黄金ETF的涨跌作为资金流向代理。上证50逆势独红+0.45%、科创50ETF大跌3.48%、黄金ETF-4.32%，反映资金从成长/贵金属切向价值蓝筹的避险切换。</p>
 </div>
 
 <div class="panel hl">
@@ -316,9 +342,9 @@ tr:hover td{background:#1a2028}
 <table>
   <tr><th>个股</th><th>方向</th><th>趋势特征</th><th>操作 / 止盈止损</th></tr>
   <tr><td class="hl-red">工商银行（601398）</td><td>银行/红利</td><td>+3.30% 续创历史新高，5日/20日主力持续净流入</td><td>防御底仓，指数连跌银行连涨的避险结构。已持有则持有不动；空仓者不追高，回踩5日线再考虑。止盈：放量滞涨即减仓（银行放量滞涨常是风格切换前兆）</td></tr>
-  <tr><td class="hl-red">长江电力（600900）</td><td>电力/红利</td><td>+2.40% 创新高，10日主力净流入13.28亿</td><td>红利防御，现金流确定性强。持有不动，回踩10日线可低吸。止盈：跌破20日线离场</td></tr>
+  <tr><td class="hl-red">长江电力（600900）</td><td>电力/红利</td><td>+2.40% 创新高，10日主力净流入居前</td><td>红利防御，现金流确定性强。持有不动，回踩10日线可低吸。止盈：跌破20日线离场</td></tr>
 </table>
-<p class="note">趋势选股以「机构资金持续净流入 + 创新高」的银行/红利为防御主线，符合退潮期避险逻辑。成长方向（半导体、算力）今日补跌，暂不纳入趋势买入，等企稳后再评估。</p>
+<p class="note">趋势选股以「机构资金持续净流入 + 创新高」的银行/红利为防御主线，符合退潮期避险逻辑。成长方向（半导体、算力）周五补跌，暂不纳入趋势买入，等企稳后再评估。周日晚融资保证金下调利好券商/两融，可观察券商板块周一是否异动。</p>
 </div>
 
 <!-- ============ 六、机会分析及仓位建议 ============ -->
@@ -328,17 +354,18 @@ tr:hover td{background:#1a2028}
 <h3>① 明天炒什么（舆情热度 × 预期差方向榜）</h3>
 <table>
   <tr><th>方向</th><th>舆情热度</th><th>预期差 / 逻辑</th><th>定性</th></tr>
-  <tr><td class="hl-red">PCB/元件</td><td class="hl-red">高（中京2连板、多股涨停）</td><td>印制电路板净流入22.39亿居首，AI算力PCB + 美国电路板短缺危机蔓延，超跌低位补涨</td><td>新主线候选，观察晋级</td></tr>
+  <tr><td class="hl-red">券商/两融受益</td><td class="hl-red">高（周日晚新政）</td><td>融资保证金100%→80%释放4000亿、降费46亿、创业板做市商——直接利好券商、两融、做市业务，是周一最新、预期差最实的政策方向</td><td>政策驱动，观察券商异动</td></tr>
+  <tr><td class="hl-red">PCB/元件</td><td class="hl-red">高（中京2连板、龙虎榜净买居前）</td><td>全球PCB短缺至2027上半年 + AI算力PCB + 超跌低位补涨，印制电路板净流入22.39亿居首</td><td>新主线候选，观察晋级</td></tr>
   <tr><td class="hl-red">银行/红利</td><td class="hl-red">高（工行建行长电创新高）</td><td>避险主线，指数连跌银行连涨，机构资金持续流入</td><td>防御底仓</td></tr>
-  <tr><td>农业/猪肉</td><td>中（金新农、万向德农涨停）</td><td>猪价探底回升 + 中美农业工作组近期开会 + 低位防御</td><td>防御补涨</td></tr>
-  <tr><td>AI漫剧/传媒</td><td>中（龙版传媒、华媒控股涨停）</td><td>传媒超跌反弹 + AI漫剧题材回流</td><td>超跌反弹，持续性存疑</td></tr>
-  <tr><td>半导体设备/材料</td><td>中（昨日主线，今日补跌）</td><td>BIS规则落地后国产替代逻辑仍在，企稳后仍是产业确定性最强方向</td><td>等企稳后低吸</td></tr>
+  <tr><td>国产算力</td><td>中（真视通4板、华胜天成）</td><td>昇腾超节点商用 + BIS收窄海外租卡，但受英伟达-14%情绪压制，多空交织</td><td>分化，看美股情绪消化</td></tr>
+  <tr><td>农业/猪肉</td><td>中（好当家、金新农、东方海洋）</td><td>猪价探底回升 + 进口收缩 + 低位防御</td><td>防御补涨</td></tr>
+  <tr><td class="hl-green">半导体设备/材料</td><td class="hl-green">中（周五补跌）</td><td>BIS落地后国产替代逻辑仍在，但美股AI估值重构压制，需等企稳</td><td>等企稳后低吸，暂回避</td></tr>
 </table>
 </div>
 
 <div class="panel">
 <h3>② 下一轮主升浪窗口</h3>
-<p style="font-size:13px">当前处于「退潮中后段 + 情绪冰点二次探底」，尚未见主升浪启动信号。下一轮主升浪窗口需等待三重信号共振：<b class="hl-blue">① 外盘企稳（美股期指/亚太止跌）；② 沪指守住3500关键位并放量企稳；③ 新主线（PCB/元件或半导体设备材料企稳反弹）晋级成建制连板</b>。历史类比：连续7日超4000股下跌为历史极值（仅2024年1-2月可比），冰点后通常有修复，但需确认拐点而非抢反弹。候选主升浪方向：PCB/元件（AI算力+短缺）、半导体设备材料（国产替代确定性最强）。</p>
+<p style="font-size:13px">当前处于「退潮中后段 + 情绪冰点二次探底」，尚未见主升浪启动信号。下一轮主升浪窗口需等待三重信号共振：<b class="hl-blue">① 美股企稳（英伟达-14%的AI估值重构冲击消化）；② 沪指守住3500关键位并缩量止跌企稳；③ 新主线（PCB/元件晋级或半导体设备材料企稳反弹）晋级成建制连板</b>。周日晚「三箭齐发」稳市组合拳提供了政策催化，若叠加美股企稳，周一或现「冰点拐点向上」的修复窗口。历史类比：连续7日超4000股下跌为历史极值（仅2024年1-2月可比），冰点后通常有修复，但需确认拐点而非抢反弹。候选主升浪方向：PCB/元件（AI算力+短缺）、半导体设备材料（国产替代确定性最强）、券商（融资新政受益）。</p>
 </div>
 
 <div class="panel hl">
@@ -346,22 +373,23 @@ tr:hover td{background:#1a2028}
 <table>
   <tr><th>情绪周期位置</th><th>当前判断</th><th>建议仓位</th><th>操作基调</th></tr>
   <tr><td class="hl-green">高潮拐点向下</td><td class="hl-green">已过（前期清仓）</td><td>0~1成</td><td>清仓等待</td></tr>
-  <tr><td class="hl-blue">退潮中后段</td><td class="hl-blue">← 当前（冰点二次探底）</td><td class="hl-blue">0~2成</td><td>防守观望，等拐点</td></tr>
-  <tr><td>冰点拐点向上（待确认）</td><td>跌停收敛已现、主线/放量待确认</td><td>2~4成</td><td>确认后上仓位做多</td></tr>
+  <tr><td class="hl-blue">退潮中后段</td><td class="hl-blue">← 当前（冰点加速·恐慌释放）</td><td class="hl-blue">0~2成</td><td>防守观望，等拐点</td></tr>
+  <tr><td>冰点拐点向上（待确认）</td><td>跌停收敛已现、主线/放量企稳待确认</td><td>2~4成</td><td>确认后上仓位做多</td></tr>
   <tr><td>情绪高潮</td><td>未到</td><td>4~8成</td><td>主升段进攻</td></tr>
 </table>
-<p class="note" style="color:var(--warn)">当前定档：退潮中后段 + 情绪冰点，建议 0~2 成轻仓防守。核心是「等外盘企稳 + 沪指守住3500 + 主线晋级」三信号，未确认前不抢反弹、不接飞刀。</p>
+<p class="note" style="color:var(--warn)">当前定档：退潮中后段 + 情绪冰点，建议 0~2 成轻仓防守。核心是「等美股企稳 + 沪指守住3500 + 主线晋级」三信号，未确认前不抢反弹、不接飞刀。周日晚政策利好可支撑情绪修复反抽，但需以量价验证。</p>
 </div>
 
 <div class="panel">
 <h3>④ 明日操作清单</h3>
 <ol class="oplist">
-  <li><b>防守观望：</b>维持 0~2 成轻仓，不抢反弹、不接飞刀，静待外盘企稳信号。</li>
-  <li><b>观察沪指 3500：</b>守住则市场企稳可期，失守则加速下探、进一步降低风险敞口。</li>
+  <li><b>防守观望：</b>维持 0~2 成轻仓，不抢反弹、不接飞刀，静待美股企稳 + 政策对冲验证。</li>
+  <li><b>观察沪指 3500：</b>守住则企稳可期，失守则加速下探3470~3480、进一步降低风险敞口。</li>
+  <li><b>观察券商异动：</b>融资保证金下调（11-30落地）直接利好券商/两融，周一若券商放量异动则情绪修复可期，是政策面最实的方向。</li>
   <li><b>观察 PCB/元件晋级：</b>中京电子能否3板、满坤科技能否延续，决定新主线是否成立；成立则小仓位试错。</li>
-  <li><b>观察半导体链止跌：</b>海光信息、中芯国际、天普股份能否止跌，止跌则国产替代方向可重新纳入。</li>
+  <li><b>观察半导体链止跌：</b>海光信息、中芯国际、通富微电能否止跌，止跌则国产替代方向可重新纳入；英伟达-14%情绪冲击下预计仍承压。</li>
   <li><b>银行/红利底仓：</b>已持有则持有不动；空仓者不追高，回踩5日线再考虑。</li>
-  <li><b>回避清单：</b>算力芯片（天普股份/沐曦/燧原）、算力中位票、冰雪经济（龙江交通/阳光照明）、影视传媒、贵金属（金价跌破3600美元）。</li>
+  <li><b>回避清单：</b>算力芯片（海光信息/沐曦/通富微电/长鑫科技）、半导体次新（粤芯半导体）、高位断板A杀（文投控股/广百股份/凯撒文化）、冰雪经济（龙江交通/阳光照明）、贵金属（金价跌破3600美元）。</li>
 </ol>
 </div>
 
@@ -370,23 +398,24 @@ tr:hover td{background:#1a2028}
 <div class="panel">
 <table>
   <tr><th>数据项</th><th>来源</th><th>口径说明</th></tr>
-  <tr><td>指数行情（收盘）</td><td>通达信 tdx_quotes</td><td>上证000001(setcode=1)、深成399001/创业板399006(setcode=0)、沪深300/中证500/中证1000(setcode=62)，收盘实取</td></tr>
-  <tr><td>涨跌家数</td><td>通达信 tdx_quotes HQInfo</td><td>上证上涨159/下跌2176、深市142/2785、创业板60/1350</td></tr>
-  <tr><td>涨跌停/连板/封板率</td><td>东方财富妙想 mx_finance_search_news（财联社/数据宝/界面多源交叉）</td><td>午间口径：涨停28~31家、跌停6家、封板率82%；收盘精确家数盘后未出齐，显式声明</td></tr>
+  <tr><td>指数行情（收盘）</td><td>westock data_market_overview</td><td>上证3533.79(-1.23%)、深成10256.39(-3.09%)、创业板2212.13(-3.54%)实取；沪深300/中证500/中证1000来自风格轮动+新闻口径</td></tr>
+  <tr><td>涨跌家数</td><td>westock data_market_overview(updown)</td><td>上涨313、下跌5236、平盘31，共5580只，下跌占比93.84%</td></tr>
+  <tr><td>涨跌停/封板率</td><td>westock updown + 东方财富妙想新闻交叉</td><td>westock触及口径「涨停29/跌停7」；新闻口径「涨停28~30/跌停58~61/封板率68%」。正文采用新闻口径并显式声明</td></tr>
   <tr><td>板块涨跌</td><td>westock data_hot(kind=board)</td><td>申万二级收盘热度榜</td></tr>
-  <tr><td>主力资金流</td><td>westock data_fund_flow + 金融界/财联社快讯</td><td>个股主力净流入实取；板块净流入为午间快讯口径</td></tr>
-  <tr><td>龙虎榜</td><td>westock data_lhb</td><td>今日盘后未出齐（返回空），用11-19口径参考并显式声明</td></tr>
-  <tr><td>公告</td><td>巨潮资讯 hisAnnouncement/query</td><td>2026-11-19~11-20 全量（深市2004条、沪市分页），按关键词筛高辨识度公告</td></tr>
-  <tr><td>微博热搜</td><td>weibo.com/ajax/side/hotSearch</td><td>「金价跌至7字头」「股市」等情绪参考</td></tr>
+  <tr><td>龙虎榜</td><td>westock data_lhb(date=2026-11-20)</td><td>全市场活跃度榜实取（净买入居前超声电子+4.41亿、东方海洋+3.14亿等）</td></tr>
+  <tr><td>主力资金流</td><td>westock data_hot + 新闻口径</td><td>板块净流入（印制电路板+22.39亿等）为新闻快讯口径</td></tr>
+  <tr><td>公告</td><td>巨潮资讯 hisAnnouncement/query</td><td>2026-11-20 深市全量1119条，按关键词筛高辨识度公告</td></tr>
+  <tr><td>美股/政策</td><td>东方财富妙想 mx_finance_search_news</td><td>英伟达-14.01%、纳指-5.28%等美股「黑色星期五」；11-22稳市「三箭齐发」多源交叉</td></tr>
+  <tr><td>微博热搜</td><td>weibo.com/ajax/side/hotSearch</td><td>「A股迎来三大利好」「沪深北交易所集体发布新政」「创业板科创板做市」等舆情参考</td></tr>
 </table>
-<p class="note" style="color:var(--warn)">数据缺口声明：① 收盘精确涨跌停家数/封板率盘后未出齐，用午间口径（涨停28~31、跌停6、封板率82%）并显式标注；② 龙虎榜当日返回空，机构/游资席位未披露，用11-19口径参考；③ ETF申赎精确数据未直接获取，用涨跌/成交代理。</p>
+<p class="note" style="color:var(--warn)">数据缺口声明：① 涨跌停家数存在「触及口径」与「封死口径」差异，正文采用新闻口径（涨停28~30、跌停58~61）并显式标注；② 沪深300/中证500/中证1000 具体收盘点位由风格轮动涨跌幅推算，未单独实取精确点位；③ ETF申赎精确数据未直接获取，用涨跌/成交作为资金流向代理。</p>
 </div>
 
 <div class="disclaimer">
-<b>免责声明：</b>本报告由 AI 自动生成，所有数据均来自公开数据源（通达信、腾讯自选股、东方财富妙想、巨潮资讯网等），仅供个人复盘研究与学习参考，不构成任何投资建议。股市有风险，投资需谨慎。数据可能存在延迟或口径差异，请以交易所官方披露为准。
+<b>免责声明：</b>本报告由 AI 自动生成，所有数据均来自公开数据源（腾讯自选股、东方财富妙想、巨潮资讯网、通达信等），仅供个人复盘研究与学习参考，不构成任何投资建议。股市有风险，投资需谨慎。数据可能存在延迟或口径差异，请以交易所官方披露为准。
 </div>
 
-<div class="meta">MarketReview · 完整版日复盘 V4.3 · 生成于 2026-11-20 15:00 收盘 · ascorelogic.github.io/MarketReview/</div>
+<div class="meta">MarketReview · 完整版日复盘 V4.3 · 生成于 2026-11-22 22:00 盘前夜 · ascorelogic.github.io/MarketReview/</div>
 </div>
 
 <script>
@@ -399,7 +428,7 @@ tr:hover td{background:#1a2028}
     xAxis:{type:'category',data:['上证指数','深证成指','创业板指','沪深300','中证500','中证1000'],axisLabel:{color:'#9aa7b4'},axisLine:{lineStyle:{color:'#2d333b'}}},
     yAxis:{type:'value',axisLabel:{color:'#9aa7b4',formatter:'{value}%'},splitLine:{lineStyle:{color:'#2d333b'}}},
     series:[{type:'bar',data:[
-      {value:-1.22,itemStyle:{color:'#2ea043'}},
+      {value:-1.23,itemStyle:{color:'#2ea043'}},
       {value:-3.09,itemStyle:{color:'#2ea043'}},
       {value:-3.54,itemStyle:{color:'#2ea043'}},
       {value:-0.76,itemStyle:{color:'#2ea043'}},
@@ -422,7 +451,7 @@ tr:hover td{background:#1a2028}
       splitArea:{areaStyle:{color:['rgba(88,166,255,0.02)','rgba(88,166,255,0.05)']}},
       axisLine:{lineStyle:{color:'#2d333b'}}
     },
-    series:[{type:'radar',data:[{value:[3,3,5,2,3,2,5,2,5],name:'健康度',areaStyle:{color:'rgba(88,166,255,0.25)'},lineStyle:{color:'#58a6ff'},itemStyle:{color:'#58a6ff'}}]}]
+    series:[{type:'radar',data:[{value:[2,2,5,1,2,2,5,2,5],name:'健康度',areaStyle:{color:'rgba(88,166,255,0.25)'},lineStyle:{color:'#58a6ff'},itemStyle:{color:'#58a6ff'}}]}]
   });
 
   window.addEventListener('resize',function(){idx.resize();health.resize();});
