@@ -33,7 +33,8 @@ nav a:hover{color:var(--gold);border-color:rgba(240,183,47,.35);background:rgba(
 .panel.hl{border-color:#f0444466}
 .grid{display:grid;gap:12px}
 .grid3{grid-template-columns:1fr 1fr 1fr}
-@media(max-width:720px){.grid3{grid-template-columns:1fr}}
+.grid2{grid-template-columns:1fr 1fr}
+@media(max-width:720px){.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
 .kpi{background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
 .kpi .label{color:var(--txt2);font-size:12px}
 .kpi .val{font-size:20px;font-weight:700;margin-top:2px}
@@ -66,14 +67,14 @@ tr:hover td{background:#1a2028}
 <body>
 <div class="wrap">
 <h1>完整版日复盘 · 2026-11-27（周五）</h1>
-<div class="subtitle">盘前更新 · 数据截至 2026-11-27 09:12（基准收盘 11-26 · 全量实取 · 六大模块 · 导航目录）</div>
+<div class="subtitle">午间半日复盘 · 数据截至 2026-11-27 12:00（上午收盘 · 全量实取 · 六大模块 · 导航目录）</div>
 <div class="tag-bar">
-  <span class="tag warn">缩量弱修复 · 冰点拐点未确认</span>
-  <span class="tag up">上证 3476.88 +0.01%</span>
-  <span class="tag down">深成 10084.04 -0.02%</span>
-  <span class="tag up">创业板 2189.82 +0.29%</span>
-  <span class="tag down">科创50 1169.99 -1.36%</span>
-  <span class="tag warn">涨停68 vs 跌停8 · 缩量657亿</span>
+  <span class="tag up">大科技"奇迹日" · 冰点拐点向上</span>
+  <span class="tag up">上证 3486.76 +0.28%</span>
+  <span class="tag up">深成 10301.40 +2.16%</span>
+  <span class="tag up">创业板 2272.72 +3.79%</span>
+  <span class="tag up">科创50 1221.79 +4.43%</span>
+  <span class="tag up">涨停96 vs 跌停0 · 放量1242亿</span>
 </div>
 
 <nav>
@@ -84,194 +85,247 @@ tr:hover td{background:#1a2028}
 <h2 id="s0"><span class="num">一</span>★核心研判（结论前置 · 8 条）</h2>
 <div class="conclusion">
 <ol>
-  <li><b>情绪温度：</b>冰点后<b>缩量弱修复</b>，跌停骤降、涨停回升但赚钱效应仍偏弱。涨停 68 家（封死口径）<b>vs 跌停骤降至 8 家（前日 44 家，收窄 82%）</b>，封板率 64.76%、炸板率约 29%；但<b>全市场超 3600 只个股下跌</b>（涨 1766 / 跌 3642，涨跌比 0.49），指数体面、个股失血。<span class="badge warn">弱修复</span></li>
-  <li><b>周期位置：</b>退潮冰点后的<b>缩量弱修复 · 冰点拐点向上前兆未确认</b>。三大指数齐收平（上证 +0.01% / 深成 -0.02% / 创业板 +0.29%），科创50 -1.36% 续跌破位；成交 1.32 万亿<b>缩量 657 亿</b>（连续四日缩量：1.66→1.55→1.38→1.32 万亿），缩量反抽、承接不足，尚缺「放量 + 主线晋级」确认。<span class="badge warn">拐点待确认</span></li>
-  <li><b>最强主线：</b><b class="hl-red">PCB/元件涨价链</b>（全球电子协会紧缺警报：订单同比 +56%、出货仅 +13%、交期拉长至 20 周 + TrendForce 预计 2026 AI 服务器出货 +28.3%）。金百泽/金禄电子涨超 15%，骏亚科技/贤丰控股/崇达技术/澳弘电子/楚天龙/东晶电子涨停，盛合晶微（先进封装）+18.94%。次主线：<b>「金」字辈玄学涨停潮</b>（金三江/金禄电子/金百泽 20CM、金牛化工 3 连板）+ <b>贵金属/黄金</b> + <b>华为算力</b>。<span class="badge hot">主线清晰</span></li>
-  <li><b>最高标 / 连板梯队：</b><b class="hl-red">克来机电 5 连板</b>为全场标准板高度（机器人 + 光通讯自动化 + 具身智能）；杭州解百 4 板（零售）；利君股份/金牛化工/天圣制药/全筑股份 3 板；盛剑科技 8 天 7 板、全筑股份 8 天 6 板、好当家 11 天 7 板、东方海洋 24 天 12 板（反包）、襄阳轴承 6 天 3 板。连板晋级率回升至 42.85%。<span class="badge hot">龙头清晰</span></li>
-  <li><b>资金主力：</b>存量<b>跷跷板</b>——净流入居前：<b class="hl-red">元件 +45.27 亿、通信 +41 亿、银行 +30.07 亿</b>；净流出居前：<b class="down">半导体 -25.67 亿</b>。中际旭创获净流入 16.9 亿（成交 197 亿居两市第一）、新易盛净流入 9.6 亿。医药/抗流感「一日游」证伪，资金从医药防御撤出、涌入 PCB 涨价链与银行，<b>非增量扩散、存量腾挪</b>。<span class="badge warn">存量博弈</span></li>
-  <li><b>最大隐患：</b>① <b>缩量反抽无承接</b>——1.32 万亿连缩四日，修复缺乏增量，随时二次探底；② <b>高位断板风险</b>——人气风向标九阳股份尾盘炸板（主力净卖 -7.39 亿）、中京电子尾盘炸板未能晋级 6 板、华东重机跌停 A 杀（净卖 -2.55 亿），高标退潮苗头已现；③ <b>克来机电 5 连板收上交所监管工作函</b>（累计涨幅 61.10%），高位情绪标监管压力上升；④ 美股感恩节休市、周五半日市，<b>外围反馈真空</b>，隔夜情绪无锚。<span class="badge warn">核心风险</span></li>
-  <li><b>明日策略：</b>缩量弱修复期<b>轻仓试错、只做主线龙头、不追高</b>。主线 PCB 涨价链（有真实涨价逻辑）可轻仓跟踪龙头，华为算力/国产算力（广东「十五五」算力规划 + 华为自研 HBM 突破）为辅；规避高位断板股（九阳/中京电子/华东重机）与退潮方向（医药/半导体设备）。等「<b>放量 + 主线晋级 + 高标不崩</b>」确认冰点拐点向上再加仓。<span class="badge warn">轻仓试错</span></li>
-  <li><b>仓位建议：</b>情绪冰点后修复但未确认，整体仓位<b>维持 0–3 成（轻仓试错）</b>，聚焦主线龙头博弈，不铺开、不重仓，留足现金等放量确认。<span class="badge warn">0–3 成</span></li>
+  <li><b>情绪温度：</b><b class="hl-red">情绪由冰点直接跳升到普涨亢奋</b>——上午 96 只涨停、<b class="hl-red">0 只跌停</b>（昨日跌停 8 家，全面清零），全市场 <b>4653 只上涨 / 827 只下跌</b>（涨跌比 5.6：1），赚钱效应爆发。半日成交 9205 亿，<b class="hl-red">较昨日放量 1242 亿</b>，量价齐升。<span class="badge hot">亢奋普涨</span></li>
+  <li><b>周期位置：</b><b class="hl-red">冰点拐点向上确认</b>——前两日（11-25 大跌、11-26 缩量弱修复）的退潮冰点，在今日被半导体产业链全线爆发直接扭转，情绪从「冰点拐点向上」进入「主升启动」初期。科创50 +4.43%、中证1000 +3.31%、中证500 +2.64%，成长弹性全面回归。<span class="badge hot">拐点向上</span></li>
+  <li><b>最强主线：</b><b class="hl-red">半导体芯片产业链</b>（半导体设备 + 先进封装 + HBM + 光刻机 + 存储 + 光芯片 + CPO 全线爆发），灿芯股份/京仪装备/华海诚科/腾景科技 20CM 涨停，长川科技/强一股份涨超 10%。次主线：<b class="hl-gold">华为产业链</b>（昇腾 + 盘古 + 鸿蒙 + 华为云，华胜天成/润和软件/拓维信息/常山北明/中国软件涨停）+ <b>算力租赁</b>（证通电子 3 连板）。<span class="badge hot">主线清晰</span></li>
+  <li><b>最高标 / 连板梯队：</b><b class="hl-red">全筑股份 9 天 7 板</b>为全场最高标；荣联科技/东晶电子 6 天 4 板，汇洲智能 5 天 4 板，利君股份/天圣制药 4 连板，光洋股份/鹿山新材 5 天 3 板，证通电子/宏达高科 3 连板。连板梯队重新拉开高度（昨日最高仅 5 板，今日 9 天 7 板接力）。<span class="badge hot">梯队修复</span></li>
+  <li><b>资金主力：</b><b class="hl-red">增量资金回流大科技</b>——板块热度榜半导体/元件/通信设备/华为盘古/IT服务霸榜前五，TMT 概念 +4.72%、算力租赁 +6.40%、CPO +5.76%、光刻机 +7.54%、华为昇腾 +7.33%。高股息红利股（中国神华 -5.21%、银行 -2.08%、煤炭、家电）<b class="down">逆势净流出</b>，资金从防御切向进攻。<span class="badge hot">增量进攻</span></li>
+  <li><b>最大隐患：</b>① <b>普涨式脉冲的持续性</b>——96 涨停集中在大科技首板，若午后无法维持主线晋级、龙头封单转弱，可能演变为「一日游」；② <b>高股息红利股急跌</b>（中国神华 -5.21%）显示机构调仓剧烈，需警惕尾盘砸盘；③ 本月<b>最后一个交易日</b>（月线/季线收官 + 基金排名调仓），跨月资金面 26 日已转净回笼，尾盘易波动。<span class="badge warn">核心风险</span></li>
+  <li><b>明日策略：</b>冰点拐点向上已确认，<b class="hl-red">可上仓位做多主线龙头</b>。半导体芯片链（设备/封装/HBM/光刻机）为主攻，华为算力/算力租赁为辅；规避高股息红利防御股（银行/煤炭/家电）与昨日退潮方向（水产/渔业/医药）。紧盯午后封板率与龙头晋级，若主线继续晋级则持有，若龙头炸板则兑现降档。<span class="badge hot">上仓位做多</span></li>
+  <li><b>仓位建议：</b>情绪拐点向上 + 主线清晰，整体仓位<b class="hl-red">可提升至 5–7 成</b>，集中半导体芯片链 + 华为算力主线龙头，留 3 成现金应对午后分歧与月末波动。<span class="badge hot">5–7 成</span></li>
 </ol>
 </div>
 
 <div class="panel hl">
-<h3>⑨ 主升浪候选观察（收盘验证）</h3>
+<h3>⑨ 主升浪候选观察（上午收盘验证）</h3>
 <table>
-<tr><th>方向</th><th>收盘表现</th><th>定性</th></tr>
-<tr><td class="hl-red">PCB/元件涨价链</td><td>金百泽 +16.88%、金禄电子 +19.39%、骏亚科技/崇达技术/澳弘电子/贤丰控股/楚天龙/东晶电子涨停、盛合晶微 +18.94%（先进封装）；元件 +3.10%</td><td class="hl-blue">最强主线 · 有涨价硬逻辑</td></tr>
-<tr><td class="hl-gold">华为算力/国产算力</td><td>证通电子 2 板、常山北明/拓维信息涨停、慧博云通/华丰科技 +10%；广东「十五五」算力规划 + 华为自研 HBM 方案（64通道 4096bit 位宽）曝光</td><td class="hl-gold">算力自主 · 预期差</td></tr>
-<tr><td class="hl-gold">「金」字辈玄学</td><td>金三江/金禄电子/金百泽 20CM、金正大/金健米业/金螳螂/金牛化工/金一文化涨停</td><td class="hl-gold">情绪抱团 · 辨识度</td></tr>
-<tr><td class="hl-gold">贵金属/黄金</td><td>招金黄金 +8.41%、晓程科技 +7%、盛达资源涨停；微博热搜「黄金重大变化」</td><td class="hl-gold">避险 · 高盛看年底黄金</td></tr>
-<tr><td class="down">医药/半导体设备</td><td>金迪克/华兰疫苗/葵花药业下挫（抗流感证伪）；中微公司 -6.52%、中芯国际 -4.51%</td><td class="down">退潮 · 坚决回避</td></tr>
+<tr><th>方向</th><th>上午表现</th><th>定性</th></tr>
+<tr><td class="hl-red">半导体芯片链</td><td>灿芯股份/京仪装备/华海诚科 20CM 涨停、长川科技/强一股份涨超 10%、中芯国际 +4.29%、长电科技 +6.28%、华天科技 +3.48%、兴森科技/华海诚科涨停；半导体板块 +5.88%</td><td class="hl-blue">最强主线 · 冰点拐点领涨</td></tr>
+<tr><td class="hl-red">华为产业链</td><td>华胜天成 +10%、润和软件 +19.99%、拓维信息 +10.02%、常山北明 +10.01%、证通电子 +10.07%（3 连板）、中国软件涨停；华为盘古 +8.26%、昇腾 +7.33%</td><td class="hl-blue">算力自主 · 预期差爆发</td></tr>
+<tr><td class="hl-gold">CPO/光模块</td><td>腾景科技 20CM 涨停、华懋科技涨停、中际旭创 +8.46%、新易盛 +9.40%、天孚通信 +4.87%、东山精密 +7.39%；CPO 概念 +5.76%</td><td class="hl-gold">AI 算力硬件 · 核心资产</td></tr>
+<tr><td class="hl-gold">算力租赁</td><td>证通电子 3 连板、中贝通信/大位科技/中嘉博创涨停、美利云 +4.80%；算力租赁 +6.40%</td><td class="hl-gold">算力自主 · 补涨扩散</td></tr>
+<tr><td class="down">高股息红利/防御</td><td>中国神华 -5.21%、银行 -2.08%、白酒 -0.92%、渔业 -4.15%、水产、煤炭、家电普跌</td><td class="down">防御退潮 · 资金切换</td></tr>
 </table>
 </div>
 
 <!-- ============ 二、大盘宏观 ============ -->
 <h2 id="s1"><span class="num">二</span>大盘宏观</h2>
 <div class="panel">
-<h3>隔夜美股与外围（感恩节休市 · 收盘基准 11-25）</h3>
-<table>
-<tr><th>品种</th><th>收盘</th><th>涨跌</th><th>解读</th></tr>
-<tr><td>道琼斯工业</td><td>50182.95</td><td class="up">+0.33%</td><td>盘中一度跌超 1100 点（-2.2%）后 V 型反转翻红，抹去千点跌幅</td></tr>
-<tr><td>标普 500</td><td>7182.78</td><td class="down">-0.25%</td><td>盘中一度跌超 3% 后大幅收窄</td></tr>
-<tr><td>纳斯达克综合</td><td>23585.80</td><td class="down">-0.62%</td><td>盘中一度暴跌逾 4%，纳指 100 一度逼近技术性熊市（-20%）</td></tr>
-<tr><td>费城半导体</td><td>8774.86</td><td class="down">-0.65%</td><td>盘中一度跌近 8% 后大幅收窄</td></tr>
-<tr><td>英伟达</td><td>149.30 美元</td><td class="down">-3.91%</td><td>连续第二日下挫，盘中一度跌近 9%；标普将其信用评级列入负面观察（90 天内或下调 AA）</td></tr>
-<tr><td>纳斯达克中国金龙</td><td>—</td><td class="up">+1.87%</td><td>中国资产独立走强，理想汽车 +11%、网易/京东 +2.5% 以上</td></tr>
-<tr><td>欧股（11-26）</td><td>DAX 25231</td><td class="up">+2.14%</td><td>德国 +2.14%、法国 +1.61%、英国 +1.75%，欧洲斯托克 50 +2.11%</td></tr>
-<tr><td>原油 / 黄金</td><td>WTI 83.68 / 金 3572</td><td class="up">+1.99% / 转涨</td><td>布伦特 +3.51%；现货黄金收复 3500 至 3572 美元</td></tr>
-</table>
-<div class="note">11-26（周四）美股感恩节休市，11-27（周五）美东 13:00 提前收盘。隔夜唯一收盘基准为 11-25（周三）：核心 PCE 同比 3.3%（创 2023 年 11 月以来新高，超预期 3.2%），美联储 12 月加息预期升温；「大空头」Michael Burry 发文称其组合「暂时几乎全部做多」。今日 A 股进入<b>外围反馈真空期</b>，定价权交给内资。</div>
-</div>
-
-<div class="panel">
-<h3>量能与指数梯度（收盘 · 实取）</h3>
+<h3>指数梯度（上午收盘 · 12:00 实取）</h3>
 <div class="grid grid3">
-  <div class="kpi"><div class="label">上证指数</div><div class="val up">3476.88 <span style="font-size:12px">+0.01%</span></div><div class="note">十字星 · 银行护盘尾盘翻红</div></div>
-  <div class="kpi"><div class="label">深证成指</div><div class="val down">10084.04 <span style="font-size:12px">-0.02%</span></div><div class="note">险守万点关口</div></div>
-  <div class="kpi"><div class="label">创业板指</div><div class="val up">2189.82 <span style="font-size:12px">+0.29%</span></div><div class="note">早盘涨超 2% 午后翻绿尾盘回升</div></div>
-  <div class="kpi"><div class="label">科创50</div><div class="val down">1169.99 <span style="font-size:12px">-1.36%</span></div><div class="note">半导体续杀领跌</div></div>
-  <div class="kpi"><div class="label">全市场宽度</div><div class="val down">涨1766/跌3642</div><div class="note">超3600股下跌 · 涨跌比0.49</div></div>
-  <div class="kpi"><div class="label">量能定性</div><div class="val flat">缩量反抽</div><div class="note">成交1.32万亿 · 缩量657亿</div></div>
+  <div class="kpi"><div class="label">上证指数</div><div class="val up">3486.76 +0.28%</div><div class="note">开盘 3482.38 · 最高 3492.45</div></div>
+  <div class="kpi"><div class="label">深证成指</div><div class="val up">10301.40 +2.16%</div><div class="note">高开高走 · 收复万点上方</div></div>
+  <div class="kpi"><div class="label">创业板指</div><div class="val up">2272.72 +3.79%</div><div class="note">成长弹性最强</div></div>
+  <div class="kpi"><div class="label">科创50</div><div class="val up">1221.79 +4.43%</div><div class="note">半导体驱动 · 全场最强</div></div>
+  <div class="kpi"><div class="label">上证50</div><div class="val down">2741.10 -0.46%</div><div class="note">红利权重拖累 · 独跌</div></div>
+  <div class="kpi"><div class="label">沪深300</div><div class="val up">3909.93 +0.24%</div><div class="note">权重分化</div></div>
+  <div class="kpi"><div class="label">中证500</div><div class="val up">6018.34 +2.64%</div><div class="note">中盘成长走强</div></div>
+  <div class="kpi"><div class="label">中证1000</div><div class="val up">5714.69 +3.31%</div><div class="note">小盘普涨</div></div>
 </div>
-<div class="note">指数梯度「指数体面、个股失血」：上证 +0.01% ≈ 深成 -0.02% &gt; 创业板 +0.29% &gt; 科创50 -1.36%。权重护盘（银行批量创历史新高：南京/成都/交通/中信/江苏银行；中国神华 53 元创 2007 年上市新高）与个股失血并存。融资余额 11-25 降至 21142.85 亿（单日 -207.42 亿，降幅趋缓），杠杆出清延续。</div>
+<div class="note">指数分化显著：<b class="hl-red">科技成长（科创50/创业板/中证1000）大涨 3–4%</b>，而上证50 逆势 -0.46%、沪深300 仅 +0.24%，权重红利（银行/煤炭/家电）拖累，是典型「科技进攻 + 红利退潮」的冰点拐点结构。</div>
+<div id="idxChart" class="chart"></div>
 </div>
 
 <div class="panel">
-<h3>健康度九维雷达（收盘定性）</h3>
-<div id="radar" class="chart"></div>
-<div class="note">九维评分（10 分制）：量能支撑 3 / 涨停质量 5 / 主线清晰度 6 / 赚钱效应 3 / 情绪接力 5 / 游资活跃 6 / 机构参与 4 / 外资态度 4 / 估值安全 5。整体健康度偏低但较前日（恐慌杀跌）回升，情绪从「冰封」切「弱修复」，主线清晰度与游资活跃度改善，但赚钱效应与量能支撑仍是短板。</div>
+<h3>量能与资金意图</h3>
+<div class="grid grid3">
+  <div class="kpi"><div class="label">沪深半日成交额</div><div class="val">9205 亿</div><div class="note">较昨日放量 1242 亿</div></div>
+  <div class="kpi"><div class="label">全市场上涨</div><div class="val up">4653 只</div><div class="note">涨跌比 5.6 : 1</div></div>
+  <div class="kpi"><div class="label">全市场下跌</div><div class="val down">827 只</div><div class="note">亏钱面大幅收敛</div></div>
+  <div class="kpi"><div class="label">涨停家数</div><div class="val up">96 只</div><div class="note">较昨日 53 只大幅回升</div></div>
+  <div class="kpi"><div class="label">跌停家数</div><div class="val up">0 只</div><div class="note">全面清零</div></div>
+  <div class="kpi"><div class="label">科创综指</div><div class="val up">+4.61%</div><div class="note">半导体驱动</div></div>
+</div>
+<div class="note">资金意图清晰：<b class="hl-red">增量资金全面回流大科技</b>，从高股息红利（神华 -5.21%、银行 -2.08%）与昨日水产/贵金属防守方向撤出，集中涌入半导体芯片链与华为算力。放量 1242 亿显示不是存量腾挪，而是真增量进场。<span class="badge hot">增量进攻</span></div>
+</div>
+
+<div class="panel">
+<h3>板块热度榜（12:00 实取）</h3>
+<table>
+<tr><th>排名</th><th>板块</th><th>涨跌</th><th>定性</th></tr>
+<tr><td>1</td><td class="hl-red">半导体</td><td class="up">+5.88%</td><td>主线核心</td></tr>
+<tr><td>2</td><td class="hl-red">元件</td><td class="up">+5.56%</td><td>PCB/被动元件</td></tr>
+<tr><td>3</td><td class="hl-red">通信设备</td><td class="up">+6.77%</td><td>光模块/6G</td></tr>
+<tr><td>4</td><td class="hl-red">华为盘古</td><td class="up">+8.26%</td><td>华为链爆发</td></tr>
+<tr><td>5</td><td class="hl-red">IT服务Ⅱ</td><td class="up">+7.33%</td><td>信创/软件</td></tr>
+<tr><td>6</td><td class="down">银行</td><td class="down">-2.08%</td><td>红利退潮</td></tr>
+<tr><td>—</td><td class="hl-gold">光刻机</td><td class="up">+7.54%</td><td>半导体设备</td></tr>
+<tr><td>—</td><td class="hl-gold">华为昇腾</td><td class="up">+7.33%</td><td>算力芯片</td></tr>
+<tr><td>—</td><td class="hl-gold">算力租赁</td><td class="up">+6.40%</td><td>算力自主</td></tr>
+<tr><td>—</td><td class="hl-gold">CPO光模块</td><td class="up">+5.76%</td><td>AI 硬件</td></tr>
+<tr><td>—</td><td class="down">渔业</td><td class="down">-4.15%</td><td>昨日防守方向退潮</td></tr>
+</table>
 </div>
 
 <!-- ============ 三、公告解读 ============ -->
-<h2 id="s2"><span class="num">三</span>公告解读（11/26 收盘后 · 重点公告）</h2>
+<h2 id="s2"><span class="num">三</span>公告解读（巨潮资讯 · 11-26 收盘后全量）</h2>
 <div class="panel">
-<h3>有辨识度 / 特殊性 / 重要字眼的公告（按五类整理）</h3>
+<div class="note">数据源：巨潮资讯网（cninfo）11-26 收盘后 ~ 11-27 全量公告，共 <b>2548 条</b>，按关键词定向检索 + 全量扫描分类。重点红色标注有辨识度/唯一性/特殊性/重要字眼的公告。</div>
+</div>
 
-<h3 class="hl-red">① 投资 / 签约 / 收购并购</h3>
+<div class="panel">
+<h3>① 回购/增持（护盘信号）</h3>
 <table>
-<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
-<tr><td class="hl-red">瑜欣电子</td><td>现金收购<b>三明华腾光电科技 93.02% 股权</b>（1.6 亿元）</td><td class="hl-red">跨界光电 · 并购催化</td></tr>
-<tr><td class="hl-red">精测电子</td><td>签订<b>日常经营性重大合同</b> + 注销部分回购股份减少注册资本</td><td class="hl-red">大单落地 + 股本优化</td></tr>
-<tr><td class="hl-red">艾艾精工</td><td>上海誉升同风金属材料<b>要约收购交割完成 · 控制权变更</b></td><td class="hl-red">实控人易主落地</td></tr>
-<tr><td class="hl-gold">云煤能源</td><td>拟转让<b>大西洋焊接 45% 股权</b> + 转让重装集团持有耐磨科技 41.99% 股权</td><td class="hl-blue">资产剥离 · 聚焦主业</td></tr>
-<tr><td class="hl-gold">华达科技</td><td>获得<b>客户项目定点</b>公告</td><td class="hl-blue">订单落地</td></tr>
-<tr><td class="hl-gold">智度股份/国光电器</td><td>与专业机构<b>共同投资</b>暨关联交易</td><td class="hl-blue">产业投资布局</td></tr>
-<tr><td class="hl-gold">招商蛇口</td><td>向全资子公司<b>现金增资</b></td><td class="hl-blue">扩表</td></tr>
+<tr><th>公司</th><th>公告</th><th>辨识度</th></tr>
+<tr><td class="hl-red">赛微微电</td><td>收到董事长提议公司回购股份</td><td class="hl-red">董事长提议回购 · 芯片</td></tr>
+<tr><td class="hl-red">精测电子</td><td>注销部分回购股份减少注册资本（+ 签订日常经营重大合同）</td><td class="hl-red">回购注销 + 重大合同双信号</td></tr>
+<tr><td>TCL中环</td><td>回购公司股份实施完毕暨股份变动</td><td class="hl-gold">光伏 · 回购落地</td></tr>
+<tr><td>国金证券</td><td>回购股份注销实施暨股份变动</td><td>券商回购注销</td></tr>
+<tr><td>复旦微电</td><td>回购股份事项前十大股东持股情况</td><td>芯片 · 回购进展</td></tr>
+<tr><td>汇通能源</td><td>以集中竞价交易方式回购公司股份方案</td><td>新回购方案</td></tr>
+<tr><td>利欧股份</td><td>取得金融机构股票回购专项贷款承诺函</td><td class="hl-gold">回购专项贷款 · 增量资金</td></tr>
+<tr><td>永和股份</td><td>控股股东增持公司股份法律意见书</td><td>氟化工 · 股东增持</td></tr>
 </table>
+</div>
 
-<h3 class="hl-red">② 融资 / 定增 / 可转债</h3>
+<div class="panel">
+<h3>② 融资/定增</h3>
 <table>
-<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
-<tr><td class="hl-red">裕太微</td><td>向特定对象发行 A 股<b>获上交所审核通过</b></td><td class="hl-red">定增过会 · 车载以太网芯片</td></tr>
-<tr><td class="hl-gold">圣晖集成</td><td>向不特定对象发行可转债<b>发行结果公告</b></td><td class="hl-blue">可转债落地</td></tr>
-<tr><td class="hl-gold">*ST闻泰</td><td>向下修正「闻泰转债」转股价格暨转股停复牌</td><td class="hl-gold">转债博弈 · ST</td></tr>
-<tr><td class="hl-gold">海亮股份</td><td><b>终止发行 H 股</b>并于港交所主板上市</td><td class="hl-gold">融资计划搁浅</td></tr>
+<tr><th>公司</th><th>公告</th><th>辨识度</th></tr>
+<tr><td class="hl-red">裕太微</td><td>2026年度向特定对象发行A股申请获上交所审核通过</td><td class="hl-red">芯片定增过会 · 国产以太网PHY</td></tr>
 </table>
+</div>
 
-<h3 class="hl-red">③ 增持 / 回购（含回购专项贷款）</h3>
+<div class="panel">
+<h3>③ 并购重组/要约收购</h3>
 <table>
-<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
-<tr><td class="hl-red">利欧股份</td><td>取得金融机构<b>股票回购专项贷款承诺函</b></td><td class="hl-red">回购贷落地</td></tr>
-<tr><td class="hl-red">复旦微电</td><td>回购股份前十大股东持股情况（回购推进中）</td><td class="hl-red">芯片龙头回购</td></tr>
-<tr><td class="hl-red">赛微微电</td><td>董事长<b>提议回购</b> + 2026 员工持股计划（草案）</td><td class="hl-red">回购 + 员工持股双利好</td></tr>
-<tr><td class="hl-gold">汇通能源</td><td>实控人/董事长<b>提议回购</b>公司股份方案</td><td class="hl-blue">回购方案</td></tr>
-<tr><td class="hl-gold">永和股份</td><td>控股股东、实控人兼董事长<b>增持</b>公司股份</td><td class="hl-blue">增持落地</td></tr>
-<tr><td class="hl-gold">精测电子</td><td>注销部分回购股份减少注册资本</td><td class="hl-blue">回购注销</td></tr>
-<tr><td class="hl-gold">TCL中环/国金证券</td><td>回购实施完毕/注销实施暨股份变动</td><td class="hl-blue">回购注销（利好股本）</td></tr>
-<tr><td class="hl-gold">特宝生物</td><td>回购股份比例达 3% + 2027「提质增效重回报」2.0 方案</td><td class="hl-blue">回购达标</td></tr>
+<tr><th>公司</th><th>公告</th><th>辨识度</th></tr>
+<tr><td class="hl-red">春晖智控</td><td>收到深交所并购重组审核委员会审核「发行股份及支付现金购买资产暨关联交易」会议安排</td><td class="hl-red">并购重组上会 · 重大</td></tr>
+<tr><td class="hl-red">艾艾精工</td><td>上海誉升同风要约收购交割完成暨控制权变更</td><td class="hl-red">要约收购完成 · 控制权易主</td></tr>
+<tr><td>亿道信息</td><td>发行股份及支付现金购买资产并募集配套资金报告书修订</td><td class="hl-gold">消费电子 · 重组推进</td></tr>
+<tr><td>博盈特焊</td><td>发行股份及支付现金购买资产进展</td><td>重组进展</td></tr>
+<tr><td>荣盛发展</td><td>债务重组</td><td class="warn">地产 · 债务化解</td></tr>
 </table>
+</div>
 
-<h3 class="hl-red">④ 经营 / 业绩 / 其他</h3>
+<div class="panel">
+<h3>④ 重大合同/中标（订单落地）</h3>
 <table>
-<tr><th>公司</th><th>公告要点</th><th>点评</th></tr>
-<tr><td class="hl-red">冰山冷热</td><td>股票交易<b>异常波动暨风险提示</b>公告</td><td class="hl-red">5 天 3 板 · 冰雪产业提示风险</td></tr>
-<tr><td class="hl-red">襄阳轴承</td><td>股票交易<b>异常波动暨风险提示</b>公告</td><td class="hl-red">6 天 3 板 · 提示风险</td></tr>
-<tr><td class="hl-gold">荣盛发展</td><td>债务重组 + 涉及担保事项公告</td><td class="hl-gold">地产债务重组</td></tr>
-<tr><td class="hl-gold">盟科药业</td><td>自愿披露<b>获得药品注册批准</b></td><td class="hl-blue">新药获批 · 创新药</td></tr>
-<tr><td class="hl-gold">中国神华</td><td>根据一般性授权<b>配售新 H 股</b> + 选举董事长/变更法定代表人</td><td class="hl-gold">H 股再融资</td></tr>
-<tr><td class="hl-gold">通用股份/天马科技</td><td>半年报<b>监管问询函回复</b></td><td class="hl-gold">问询函需留意</td></tr>
+<tr><th>公司</th><th>公告</th><th>辨识度</th></tr>
+<tr><td class="hl-red">光启技术</td><td>签订超材料航空结构产品重大销售合同</td><td class="hl-red">超材料 · 军工订单</td></tr>
+<tr><td class="hl-red">中国能建</td><td>重大工程中标公告</td><td class="hl-gold">央企大单</td></tr>
+<tr><td class="hl-red">蜂助手</td><td>签署算力业务日常经营重大合同</td><td class="hl-red">算力业务 · 主线呼应</td></tr>
+<tr><td>神州数码</td><td>收到中标通知书</td><td class="hl-gold">信创/算力</td></tr>
+<tr><td>特锐德</td><td>预中标国网项目</td><td class="hl-gold">电网充电桩</td></tr>
+<tr><td>三星电气</td><td>子公司经营合同预中标</td><td>电表</td></tr>
+<tr><td>精测电子</td><td>签订日常经营性重大合同</td><td class="hl-gold">半导体检测</td></tr>
 </table>
-<div class="note">注：以上为 11-26 收盘后巨潮资讯网全量公告（seDate 2026-11-26~11-27，totalAnnouncement 2520 条，去重抽样约 160 条）按关键词分类。当日<b>无重大负面</b>（无立案/处罚），整体偏正面——回购注销潮 + 回购专项贷款延续 + 多起并购/定增过会，延续政策维稳与产业资本增持基调；需留意荣盛发展债务重组、海亮股份终止 H 股、克来机电监管工作函等风险点。</div>
+</div>
+
+<div class="panel">
+<h3>⑤ 其他重要信号</h3>
+<table>
+<tr><th>公司</th><th>公告</th><th>辨识度</th></tr>
+<tr><td class="warn">ST晨鸣</td><td>地方国有公司拟增持公司股份提示性公告</td><td class="warn">国资入局纾困</td></tr>
+<tr><td class="warn">*ST香雪</td><td>确定重整投资人暨签署重整投资协议</td><td class="warn">重整推进</td></tr>
+<tr><td>招商蛇口</td><td>向全资子公司现金增资</td><td>地产</td></tr>
+<tr><td>长园集团</td><td>涉及诉讼事项进展</td><td class="warn">诉讼风险</td></tr>
+<tr><td>通用股份/天马科技</td><td>2026半年度报告监管问询函回复</td><td class="warn">监管问询</td></tr>
+</table>
+</div>
+
+<div class="warnbox">
+<b>公告线索提炼：</b>① 半导体链密集回购/定增/中标（<b>赛微微电</b>董事长提议回购、<b>精测电子</b>回购注销+重大合同、<b>裕太微</b>定增过会、<b>蜂助手</b>算力重大合同），与今日半导体主线高度呼应；② <b>春晖智控</b>并购重组上会、<b>艾艾精工</b>要约收购控制权易主，是辨识度较高的资本运作信号；③ <b>光启技术</b>超材料军工重大合同、<b>中国能建</b>央企大单，代表军民融合方向订单落地。
 </div>
 
 <!-- ============ 四、短线情绪及个股发现 ============ -->
 <h2 id="s3"><span class="num">四</span>短线情绪及个股发现</h2>
 <div class="panel">
-<h3>涨停/跌停 · 连板梯队 · 封板率</h3>
+<h3>涨停/跌停与封板（12:00 午间快讯口径）</h3>
 <div class="grid grid3">
-  <div class="kpi"><div class="label">涨停家数</div><div class="val up">68</div><div class="note">封板率 64.76% · 炸板率 29%</div></div>
-  <div class="kpi"><div class="label">跌停家数</div><div class="val down">8</div><div class="note">较前日 44 家骤降 82%</div></div>
-  <div class="kpi"><div class="label">连板高度</div><div class="val up">5 板</div><div class="note">克来机电 · 连板 14 只</div></div>
+  <div class="kpi"><div class="label">涨停家数</div><div class="val up">96 只</div><div class="note">较昨日 53 只 +81%</div></div>
+  <div class="kpi"><div class="label">跌停家数</div><div class="val up">0 只</div><div class="note">昨日 8 只 · 清零</div></div>
+  <div class="kpi"><div class="label">上涨/下跌</div><div class="val">4653 / 827</div><div class="note">涨跌比 5.6 : 1</div></div>
 </div>
-<h3>连板梯队</h3>
-<table>
-<tr><th>高度</th><th>个股（题材）</th></tr>
-<tr><td class="hl-red">5 板</td><td>克来机电（机器人 + 光通讯自动化 + 具身智能）※ 收上交所监管工作函</td></tr>
-<tr><td class="hl-gold">4 板</td><td>杭州解百（百货零售 + 杭州国资）</td></tr>
-<tr><td class="hl-blue">3 板</td><td>利君股份（军工）、天圣制药（中成药）、全筑股份（先进封装）、金牛化工（甲醇）</td></tr>
-<tr><td class="hl-blue">2 板</td><td>赤天化、证通电子（华为算力）、中央商场（零售）、崇达技术等 9 家</td></tr>
-<tr><td class="hl-gold">间断高标</td><td>盛剑科技 8 天 7 板、全筑股份 8 天 6 板、好当家 11 天 7 板、东方海洋 24 天 12 板（反包）、襄阳轴承 6 天 3 板、冰山冷热 5 天 3 板</td></tr>
-</table>
-<div class="warnbox"><b>关键提醒</b>：跌停从 44 家骤降至 8 家、涨停回升至 68 家、连板晋级率回升至 42.85%，情绪明显修复；<b>但九阳股份尾盘炸板、中京电子尾盘炸板（6 板失败）、华东重机 A 杀跌停</b>，高标退潮苗头已现；<b>克来机电 5 连板收上交所监管工作函</b>，高位情绪标监管压力上升。修复偏「缩量反抽」，缺乏增量确认，是<b>冰点拐点向上前兆、而非确认</b>。</div>
+<div class="note">情绪从昨日「跌停收敛的弱修复」直接跳升为<b class="hl-red">跌停清零的普涨亢奋</b>，赚钱效应爆发，情绪周期进入「主升启动」初期。</div>
 </div>
 
 <div class="panel">
-<h3>龙虎榜关键读数（11/26）</h3>
+<h3>连板梯队（午间快讯口径）</h3>
 <table>
-<tr><th>个股</th><th>涨跌</th><th>主力净额（游资榜）</th><th>解读</th></tr>
-<tr><td class="hl-red">拓维信息</td><td class="up">+10.03%</td><td class="up">净买 +3.99 亿</td><td>华为算力 · 章盟主 1.58 亿 · 游资主力共振</td></tr>
-<tr><td class="hl-red">旋极信息</td><td class="up">+20%</td><td class="up">净买 +3.34 亿</td><td>算力芯片 20CM · 章盟主 1.79 亿</td></tr>
-<tr><td class="hl-red">盛合晶微</td><td class="up">+18.94%</td><td class="up">净买 +3.20 亿</td><td>先进封装 · 山东帮 1.15 亿</td></tr>
-<tr><td class="hl-gold">襄阳轴承</td><td class="up">+10.02%</td><td class="up">净买 +2.87 亿</td><td>6 天 3 板 · 章盟主 0.92 亿</td></tr>
-<tr><td class="hl-gold">冰山冷热</td><td class="up">+10%</td><td class="up">净买 +2.55 亿</td><td>冰雪产业 5 天 3 板</td></tr>
-<tr><td class="hl-gold">金健米业</td><td class="up">+10.06%</td><td class="up">净买 +2.52 亿</td><td>「金」字辈 · 农业</td></tr>
-<tr><td class="down">华东重机</td><td class="down">-10.01%</td><td class="down">净卖 -2.55 亿</td><td><b>前高标 A 杀 · 净卖出居首 · 章盟主卖 1.37 亿</b></td></tr>
-<tr><td class="down">北纬科技</td><td class="up">+10.03%</td><td class="down">净卖 -1.66 亿</td><td>准地天板未封住 · 资金出货</td></tr>
+<tr><th>高度</th><th>个股</th><th>方向</th></tr>
+<tr><td class="hl-red">9天7板</td><td class="hl-red">全筑股份</td><td>装配式建筑/重整</td></tr>
+<tr><td class="hl-red">6天4板</td><td>荣联科技、东晶电子</td><td>数据中心/被动元件</td></tr>
+<tr><td>5天4板</td><td>汇洲智能</td><td>—</td></tr>
+<tr><td>4连板</td><td>利君股份、天圣制药</td><td>军工/医药</td></tr>
+<tr><td class="hl-gold">5天3板</td><td>光洋股份、鹿山新材</td><td>机器人减速器/光伏胶膜</td></tr>
+<tr><td>3连板</td><td class="hl-red">证通电子（算力租赁）、宏达高科</td><td>算力/—</td></tr>
+<tr><td>3天2板</td><td>新筑股份</td><td>—</td></tr>
+<tr><td>2连板</td><td>大胜达、山鹰国际等</td><td>—</td></tr>
+<tr><td>涨停</td><td class="hl-gold">深南电路、精测电子、兴森科技、华海诚科（PCB/半导体）</td><td>主线首板</td></tr>
 </table>
-<div class="note">整体看：游资主力<b>净买拓维信息、旋极信息、盛合晶微、襄阳轴承、冰山冷热、金健米业</b>（算力/PCB/「金」字辈主线），<b>净卖华东重机、北纬科技、华胜天成、信息发展、赤天化</b>（高标 A 杀/分歧股）。章盟主（江苏路）主攻旋极信息 1.79 亿、拓维信息 1.58 亿、中京电子 1.30 亿、襄阳轴承 0.92 亿，同时抛华东重机 1.37 亿。资金「买算力硬件主线、弃高标断板」特征清晰。机构席位（jg/yzb/yyb）接口本次返回为空，仅游资榜口径。</div>
+<div class="note">连板高度从昨日 5 板重新拉到 <b>9 天 7 板</b>，梯队完整，<b class="hl-red">全筑股份</b>成为全场情绪总龙头。算力租赁<b>证通电子 3 连板</b>、PCB/半导体链大批首板启动，主线接力清晰。</div>
 </div>
 
 <div class="panel">
-<h3>情绪流选股（代表股 + 盘口应对）</h3>
+<h3>龙虎榜（11-26 机构席位 · 数据实取）</h3>
 <table>
-<tr><th>个股</th><th>逻辑</th><th>盘口应对</th></tr>
-<tr><td class="hl-red">克来机电（5 板）</td><td>机器人 + 具身智能唯一 5 板高度标，但收上交所监管工作函</td><td>竞价溢价 + 开盘承接定强弱；已收监管函，警惕高开分歧，破分时均线即止盈</td></tr>
-<tr><td class="hl-red">崇达技术 / 骏亚科技（首板）</td><td>PCB 涨价链容量中军，有全球电子协会紧缺警报硬逻辑</td><td>看竞价强弱 + 分时抗跌；龙头晋级可跟，炸板即弃</td></tr>
-<tr><td class="hl-gold">拓维信息（首板）</td><td>华为算力，游资主力净买 3.99 亿垫底</td><td>回踩分时均线不破可低吸</td></tr>
-<tr><td class="hl-gold">中际旭创/新易盛</td><td>CPO 光模块龙头，主力净流入 16.9 亿/9.6 亿</td><td>机构趋势票，看 10 点前能否回封承接，破 5 日线减仓</td></tr>
-<tr><td class="down">九阳股份（避雷）</td><td>人气风向标尾盘炸板，主力净卖 -7.39 亿，澄清无半导体/华为合作</td><td class="down">规避 · 巨额派发，勿接</td></tr>
-<tr><td class="down">华东重机（避雷）</td><td>前高标 A 杀跌停，净卖 2.55 亿</td><td class="down">规避 · 断板核销</td></tr>
+<tr><th>个股</th><th>机构净买(亿)</th><th>方向/解读</th></tr>
+<tr><td class="hl-red">冰山冷热</td><td class="up">+4.08（3日累计）</td><td>冰雪产业 · 机构主买</td></tr>
+<tr><td class="hl-red">拓维信息</td><td class="up">+1.21</td><td>华为算力 · 机构买入</td></tr>
+<tr><td>旋极信息</td><td class="up">+0.60</td><td>信创 · 机构买入</td></tr>
+<tr><td>金禄电子</td><td class="up">+0.12</td><td>PCB · 机构+游资</td></tr>
+<tr><td class="down">凡拓数创</td><td class="down">-0.61</td><td>数字人 · 机构出货</td></tr>
+<tr><td class="down">东方海洋</td><td class="down">-0.46</td><td>水产 · 机构出货</td></tr>
+<tr><td class="down">北纬科技</td><td class="down">-0.59</td><td>高标 · 机构出货</td></tr>
 </table>
-<div class="note">止盈止损原则：主线龙头（PCB/机器人/算力）破分时均线或炸板即止盈，不恋战；高标断板股（九阳/中京电子/华东重机）坚决回避，等二次冰点出清再评估。今日为周五 + 美股半日市，尾盘资金倾向落袋，谨慎追高。</div>
+<div class="note">11-26 龙虎榜整体<b>游资主导、机构席位偏弱</b>，机构净买集中在<b>拓维信息（华为算力）</b>与<b>旋极信息（信创）</b>，与今日主线方向一致；东方海洋/北纬科技等高位股机构净卖出，印证高标退潮。</div>
+</div>
+
+<div class="panel">
+<h3>情绪流选股（含避雷/兑现监控）</h3>
+<div class="grid grid2">
+  <div class="kpi">
+    <div class="label">进攻候选 · 华为算力</div>
+    <div class="val" style="font-size:16px">拓维信息 23.06 <span class="up">+10.02%</span></div>
+    <div class="note">2连板 · 龙虎榜机构净买 1.21 亿 · 华为昇腾生态核心</div>
+  </div>
+  <div class="kpi">
+    <div class="label">进攻候选 · 算力租赁</div>
+    <div class="val" style="font-size:16px">证通电子 7.76 <span class="up">+10.07%</span></div>
+    <div class="note">3连板 · 算力租赁板块龙头</div>
+  </div>
+</div>
+<div class="warnbox">
+<b>避雷/兑现监控：</b>① 昨日水产/渔业/贵金属防守方向今日退潮（<b>东方海洋 -5.24%、好当家 -2.02%、金新农 -7.13%、渔业板块 -4.15%</b>），昨日追高者被套，坚决回避；② 高股息红利（<b>中国神华 -5.21%、银行 -2.08%、白酒 -0.92%</b>）机构调仓剧烈，短期回避；③ 高位股（<b>北纬科技 -4.42%</b>）资金出货，不接飞刀。
+</div>
 </div>
 
 <!-- ============ 五、机构趋势及趋势选股 ============ -->
 <h2 id="s4"><span class="num">五</span>机构趋势及趋势选股</h2>
 <div class="panel">
-<h3>资金性质：存量跷跷板 · 主线进攻 vs 高标退潮</h3>
+<h3>主力资金与机构意图</h3>
 <table>
-<tr><th>方向</th><th>资金行为</th><th>性质</th></tr>
-<tr><td class="up">PCB/元件/通信设备</td><td>元件 +45.27 亿、通信 +41 亿净流入，中际旭创 +16.9 亿、新易盛 +9.6 亿，涨价硬逻辑</td><td class="up">主线进攻 · 增量集中</td></tr>
-<tr><td class="up">银行</td><td>净流入 +30.07 亿居前，南京/成都/交行/中信/江苏银行续创历史新高</td><td class="up">防御抱团 · 拥挤</td></tr>
-<tr><td class="up">贵金属/黄金</td><td>招金黄金 +8.41%、晓程科技 +7%、盛达资源涨停，避险</td><td class="up">避险</td></tr>
-<tr><td class="down">半导体</td><td>净流出 -25.67 亿，中微 -6.52%、中芯 -4.51%、长鑫科技被主力弃</td><td class="down">设备/存储续杀</td></tr>
-<tr><td class="down">医药/抗流感</td><td>金迪克/华兰疫苗/葵花药业下挫，一日游证伪</td><td class="down">退潮出清</td></tr>
+<tr><th>方向</th><th>资金动向</th><th>解读</th></tr>
+<tr><td class="hl-red">半导体芯片链</td><td class="up">板块 +5.88% · 热度榜第一</td><td>增量资金主攻方向</td></tr>
+<tr><td class="hl-red">华为产业链</td><td class="up">昇腾 +7.33%、盘古 +8.26%</td><td>自主可控核心</td></tr>
+<tr><td class="hl-red">CPO/光模块</td><td class="up">+5.76% · 中际旭创 +8.46%</td><td>AI 硬件核心资产</td></tr>
+<tr><td class="down">高股息红利</td><td class="down">神华 -5.21%、银行 -2.08%</td><td>机构调仓撤离</td></tr>
 </table>
-<div class="warnbox"><b>趋势选股结论</b>：当前<b>无贝塔主升浪趋势股可做</b>——PCB 涨价链是「局部主线进攻」但属存量腾挪，尚未扩散成主升浪；银行是避险抱团非进攻。真正的趋势机会需等「放量 + 主线晋级」确认冰点拐点向上后，从 PCB/算力超跌反抽方向里找启动。<b>当前 = 轻仓试错主线龙头，不强行上重仓。</b></div>
+<div class="note">机构资金从「高股息防御」全面切向「科技成长进攻」，是典型的<b class="hl-red">冰点拐点向上</b>资金特征，持续性取决于午后增量是否延续。</div>
 </div>
 
 <div class="panel">
-<h3>核心宽基 ETF 资金动向（代理：尾盘异动 + 方向）</h3>
+<h3>核心宽基 + 行业 ETF（资金净流入代理）</h3>
 <table>
-<tr><th>ETF 方向</th><th>今日表现</th><th>信号</th></tr>
-<tr><td class="up">宽基 ETF</td><td class="up">尾盘再度脉冲式放量，月内已吸金超 3800 亿</td><td>神秘资金护盘 · 承接托底</td></tr>
-<tr><td class="up">银行 ETF</td><td class="up">银行股续创新高</td><td>防御抱团</td></tr>
-<tr><td class="down">科创50 ETF</td><td class="down">-1.36%</td><td>半导体续杀</td></tr>
-<tr><td class="warn">标普500/信息科技LOF</td><td class="warn">多只 QDII 发布溢价风险提示（161128/159655/159612）</td><td>跨境 ETF 溢价风险 · 勿盲目追</td></tr>
+<tr><th>ETF</th><th>涨跌</th><th>解读</th></tr>
+<tr><td class="hl-red">科创半导体ETF华夏(588170)</td><td class="up">+8.28%</td><td>半导体设备 · 领涨</td></tr>
+<tr><td class="hl-red">半导体设备ETF万家(159327)</td><td class="up">+8.44%</td><td>设备国产化</td></tr>
 </table>
-<div class="note">尾盘宽基 ETF 再度放量（神秘资金护盘），是深成指「1 万点失而复得」的直接原因，托底意图明确但未改变缩量格局。多只标普 500/信息科技 QDII 溢价过高发布风险提示，警惕跨境 ETF 溢价收敛风险。</div>
+<div class="note">半导体设备/科创半导体 ETF 半日涨超 8%，是当日最强资金集中方向，印证芯片产业链为绝对主线。</div>
+</div>
+
+<div class="panel">
+<h3>趋势选股（操作表）</h3>
+<table>
+<tr><th>个股</th><th>上午价</th><th>涨跌</th><th>逻辑</th><th>操作</th></tr>
+<tr><td class="hl-red">中际旭创(300308)</td><td>466.58</td><td class="up">+8.46%</td><td>CPO 光模块龙头 · AI 算力硬件核心</td><td>趋势持有 · 回踩低吸</td></tr>
+<tr><td class="hl-red">新易盛(300502)</td><td>206.80</td><td class="up">+9.40%</td><td>光模块 · 800G 放量</td><td>趋势持有</td></tr>
+<tr><td class="hl-red">中芯国际(688981)</td><td>121.50</td><td class="up">+4.29%</td><td>晶圆代工龙头 · 国产替代</td><td>趋势跟踪</td></tr>
+<tr><td class="hl-gold">拓维信息(002261)</td><td>23.06</td><td class="up">+10.02%</td><td>华为昇腾生态 · 2 连板</td><td>龙头低吸</td></tr>
+<tr><td class="hl-gold">长电科技(600584)</td><td>50.80</td><td class="up">+6.28%</td><td>先进封装 · 国产封测龙头</td><td>趋势跟踪</td></tr>
+</table>
+<div class="note">止盈止损参考：主线趋势股以 5 日线为止盈减仓线、跌破 10 日线止损；情绪连板股（拓维信息/证通电子）以「炸板即兑现」为纪律。</div>
 </div>
 
 <!-- ============ 六、机会分析及仓位建议 ============ -->
@@ -279,85 +333,94 @@ tr:hover td{background:#1a2028}
 <div class="panel">
 <h3>① 明天炒什么（舆情热度 × 预期差方向榜）</h3>
 <table>
-<tr><th>方向</th><th>舆情/催化</th><th>预期差定性</th></tr>
-<tr><td class="hl-red">PCB/元件涨价链</td><td>全球电子协会紧缺警报（订单 +56%、交期 20 周）+ AI 服务器出货 +28.3%</td><td class="hl-red">最强主线 · 涨价硬逻辑</td></tr>
-<tr><td class="hl-red">国产算力 / 华为链</td><td>广东「十五五」算力规划（智算 2028 破 1000EFlops、优先国产芯片）+ 华为自研 HBM 方案（64 通道 4096bit、5 层 W2W 混合键合）+ 平头哥 IPO 推进</td><td class="hl-red">算力自主 · 政策 + 技术双预期差</td></tr>
-<tr><td class="hl-gold">6G / 通信扩散</td><td>三部委《新一代通信网建设实施方案》（2030 建成）+ 通信设备今日吸金</td><td class="hl-blue">通信政策扩散 · 待验证广度</td></tr>
-<tr><td class="hl-gold">「金」字辈 / 黄金</td><td>「金」字辈涨停潮 + 微博热搜「黄金重大变化」+ 高盛年底黄金多头重建</td><td class="hl-gold">情绪抱团 · 避险</td></tr>
-<tr><td class="hl-gold">机器人 / 具身智能</td><td>WISE2026 大会「机器人产量 5-10 年超汽车」判断 + 克来机电 5 板</td><td class="hl-gold">题材 · 待扩散</td></tr>
-<tr><td class="hl-gold">创新药（乙肝治愈）</td><td>微博热搜「全球首个乙肝治愈新药中国获批」</td><td class="hl-blue">事件驱动 · 观察</td></tr>
+<tr><th>方向</th><th>舆情热度</th><th>预期差</th><th>评级</th></tr>
+<tr><td class="hl-red">半导体设备/先进封装</td><td>极高</td><td>国产替代 + 扩产周期</td><td class="hl-red">★★★ 主攻</td></tr>
+<tr><td class="hl-red">华为昇腾/算力自主</td><td>极高</td><td>自研 HBM + 国产算力替代</td><td class="hl-red">★★★ 主攻</td></tr>
+<tr><td class="hl-gold">CPO/光模块</td><td>高</td><td>AI 算力硬件 · 800G 放量</td><td class="hl-gold">★★ 配置</td></tr>
+<tr><td class="hl-gold">算力租赁</td><td>高</td><td>国产算力补涨扩散</td><td class="hl-gold">★★ 配置</td></tr>
+<tr><td class="dim">超材料/军工（光启技术）</td><td>中</td><td>订单落地催化</td><td>★ 观察</td></tr>
 </table>
+<div class="note">微博热搜无直接 A 股主线词（偏娱乐/社会），但「<b>服务贸易发展十五五规划</b>」登榜（728万热度），可关注服务贸易/跨境电商政策方向。</div>
 </div>
 
 <div class="panel">
-<h3>② 仓位建议（仓位档位循环表）</h3>
+<h3>② 下一轮主升浪窗口</h3>
+<div class="note">今日（11-27）是<b>本月最后一个交易日</b>，月线/季线收官 + 基金排名调仓。今日半导体产业链的爆发若午后能维持封板率与龙头晋级，则标志<b class="hl-red">新一轮科技主升浪启动</b>，窗口在「今日午后确认 + 下周一（12 月）延续」。关键观察：① 午后龙头（全筑股份/拓维信息/证通电子）封单是否转弱；② 半导体链首板是否有连板晋级；③ 放量能否延续至收盘（目标全日成交超 1.6 万亿）。</div>
+</div>
+
+<div class="panel">
+<h3>③ 仓位建议（档位循环表）</h3>
 <table>
-<tr><th>周期位置</th><th>情绪状态</th><th>仓位</th><th>当前判定</th></tr>
-<tr><td>高潮拐点向下</td><td class="down">恐慌杀跌 · 二次探底</td><td class="down">0–2 成（清仓等待）</td><td class="dim">已过（11-25 冰点）</td></tr>
-<tr><td class="hl-gold">冰点后缩量弱修复</td><td class="warn">跌停骤降 + 涨停回升 · 未放量</td><td class="hl-gold">0–3 成（轻仓试错）</td><td class="hl-red">◀ 当前</td></tr>
-<tr><td>冰点拐点向上（未确认）</td><td>放量 + 主线晋级 + 高标不崩</td><td>分批上仓位做多</td><td class="dim">待确认</td></tr>
-<tr><td>情绪高潮</td><td>普涨 · 涨停潮</td><td>开始减仓</td><td class="dim">—</td></tr>
+<tr><th>周期位置</th><th>情绪信号</th><th>仓位档位</th><th>操作</th></tr>
+<tr><td class="up">冰点拐点向上（当前）</td><td>跌停清零 + 主线爆发</td><td class="hl-red">5–7 成</td><td class="hl-red">上仓位做多主线龙头</td></tr>
+<tr><td class="dim">情绪高潮</td><td>普涨冲高 + 涨停潮</td><td class="hl-gold">减至 3–5 成</td><td>开始减仓兑现</td></tr>
+<tr><td class="dim">高潮拐点向下</td><td>龙头炸板 + 跌停回升</td><td class="down">0–2 成</td><td>清仓等待</td></tr>
 </table>
+<div class="note">当前定性为「冰点拐点向上」初期，按画像<b class="hl-red">上仓位做多主线主升段</b>，但需盯紧午后情绪是否转向「高潮」，一旦龙头集体炸板即降档。</div>
 </div>
 
 <div class="panel">
-<h3>③ 明日操作清单（T = 2026-11-27 周五）</h3>
-<ol class="oplist">
-  <li><b>轻仓试错主线</b>：维持 0–3 成仓，聚焦 PCB/元件涨价链龙头（崇达/骏亚/金禄/金百泽）与华为算力（拓维/证通电子），不铺开。</li>
-  <li><b>不追高标断板</b>：九阳股份、中京电子、华东重机等高位炸板/A 杀股坚决回避；克来机电已收监管工作函，警惕高开分歧。</li>
-  <li><b>盯冰点拐点三信号</b>：放量（回到 1.4 万亿以上）+ PCB 主线晋级连板 + 高标不崩，三者共振才加仓。</li>
-  <li><b>留意美股休市 + 周五落袋</b>：隔夜美股休市、周五半日市，外围无锚；周五尾盘资金倾向落袋，谨慎追高、控制隔夜仓位。</li>
-  <li><b>跟踪国产算力/华为链</b>：广东算力规划 + 华为自研 HBM 突破，国产存储/封测或迎预期差，轻仓观察中际旭创/新易盛承接。</li>
-</ol>
-<div class="warnbox"><b>一句话总结</b>：退潮冰点后缩量弱修复 → <b>0–3 成轻仓试错</b>；跌停 44→8 骤降、涨停回升至 68，但缩量反抽无承接、九阳/中京电子尾盘炸板、克来机电收监管函 → <b>冰点拐点向上前兆未确认</b>；下一轮主升浪 → 等「放量 + PCB 主线晋级 + 高标不崩」确认后，从 PCB 涨价链 / 国产算力（华为链）方向里找贝塔主升段，轻仓试错、不重仓、不追高。</div>
-</div>
-
-<!-- ============ 七、数据源与口径 ============ -->
-<h2 id="s6"><span class="num">七</span>数据源与口径说明</h2>
-<div class="panel">
+<h3>④ 明日操作清单</h3>
 <ul class="oplist">
-  <li>指数/涨跌停/技术/风格/估值：腾讯自选股 data_market_overview + 东方财富妙想 mx_ashare_finance_data（2026-11-26 收盘）</li>
-  <li>隔夜美股/外围：东方财富妙想 mx_finance_search_news 多源交叉（财联社/第一财经/每经/格隆汇/界面/淘股吧，收盘基准 11-25）</li>
-  <li>龙虎榜：腾讯自选股 data_lhb（全市场榜，2026-11-26；机构席位 jg/yzb/yyb 本次返回空，仅游资榜口径）</li>
-  <li>收评/连板梯队/涨停复盘：财联社/证券时报/每经/金融界/韭研公社/淘股吧多源交叉</li>
-  <li>公告：巨潮资讯网 hisAnnouncement/query（seDate 2026-11-26~11-27，totalAnnouncement 2520 条，去重抽样约 160 条按关键词分类）</li>
-  <li>舆情：微博热搜 realtime（黄金重大变化/全球首个乙肝治愈新药获批等）+ 腾讯自选股 data_hot（stock）</li>
-  <li><b>数据缺口声明</b>：① 涨跌停口径——新闻封死口径「涨停 68/跌停 8」为准，封板率 64.76%；② 科创50 取新闻口径 1169.99（-1.36%）；③ 今日（11-27）指数 09:12 实时价与昨收持平（0%），属盘初阶段，正文以 11-26 收盘为基准；④ 行业 ETF 申赎份额以尾盘异动/涨跌方向代理；⑤ 隔夜美股 11-26 感恩节休市，收盘基准为 11-25（周三）。</li>
-  <li>本文基于公开数据与量化分析，仅供个人复盘参考，<b>不构成投资建议</b>。市场有风险，投资需谨慎。</li>
+  <li><b class="hl-red">主攻半导体芯片链</b>：半导体设备（精测电子/华海诚科/兴森科技）、先进封装（长电科技/华天科技/盛合晶微）、HBM/存储，只做主线龙头，不追后排。</li>
+  <li><b class="hl-red">次攻华为算力/算力租赁</b>：拓维信息、证通电子、常山北明、润和软件，回踩低吸，炸板即兑现。</li>
+  <li><b class="hl-gold">配置 CPO/光模块</b>：中际旭创、新易盛、天孚通信，趋势持有，跌破 5 日线减仓。</li>
+  <li><b class="down">规避</b>：高股息红利（银行/煤炭/家电）、昨日水产/渔业/贵金属防守方向、高位断板股（北纬科技等）。</li>
+  <li><b>纪律</b>：午后紧盯封板率与龙头晋级，若半导体首板无法晋级连板、全筑股份炸板，则降档至 3 成以下等待；月末最后交易日尾盘防调仓砸盘，留 3 成现金。</li>
 </ul>
 </div>
 
-<div class="meta">周期择时复盘 · 数据截至 2026-11-27 09:12 · ascorelogic.github.io/MarketReview</div>
+<!-- ============ 数据源与口径 ============ -->
+<h2 id="s6"><span class="num">七</span>数据源与口径说明</h2>
+<div class="panel">
+<ul class="oplist">
+  <li><b>指数实时行情</b>：westock data_quote（八指数 12:00 实取：上证/深成/创业板/科创50/上证50/沪深300/中证500/中证1000）</li>
+  <li><b>涨跌停/涨跌家数/成交额</b>：东方财富妙想 mx_finance_search_news 午间快讯（财联社/界面新闻/中新经纬/第一财经多源交叉：96 涨停/0 跌停/4653 涨 827 跌/半日 9205 亿放量 1242 亿/创业板 +3.79%/科创50 +4.43%）</li>
+  <li><b>连板梯队</b>：界面快讯午间涨跌停股分析（全筑股份 9天7板/荣联科技/东晶电子 6天4板等）</li>
+  <li><b>板块热度榜</b>：westock data_hot（board，12:00 实取）</li>
+  <li><b>个股热度/涨幅</b>：westock data_hot（stock，12:00 实取）</li>
+  <li><b>龙虎榜</b>：westock data_lhb（11-26 机构席位 jg 全市场）</li>
+  <li><b>公告</b>：巨潮资讯网 cninfo（curl POST，11-26~11-27 全量 2548 条 + 关键词定向检索：回购/增持/中标/重大合同/并购/要约收购）</li>
+  <li><b>微博热搜</b>：weibo hotSearch（服务贸易十五五规划登榜）</li>
+  <li><b>交易日判定</b>：westock data_trade_calendar（2026-11-27 isTrading=true）</li>
+</ul>
+<div class="warnbox">
+<b>数据缺口声明：</b>① 上午半日数据以 12:00 收盘为准，下午数据（收盘指数/全日涨停/全日成交/龙虎榜当日榜）标注<b>待收盘</b>，需收盘后二次更新；② 11-26 龙虎榜为上一交易日数据（当日午间龙虎榜尚未出）；③ 主力资金净流向以板块热度榜+快讯口径代理，精确分时主力资金需收盘后 wind/ifind 校准；④ 封板率/炸板率午间快讯未统一披露，待收盘口径补齐。
+</div>
+</div>
+
+<div class="meta">
+本报告由 A 股复盘助手自动生成 · 数据全部实取 · 仅作个人复盘研究参考，不构成任何投资建议。股市有风险，投资需谨慎。
+</div>
 </div>
 
 <script>
+// 指数涨跌幅柱状图
 (function(){
-  var radar = echarts.init(document.getElementById('radar'));
-  radar.setOption({
+  var el=document.getElementById('idxChart');
+  if(!el) return;
+  var chart=echarts.init(el);
+  chart.setOption({
     backgroundColor:'transparent',
-    radar:{
-      indicator:[
-        {name:'量能支撑',max:10},{name:'涨停质量',max:10},{name:'主线清晰度',max:10},
-        {name:'赚钱效应',max:10},{name:'情绪接力',max:10},{name:'游资活跃',max:10},
-        {name:'机构参与',max:10},{name:'外资态度',max:10},{name:'估值安全',max:10}
-      ],
-      axisName:{color:'#9aa7b4'},
-      splitLine:{lineStyle:{color:'#2d333b'}},
-      splitArea:{areaStyle:{color:['rgba(88,166,255,0.02)','rgba(88,166,255,0.05)']}},
-      axisLine:{lineStyle:{color:'#2d333b'}}
-    },
+    tooltip:{trigger:'axis'},
+    grid:{left:50,right:20,top:30,bottom:30},
+    xAxis:{type:'category',data:['上证','深成','创业板','科创50','上证50','沪深300','中证500','中证1000'],axisLabel:{color:'#9aa7b4'}},
+    yAxis:{type:'value',axisLabel:{color:'#9aa7b4',formatter:'{value}%'}},
     series:[{
-      type:'radar',
-      data:[{
-        value:[3,5,6,3,5,6,4,4,5],
-        name:'今日健康度',
-        areaStyle:{color:'rgba(240,183,47,0.25)'},
-        lineStyle:{color:'#f0b72f'},
-        itemStyle:{color:'#f0b72f'}
-      }]
+      type:'bar',
+      data:[
+        {value:0.28,itemStyle:{color:'#f04444'}},
+        {value:2.16,itemStyle:{color:'#f04444'}},
+        {value:3.79,itemStyle:{color:'#f04444'}},
+        {value:4.43,itemStyle:{color:'#f04444'}},
+        {value:-0.46,itemStyle:{color:'#2ea043'}},
+        {value:0.24,itemStyle:{color:'#f04444'}},
+        {value:2.64,itemStyle:{color:'#f04444'}},
+        {value:3.31,itemStyle:{color:'#f04444'}}
+      ],
+      label:{show:true,position:'top',color:'#e6edf3',formatter:'{c}%'}
     }]
   });
-  window.addEventListener('resize',function(){radar.resize();});
 })();
 </script>
 </body>
